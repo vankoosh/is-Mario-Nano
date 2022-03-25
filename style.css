@@ -99,7 +99,7 @@ a[href*="git"]:hover {
 
 #contactLink {
   border: 3px solid ;
-  border-radius: 1rem;
+  border-radius: 2rem;
   padding: .8vh;
   margin-top: .5vh;
 }
@@ -373,9 +373,9 @@ img[src*=cert] {
 }
 
 #card-container {
-  width: auto;
+  /* width: 50%; */
   margin-top: 8rem;
-  padding: 0 5rem;
+  padding-left: 10rem;
 }
 
 .card {
@@ -385,7 +385,7 @@ img[src*=cert] {
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5vh;
+  margin-bottom: 8vh;
   padding: 1rem;
   height: auto;
   border-radius: 5px;
