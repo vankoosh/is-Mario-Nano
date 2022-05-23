@@ -61,6 +61,7 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
+
 /* -----------------------------------NAVBAR */
 
 #nav_bar {
@@ -289,10 +290,7 @@ a[href*="git"]:hover {
   border: 1px solid var(--font-color);
   opacity: 0.5;
   width: 30vw;
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3rem;
+  margin: 1rem auto;
   display: block;
 }
 
@@ -310,8 +308,9 @@ a[href*="git"]:hover {
 
 .my-skills {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
+  margin-bottom: 10vh;
 }
 
 .my-skills div {
@@ -331,17 +330,23 @@ a[href*="git"]:hover {
 #my-certs {
   display: flex;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-around;
+  width: 50vw;
+}
+
+#my-certs div,
+#my-certs div span,
+#my-certs div a,
+#my-certs img{
+  margin: 0;
+  display: block;
+  text-align: center;
+  font-weight: bold;
 }
 
 img[src*="cert"] {
   height: auto;
-  width: 5vw;
-  /* margin-bottom: 25vh; */
-}
-
-#my-certs a {
-  margin: 0 1vw;
+  width: 6vw;
 }
 
 #story-container {
@@ -355,6 +360,7 @@ img[src*="cert"] {
   justify-content: center;
   align-items: center;
   margin: 0 5rem;
+  /* outline: 1px solid black; */
 }
 
 #story-pic img {
@@ -363,12 +369,14 @@ img[src*="cert"] {
   max-width: 300px;
 }
 
-#story-text p {
+#story-text {
   font-size: calc(0.6vw + 0.4rem);
   line-height: 2rem;
   letter-spacing: -0.1rem;
   word-spacing: -0.1rem;
-  padding-left: 3rem;
+  margin: 0 auto;
+  max-width: 2000px;
+  text-align: center;
 }
 
 #long-story {
