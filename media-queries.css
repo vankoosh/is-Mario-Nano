@@ -4,13 +4,13 @@
   display: flex;
   justify-content: flex-end;
 }
-
+/* 
 .my-skills img{
   width: 5rem;
   height: auto;
   margin-left: 1rem;
   margin-right: 1rem;
-}
+} */
 }
 
 @media (min-width: 1400px) {

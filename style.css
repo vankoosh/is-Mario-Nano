@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid black; */
+  outline: 1px solid black;
 }
 
 body {
@@ -318,10 +318,9 @@ a[href*="git"]:hover {
   justify-content: center;
 }
 
-.my-skills div img {
-  width: 5vw;
-  height: auto;
-  /* width: 10%; */
+.my-skills img {
+  width: 4rem;
+  height: 4rem;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 3rem;
@@ -410,7 +409,7 @@ img[src*="cert"] {
 }
 
 .card {
-  width: 70vw;
+  /* width: 70vw; */
   min-width: 1000px;
   display: flex;
   margin-top: 0;
@@ -418,14 +417,14 @@ img[src*="cert"] {
   margin-right: auto;
   margin-bottom: 8vh;
   padding: 1rem;
-  height: auto;
-  border-radius: 5px;
+  border-left: 1px solid #80808085;
+  border-bottom: 1px solid #80808085;
 }
 
 .card img {
   border: 1px solid rgba(0, 0, 0, 0.486);
   max-width: 900px;
-  width: 25vw;
+  width: 20vw;
   min-width: 300px;
   height: auto;
   object-fit: contain;
