@@ -65,15 +65,3 @@ window.addEventListener("scroll", () => {
 
 
 // and then add to html navbar items <div><a href="javascript:void(0)" id="homeLink">.home()</a></div>
-
-
-
-
-
-
-
-
-
-// window.addEventListener("resize", () => {
-//   vHeight.textContent = viewportHeight;
-// });
