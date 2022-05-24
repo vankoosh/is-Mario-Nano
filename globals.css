@@ -71,3 +71,7 @@ body::-webkit-scrollbar-thumb {
   padding-left: 5px;
   max-width: 2560px;
 }
+
+.outline{
+  outline: 1px solid black;
+}

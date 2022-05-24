@@ -13,6 +13,7 @@ import {
   vWidth,
   scrollElem
 } from "./vars.js";
+import { outlineToggler } from "./outlineToggler.js";
 
 import scrollTo from "./scrollTo.js";
 
@@ -65,10 +66,3 @@ window.addEventListener("scroll", () => {
 
 
 // and then add to html navbar items <div><a href="javascript:void(0)" id="homeLink">.home()</a></div>
-
-document.querySelector('#outline').addEventListener("click", () => {
-  const list = document.getElementsByTagName('*');
-  for (let item in list) {
-    console.log(item);
-  }
-})
