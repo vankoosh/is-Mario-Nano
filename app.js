@@ -13,11 +13,13 @@ import {
   vWidth,
   scrollElem
 } from "./vars.js";
-import { outlineToggler } from "./outlineToggler.js";
+
+// import { outlineToggler } from "./outlineToggler.js";
 
 import scrollTo from "./scrollTo.js";
 
-// -----------------IMPORTS
+// ----------------- END OF IMPORTS
+
 
 function trackWindowSize() {
   vHeightElem.textContent = window.innerHeight;
@@ -66,3 +68,23 @@ window.addEventListener("scroll", () => {
 
 
 // and then add to html navbar items <div><a href="javascript:void(0)" id="homeLink">.home()</a></div>
+
+
+let clicked = false;
+
+document.querySelector("#outline").addEventListener("click", () => {
+  const list = document.getElementsByTagName("*");
+  if (!clicked) {
+    for (let item of list) {
+      item.classList.add("outline");
+      clicked = true;
+      console.log("Outline Btn Clicked");
+    }
+  } else {
+    for (let item of list) {
+      item.classList.remove("outline");
+      clicked = false;
+    }
+  }
+});
+

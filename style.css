@@ -1,6 +1,12 @@
 @import "media-queries.css";
 @import "globals.css";
 
+#outline{
+  position: fixed;
+  left: 3rem;
+  top: 50vh;
+  z-index: 99999999;
+}
 
 /* -----------------------------------NAVBAR */
 
