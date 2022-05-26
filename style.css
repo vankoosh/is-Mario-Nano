@@ -259,25 +259,22 @@ a[href*="git"]:hover {
   width: 50vw;
 }
 
-#my-certs div,
-#my-certs div span,
-#my-certs div a,
-#my-certs img{
-  margin: 0;
-  display: block;
-  text-align: center;
+#my-certs div{
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+  align-items: center;
+}
+
+#my-certs div span{
   font-weight: bold;
+  text-align: center;
 }
 
 img[src*="cert"] {
   height: auto;
-  width: 6vw;
-}
-
-#story-container {
-  /* display: flex; */
-  /* justify-content: space-around; */
-  /* padding: 0 5rem; */
+  margin: 0 auto;
+  max-width: 7vw;
 }
 
 #story-pic {
