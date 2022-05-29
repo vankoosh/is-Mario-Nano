@@ -97,6 +97,7 @@ a[href*="git"]:hover {
   margin: 0 auto;
   max-width: 2560px;
   height: 100vh;
+  /* outline: 1px solid black; */
 }
 
 .circle {
@@ -120,8 +121,9 @@ a[href*="git"]:hover {
 }
 
 #hi-text {
-  margin-top: 33vh;
+  margin-top: 40vh;
   position: relative;
+  /* outline: 1px solid black; */
 }
 
 #hi-text h3 {
@@ -132,8 +134,8 @@ a[href*="git"]:hover {
   font-size: calc(4vw - 1rem);
   display: inline-block;
   padding: 0.3rem;
-  left: 5rem;
-  top: 0;
+  left: 6rem;
+  top: -5rem;
 }
 
 #hi-text h1 {
@@ -141,7 +143,7 @@ a[href*="git"]:hover {
   color: #fff;
   font-size: calc(8vw - 1rem);
   padding: 0.3rem;
-  margin-top: 4.5rem;
+  /* margin-top: 4.5rem; */
   margin-left: 3rem;
 }
 

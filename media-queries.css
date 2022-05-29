@@ -82,6 +82,11 @@
 }
 }
 
+@media (min-width: 2300px){
+  #hi-text h3{
+    top: -5.5rem;
+  }
+}
 
 @media (min-width: 2500px) {
 
@@ -122,5 +127,16 @@
   font-size: 2rem;
   padding-top: 1.1rem;
 }
+}
 
+@media (min-width: 2600px) {
+  #hi-text h3 {
+      top: -6rem;
+    }
+}
+
+@media (min-width: 2900px){
+#hi-text h3 {
+    top: -7rem;
+  }
 }
