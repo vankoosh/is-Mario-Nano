@@ -40,8 +40,8 @@ window.addEventListener("scroll", () => {
   let scrollPos = window.scrollY;
   // let aboutFromTop = aboutTitle.getBoundingClientRect().top;
   // console.log(aboutFromTop);
-  scrollElem.innerText = window.scrollY;
-  hIh3.style.top = -scrollPos * 0.15 + "px";
+  // scrollElem.innerText = window.scrollY;
+  // hIh3.style.top = -scrollPos * 0.15 + "px";
   // aboutTitle.style.fontSize = scrollPos * 0.03 + "px";
   // workTitle.style.fontSize = (scrollPos - 1000) * 0.03 + "px";
   // contactTitle.style.fontSize = (scrollPos - 3000) * 0.03 + "px";
