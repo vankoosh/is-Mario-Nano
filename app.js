@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", () => {
 );
 
 window.addEventListener("scroll", () => {
-  let scrollPos = window.scrollY;
+  // let scrollPos = window.scrollY;
   // let aboutFromTop = aboutTitle.getBoundingClientRect().top;
   // console.log(aboutFromTop);
   // scrollElem.innerText = window.scrollY;
