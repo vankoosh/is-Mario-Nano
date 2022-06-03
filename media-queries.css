@@ -30,8 +30,8 @@
 #aboutLink,
 #workLink,
 #contactLink{
-  margin-right: 2vw;
-  font-size: calc(.6vw + .6rem);
+  /* margin-right: 2vw; */
+  /* font-size: calc(.6vw + .6rem); */
 }
 
   .card-text p {
@@ -63,7 +63,7 @@
   #workLink,
   #contactLink{
   margin-right: 3vw;
-  font-size: calc(.8vw + .7rem);
+  /* font-size: calc(.8vw + .7rem); */
   font-weight: bold;
 }
   #story-text p {
