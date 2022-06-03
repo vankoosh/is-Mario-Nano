@@ -3,6 +3,7 @@ const aboutTitle = document.querySelector("#about-me");
 const aboutLink = document.querySelector("#aboutLink");
 const workLink = document.querySelector("#workLink");
 const workTitle = document.querySelector("#my-work");
+const skillsTitle = document.querySelector("#skills");
 const contactLink = document.querySelector("#contactLink");
 const contactTitle = document.querySelector("#contact");
 const vHeightElem = document.querySelector("#height");
@@ -21,6 +22,7 @@ export {
   aboutLink,
   workLink,
   workTitle,
+  skillsTitle,
   contactLink,
   contactTitle,
   vHeightElem,

@@ -4,6 +4,7 @@ import {
   aboutLink,
   workLink,
   workTitle,
+  skillsTitle,
   contactLink,
   contactTitle,
   vHeightElem,
@@ -49,7 +50,9 @@ window.addEventListener("scroll", () => {
   const changeFontSize = () => {
     let aboutFromTop = aboutTitle.getBoundingClientRect().top;
     let workFromTop = workTitle.getBoundingClientRect().top;
+    let skillsFromTop = skillsTitle.getBoundingClientRect().top;
     let contactFromTop = contactTitle.getBoundingClientRect().top;
+
     if (aboutFromTop < window.innerHeight) {
       aboutTitle.style.fontSize =
         (window.innerHeight - aboutFromTop) * 0.04 + "px";
@@ -57,6 +60,10 @@ window.addEventListener("scroll", () => {
     if (workFromTop < window.innerHeight) {
       workTitle.style.fontSize =
         (window.innerHeight - workFromTop) * 0.04 + "px";
+    }
+    if (skillsFromTop < window.innerHeight) {
+      skillsTitle.style.fontSize =
+        (window.innerHeight - skillsFromTop) * 0.04 + "px";
     }
     if (contactFromTop < window.innerHeight) {
       contactTitle.style.fontSize =

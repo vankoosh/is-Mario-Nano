@@ -319,7 +319,7 @@ img[src*="cert"] {
   width: 100%;
   margin-top: 10rem;
   /* margin-bottom: 70rem; */
-  padding-right: 10rem;
+  padding-right: 12rem;
 }
 
 #long-story h5 {
@@ -339,7 +339,7 @@ img[src*="cert"] {
   /* position: relative; */
   max-width: 2960px;
   margin: 0 auto;
-  margin-top: 10vh;
+  margin-top: 7vh;
   margin-bottom: 5rem;
   /* padding-left: 10rem; */
   /* width: 100%; */
