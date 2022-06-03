@@ -47,7 +47,7 @@
 
 @media (min-width: 1900px) {
     #story-text p {
-    font-size: calc(.5vw + .5rem);
+    /* font-size: calc(.5vw + .5rem); */
     line-height: 2rem;
     letter-spacing: -.01rem;
     word-spacing: -.1rem;
@@ -67,7 +67,7 @@
   font-weight: bold;
 }
   #story-text p {
-  font-size: calc(.9vw + .7rem);
+  font-size: 3rem;
 }
 
   .card-text p {
@@ -96,7 +96,7 @@
   }
 
   #story-text p {
-  font-size: calc(.7vw + .7rem);
+  /* font-size: calc(.7vw + .7rem); */
   line-height: 3rem;
 }
 

@@ -39,23 +39,6 @@ h5 {
   font-family: Alata, sans-serif;
 }
 
-/* SCROLL BAR */
-body::-webkit-scrollbar {
-  width: 0.8em;
-}
-
-body::-webkit-scrollbar-track {
-  opacity: 0;
-  margin-block: 0.5em;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: black;
-  border: 1px solid #fff;
-  border-radius: 0.4em;
-}
-/* SCROLL BAR END */
-
 
 .hidden {
   display: none;
@@ -71,4 +54,22 @@ body::-webkit-scrollbar-thumb {
 
 .outline{
   outline: 1px solid black;
+  
+  
+  /* SCROLL BAR */
+  body::-webkit-scrollbar {
+    width: 0.8em;
+  }
+  
+  body::-webkit-scrollbar-track {
+    opacity: 0;
+    margin-block: 0.5em;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: black;
+    border: 1px solid #fff;
+    border-radius: 0.4em;
+  }
+  /* SCROLL BAR END */
 }
