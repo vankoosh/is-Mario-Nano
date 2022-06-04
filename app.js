@@ -22,17 +22,17 @@ import scrollTo from "./scrollTo.js";
 // ----------------- END OF IMPORTS
 
 
-function trackWindowSize() {
-  vHeightElem.textContent = window.innerHeight;
-  vWidthElem.textContent = window.innerWidth;
-  window.onresize = trackWindowSize;
-}
+// function trackWindowSize() {
+//   vHeightElem.textContent = window.innerHeight;
+//   vWidthElem.textContent = window.innerWidth;
+//   window.onresize = trackWindowSize;
+// }
 
 
 window.addEventListener("DOMContentLoaded", () => {
   isVarsConnected();
   scrollTo();
-  trackWindowSize();  
+  // trackWindowSize();  
   },
   true
 );

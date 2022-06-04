@@ -14,12 +14,8 @@
   display: flex;
   position: fixed;
   width: 100%;
-  /* height: 7vh; */
   margin: 0 auto;
   top: 0;
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
-  /* font-weight: 600; */
   z-index: 9999999;
   background: linear-gradient(
     180deg,
@@ -28,7 +24,6 @@
     rgba(254, 255, 255, 0) 100%
   );
   justify-content: flex-end;
-  /* outline: 1px solid grey; */
 }
 
 #nav-bar > div {
@@ -37,12 +32,10 @@
 
 #nav-bar div:nth-child(5) {
   margin-right: 1rem;
-  /* margin-left: 3rem; */
 }
 
 #nav-bar div:nth-child(6) {
-  margin-right: 5rem;
-  /* width: 1vw; */
+  margin-right: 2rem;
 }
 
 a[href*="linkedin"],
@@ -56,7 +49,7 @@ a[href*="git"]:hover {
 }
 
 #nav-bar img {
-  width: 2rem;
+  width: 1.5rem;
 }
 
 #homeLink,
@@ -64,7 +57,7 @@ a[href*="git"]:hover {
 #workLink,
 #contactLink {
   margin-right: 2.8vw;
-  font-size: calc(0.5vw + 0.6rem);
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -72,7 +65,6 @@ a[href*="git"]:hover {
   border: 3px solid;
   border-radius: 2rem;
   padding: .1rem .3rem;
-  /* margin-top: 0.5vh; */
 }
 
 /* --------------------------FRONTPAGE */
@@ -97,7 +89,6 @@ a[href*="git"]:hover {
   margin: 0 auto;
   max-width: 2960px;
   height: 100vh;
-  /* outline: 1px solid black; */
 }
 
 .circle {
@@ -113,7 +104,6 @@ a[href*="git"]:hover {
 .line {
   position: absolute;
   width: 1px;
-  /* height:15000px; */
   background-color: var(--alt-color);
   left: 5px;
   top: 50%;
@@ -123,7 +113,6 @@ a[href*="git"]:hover {
 #hi-text {
   margin-top: 40vh;
   position: relative;
-  /* outline: 1px solid black; */
 }
 
 #hi-text h3 {
@@ -143,7 +132,6 @@ a[href*="git"]:hover {
   color: #fff;
   font-size: calc(8vw - 1rem);
   padding: 0.3rem;
-  /* margin-top: 4.5rem; */
   margin-left: 3rem;
 }
 
@@ -210,7 +198,6 @@ a[href*="git"]:hover {
 }
 
 #about-me{
-  /* max-width: 2960px; */
   margin: 7vh auto 14vh;
 }
 
@@ -295,7 +282,6 @@ img[src*="cert"] {
   justify-content: center;
   align-items: center;
   margin: 0 5rem;
-  /* outline: 1px solid black; */
 }
 
 #story-pic img {
@@ -310,7 +296,6 @@ img[src*="cert"] {
   letter-spacing: -0.1rem;
   word-spacing: -0.1rem;
   margin: 0 auto;
-  /* max-width: 2000px; */
   text-align: center;
 }
 
@@ -319,7 +304,6 @@ img[src*="cert"] {
   justify-content: end;
   width: 100%;
   margin-top: 10rem;
-  /* margin-bottom: 70rem; */
   padding-right: 12rem;
 }
 
@@ -342,16 +326,11 @@ img[src*="cert"] {
   margin: 0 auto;
   margin-top: 7vh;
   margin-bottom: 5rem;
-  /* padding-left: 10rem; */
-  /* width: 100%; */
   height: calc(100vh - 3rem);
-  /* margin-top: 5rem; */
-  /* padding-left: 5px; */
 }
 
 .work-card {
   width: 50vw;
-  /* min-width: 800px; */
   display: flex;
   margin-top: 0;
   margin-left: auto;
@@ -364,9 +343,7 @@ img[src*="cert"] {
 
 .work-card img {
   border: 1px solid #0000007c;
-  /* max-width: 900px; */
   width: 18rem;
-  /* min-width: 300px; */
   height: auto;
   object-fit: cover;
 }
@@ -405,14 +382,6 @@ img[src*="cert"] {
   margin-top: 1rem;
 }
 
-/* .work-card-btn-container a {
-  color: var(--alt-color);
-  display: inline-block;
-  padding: .2rem .5rem;
-  margin-right: 3rem;
-  background-color: #000;
-} */
-
 .work-card-btn {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -423,11 +392,7 @@ img[src*="cert"] {
   color: #fff;
   display: inline-block;
   padding: .4rem .5rem;
-  /* width: 14rem; */
-  /* height: 3rem; */
-  /* padding-top: 1rem; */
   margin-right: 3rem;
-  /* border-radius: 8px; */
   background-color: #000;
 }
 
@@ -482,9 +447,12 @@ img[src*="cert"] {
   text-align: center;
 }
 
-/* ************ */
-/* ----------------------------------MEDIA QUERIES */
-/* ************ */
+
+
+
+
+
+
 
 /* Style the Image Used to Trigger the Modal */
 #myImg {

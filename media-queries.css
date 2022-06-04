@@ -1,3 +1,7 @@
+@media (min-width: 900px){
+  
+}
+
 @media (min-width: 1000px){
 
 .my-skills div:first-child {
@@ -8,31 +12,23 @@
 #story-pic{
   display: none;
 }
-
 }
 
-@media (min-width: 1300px){
-  
-}
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
+
+#nav-bar div:nth-child(6){
+  margin-right: 5rem;
+}
 
 .my-skills {
   flex-direction: row;
   justify-content: center;
 }
-
 }
 
 
 @media (min-width: 1700px) {
-#homeLink,
-#aboutLink,
-#workLink,
-#contactLink{
-  /* margin-right: 2vw; */
-  /* font-size: calc(.6vw + .6rem); */
-}
 
   .card-text p {
     font-size: calc(.6vw + .5rem);
@@ -44,14 +40,11 @@
   }
 }
 
-
 @media (min-width: 1900px) {
     #story-text p {
-    /* font-size: calc(.5vw + .5rem); */
     line-height: 2rem;
     letter-spacing: -.01rem;
     word-spacing: -.1rem;
-    /* padding-left: 3rem; */
   }
 }
 
@@ -63,7 +56,6 @@
   #workLink,
   #contactLink{
   margin-right: 3vw;
-  /* font-size: calc(.8vw + .7rem); */
   font-weight: bold;
 }
   #story-text p {
@@ -96,7 +88,6 @@
   }
 
   #story-text p {
-  /* font-size: calc(.7vw + .7rem); */
   line-height: 3rem;
 }
 
