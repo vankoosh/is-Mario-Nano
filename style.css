@@ -1,5 +1,6 @@
-@import "media-queries.css";
+/* @import "media-queries.css"; */
 @import "globals.css";
+/* @import "./hamburger.css" */
 
 #outline{
   position: fixed;
@@ -11,19 +12,7 @@
 /* -----------------------------------NAVBAR */
 
 #nav-bar {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  margin: 0 auto;
-  top: 0;
-  z-index: 9999999;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 85%,
-    rgba(254, 255, 255, 0) 100%
-  );
-  justify-content: flex-end;
+  display: none;  
 }
 
 #nav-bar > div {

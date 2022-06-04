@@ -17,8 +17,7 @@ body {
   font-family: Source Code Pro, sans-serif;
   user-select: none;
   font-size: 100%;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 a {
@@ -54,7 +53,7 @@ h5 {
 
 .outline{
   outline: 1px solid black;
-  
+}
   
   /* SCROLL BAR */
   body::-webkit-scrollbar {
@@ -72,4 +71,3 @@ h5 {
     border-radius: 0.4em;
   }
   /* SCROLL BAR END */
-}
