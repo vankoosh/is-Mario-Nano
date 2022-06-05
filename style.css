@@ -1,6 +1,6 @@
 /* @import "media-queries.css"; */
 @import "globals.css";
-/* @import "./hamburger.css" */
+@import "hamburger.css";
 
 #outline{
   position: fixed;
