@@ -1,4 +1,8 @@
 @media (min-width: 900px){
+  #hamburger-menu{
+    display: none;
+  }
+
   #nav-bar {
       display: flex;
       position: fixed;
