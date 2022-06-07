@@ -279,12 +279,17 @@ img[src*="cert"] {
   max-width: 300px;
 }
 
+#story-text{
+  width: 70%;
+  margin: 0 auto;
+}
+
 #story-text p{
   font-size: 1.25rem;
   line-height: 2rem;
   letter-spacing: -0.1rem;
   word-spacing: -0.1rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   text-align: center;
 }
 
