@@ -85,7 +85,7 @@ a[href*="git"]:hover {
   width: 12px;
   height: 12px;
   background-color: var(--alt-color);
-  left: 0;
+  left: 10vw;
   top: 50vh;
   border-radius: 15px;
 }
@@ -94,19 +94,9 @@ a[href*="git"]:hover {
   position: absolute;
   width: 1px;
   background-color: var(--alt-color);
-  left: 5px;
+  left: calc(10vw + 5px);
   top: 50%;
   bottom: -3500px;
-}
-
-#front-pic{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#front-pic img {
-  width: 6rem;
 }
 
 #hi-text {
@@ -117,6 +107,7 @@ a[href*="git"]:hover {
 #my-pic{
   margin-left: 7rem;
   margin-top: 3rem;
+  width: 15rem;
 }
 
 #hi-text h3 {
@@ -142,11 +133,13 @@ a[href*="git"]:hover {
 }
 
 #front p {
-  margin-top: 3rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  /* margin-top: 7rem; */
+  width: 80%;
+  margin: 7rem auto 0;
+  /* margin-left: 3rem; */
+  /* margin-right: 3rem; */
   text-align: center;
-  font-size: .7rem;
+  font-size: 1.3rem;
   font-weight: bold;
   line-height: 1.5em;
 }
