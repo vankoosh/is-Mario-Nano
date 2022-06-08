@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media only screen and (min-width: 700px) {
   #front {
     display: flex;
   }
@@ -18,7 +18,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media only screen and (min-width: 900px) {
   #hamburger-menu {
     display: none;
   }
@@ -50,7 +50,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
 
   .my-skills div:first-child {
     display: flex;
