@@ -114,6 +114,11 @@ a[href*="git"]:hover {
   position: relative;
 }
 
+#my-pic{
+  margin-left: 7rem;
+  margin-top: 3rem;
+}
+
 #hi-text h3 {
   position: absolute;
   background-color: rgb(0, 0, 0);
@@ -133,7 +138,7 @@ a[href*="git"]:hover {
   font-size: 3.5rem;
   padding: 0.3rem;
   margin-left: 3rem;
-  margin-right: 3rem;
+  width: 14rem;
 }
 
 #front p {
@@ -151,8 +156,8 @@ a[href*="git"]:hover {
   display: inline-flex;
   width: 180px;
   height: 55px;
-  margin-top: 70vh;
-  transform: translateX(-12rem);
+  margin-top: 10rem;
+  transform: translateX(30vw);
 }
 
 #cta a {
