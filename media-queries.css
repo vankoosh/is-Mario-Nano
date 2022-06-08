@@ -1,6 +1,20 @@
-@media (min-width: 700px){
+@media (min-width: 700px) {
   #front {
     display: flex;
+  }
+
+  #front-pic {
+    display: none;
+  }
+
+  #hi-text {
+    margin-top: 45vh;
+  }
+
+  #front p {
+    margin-top: 50vh;
+    margin-left: 7rem;
+    font-size: 1.1vw;
   }
 }
 
@@ -23,15 +37,15 @@
     justify-content: flex-end;
   }
 
-    #front{
-      width: 80%;
-    }
+  #front {
+    width: 80%;
+  }
 
   #hi-text h1 {
     font-size: calc(8vw - 1rem);
   }
 
-  #hi-text h3{
+  #hi-text h3 {
     font-size: calc(4vw - 1rem);
   }
 }
