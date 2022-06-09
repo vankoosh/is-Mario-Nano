@@ -74,7 +74,7 @@ a[href*="git"]:hover {
 #front {
   /* display: flex; */
   position: relative;
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
   max-width: 2960px;
   height: 100vh;
@@ -102,7 +102,7 @@ a[href*="git"]:hover {
 }
 
 #hi-text {
-  margin-top: 20vh;
+  margin-top: 10vh;
   position: relative;
 }
 
@@ -141,7 +141,7 @@ a[href*="git"]:hover {
   /* margin-left: 3rem; */
   /* margin-right: 3rem; */
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.5em;
 }
@@ -151,12 +151,12 @@ a[href*="git"]:hover {
   display: inline-flex;
   width: 180px;
   height: 55px;
-  margin-top: 10rem;
-  transform: translateX(30vw);
+  margin-top: 8rem;
+  transform: translateX(45vw);
 }
 
 #cta a {
-  font-size: calc(0.9vw + 0.5rem);
+  font-size: 1.3rem;
   letter-spacing: 1px;
   transform-style: preserve-3d;
   transform: translateZ(-25px);
@@ -273,7 +273,7 @@ a[href*="git"]:hover {
 img[src*="cert"] {
   height: auto;
   margin: 0 auto;
-  max-width: 7vw;
+  /* max-width: 7vw; */
 }
 
 #story-container {

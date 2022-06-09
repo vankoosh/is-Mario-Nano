@@ -6,6 +6,7 @@
 
   #front {
     display: flex;
+    width: 80%;
   }
 
   #front-pic {
@@ -24,6 +25,10 @@
 
   #cta{
     margin-top: 70vh;
+  }
+
+  #cta a {
+    font-size: calc(0.9vw + 0.5rem);
   }
 }
 
