@@ -88,6 +88,7 @@ a[href*="git"]:hover {
   left: 10vw;
   top: 50vh;
   border-radius: 15px;
+  opacity: 0;
 }
 
 .line {
@@ -97,6 +98,7 @@ a[href*="git"]:hover {
   left: calc(10vw + 5px);
   top: 50%;
   bottom: -3500px;
+  opacity: 0;
 }
 
 #hi-text {
