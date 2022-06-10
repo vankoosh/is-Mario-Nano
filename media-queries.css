@@ -1,12 +1,13 @@
 @media only screen and (min-width: 700px) {
+
   .circle,
-  .line{
+  .line {
     opacity: 1;
   }
 
   #front {
     display: flex;
-    width: 80%;
+    max-width: 2960px;
   }
 
   #front-pic {
@@ -23,12 +24,17 @@
     font-size: 1.5rem;
   }
 
-  #cta{
+  #cta {
     margin-top: 70vh;
   }
 
   #cta a {
     font-size: calc(0.9vw + 0.5rem);
+  }
+
+  .work-card {
+    display: flex;
+    width: 50vw;
   }
 }
 

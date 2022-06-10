@@ -1,7 +1,12 @@
 @import "globals.css";
 
+#hamburger-menu {
+  outline: 1px solid black;
+}
+
 #menuToggle {
   display: block;
+  width: 2rem;
   position: relative;
   top: calc(100vh - 3rem);
   left: calc(100vw - 5rem);
