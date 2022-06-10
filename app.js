@@ -1,5 +1,5 @@
 import {
-  hIh3,
+  // hIh3,
   aboutTitle,
   aboutLink,
   workLink,
@@ -20,7 +20,6 @@ import {
 import scrollTo from "./scrollTo.js";
 
 // ----------------- END OF IMPORTS
-
 
 // function trackWindowSize() {
 //   vHeightElem.textContent = window.innerHeight;
@@ -53,9 +52,7 @@ window.addEventListener("scroll", () => {
     let skillsFromTop = skillsTitle.getBoundingClientRect().top;
     let contactFromTop = contactTitle.getBoundingClientRect().top;
 
-    let vWidth = window.innerWidth;
-
-    console.log(vWidth);
+    console.log(`The vWidth is ${vWidth}`);
 
     if (aboutFromTop < window.innerHeight && vWidth > 700) {
       aboutTitle.style.fontSize =
@@ -67,9 +64,9 @@ window.addEventListener("scroll", () => {
     }
     if (skillsFromTop < window.innerHeight && vWidth > 700) {
       skillsTitle.style.fontSize =
-        (window.innerHeight - skillsFromTop && vWidth > 700) * 0.04 + "px";
+        (window.innerHeight - skillsFromTop) * 0.04 + "px";
     }
-    if (contactFromTop < window.innerHeight) {
+    if (contactFromTop < window.innerHeight && vWidth > 700) {
       contactTitle.style.fontSize =
         (window.innerHeight - contactFromTop) * 0.04 + "px";
     }

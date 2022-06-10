@@ -1,4 +1,4 @@
-const hIh3 = document.querySelector("#hi-im");
+// const hIh3 = document.querySelector("#hi-im");
 const aboutTitle = document.querySelector("#about-me");
 const aboutLink = document.querySelector("#aboutLink");
 const workLink = document.querySelector("#workLink");
@@ -17,7 +17,7 @@ const isVarsConnected = () => {
 }
 
 export {
-  hIh3,
+  // hIh3,
   aboutTitle,
   aboutLink,
   workLink,

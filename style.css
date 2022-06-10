@@ -2,7 +2,7 @@
 @import "globals.css";
 @import "hamburger.css";
 
-#outline{
+#outline {
   position: fixed;
   left: 3rem;
   top: 50vh;
@@ -12,10 +12,10 @@
 /* -----------------------------------NAVBAR */
 
 #nav-bar {
-  display: none;  
+  display: none;
 }
 
-#nav-bar > div {
+#nav-bar>div {
   margin-top: .5rem;
 }
 
@@ -107,7 +107,7 @@ a[href*="git"]:hover {
   position: relative;
 }
 
-#my-pic{
+#my-pic {
   margin-left: 7rem;
   margin-top: 3rem;
   width: 15rem;
@@ -132,7 +132,7 @@ a[href*="git"]:hover {
   font-size: 3.5rem;
   padding: 0.3rem;
   margin-left: 3rem;
-  width: 14rem;
+  /* width: 14rem; */
 }
 
 #front p {
@@ -152,7 +152,7 @@ a[href*="git"]:hover {
   display: inline-flex;
   width: 180px;
   height: 55px;
-  margin-top: 8rem;
+  margin-top: 6rem;
   transform: translateX(30vw);
 }
 
@@ -164,6 +164,7 @@ a[href*="git"]:hover {
   transition: transform 0.25s;
   font-family: Alata, sans-serif;
 }
+
 #cta a:before,
 #cta a:after {
   position: absolute;
@@ -177,15 +178,18 @@ a[href*="git"]:hover {
   box-sizing: border-box;
   border-radius: 7px;
 }
+
 #cta a:before {
   color: #fff;
   background: #000;
   transform: rotateY(0deg) translateZ(25px);
 }
+
 #cta a:after {
   color: #000;
   transform: rotateX(90deg) translateZ(25px);
 }
+
 #cta a:hover {
   transform: translateZ(-25px) rotateX(-90deg);
 }
@@ -194,15 +198,20 @@ a[href*="git"]:hover {
 /* ----------------------------------ABOUT ME */
 /* ******* */
 
-#about-container{
+#about-me,
+#my-work,
+#skills,
+#contact {
+  font-size: 2rem;
+  margin: 7vh auto 14vh;
+  display: inline-block;
+}
+
+#about-container {
   position: relative;
   max-width: 2960px;
   margin: 5rem auto 15rem;
   padding-left: 5px;
-}
-
-#about-me{
-  margin: 7vh auto 14vh;
 }
 
 #about-me::first-letter,
@@ -218,6 +227,11 @@ a[href*="git"]:hover {
   width: 30vw;
   margin: 1rem auto;
   display: block;
+}
+
+#skills {
+  display: inline-block;
+  outline: 1px solid black;
 }
 
 .skills-title {
@@ -259,14 +273,14 @@ a[href*="git"]:hover {
   width: 50vw;
 }
 
-#my-certs div{
+#my-certs div {
   display: flex;
   flex-direction: column;
   width: 10vw;
   align-items: center;
 }
 
-#my-certs div span{
+#my-certs div span {
   font-weight: bold;
   text-align: center;
 }
@@ -281,12 +295,12 @@ img[src*="cert"] {
   height: 80vh;
 }
 
-#story-text{
+#story-text {
   width: 70%;
   margin: 0 auto;
 }
 
-#story-text p{
+#story-text p {
   font-size: 1.25rem;
   line-height: 2rem;
   letter-spacing: -0.1rem;
@@ -312,8 +326,9 @@ img[src*="cert"] {
 /* ----------------MY-WORK */
 /* ******* */
 
-#my-work{
-  max-width: 2960px;
+#my-work {
+  display: inline-block;
+  outline: 1px solid black;
 }
 
 #work-container {
@@ -384,7 +399,7 @@ img[src*="cert"] {
   transition: color ease-in 0.2s;
 }
 
-.work-card-btn{
+.work-card-btn {
   color: #fff;
   display: inline-block;
   padding: .4rem .5rem;
@@ -400,8 +415,9 @@ img[src*="cert"] {
 /* ------------------CONTACT */
 /* ************* */
 
-#contact{
-  max-width: 2960px;
+#contact {
+  display: inline-block;
+  outline: 1px solid black;
 }
 
 #contact-container {
@@ -463,17 +479,26 @@ img[src*="cert"] {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
@@ -507,6 +532,7 @@ img[src*="cert"] {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1);
   }
