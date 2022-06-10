@@ -53,17 +53,21 @@ window.addEventListener("scroll", () => {
     let skillsFromTop = skillsTitle.getBoundingClientRect().top;
     let contactFromTop = contactTitle.getBoundingClientRect().top;
 
-    if (aboutFromTop < window.innerHeight) {
+    let vWidth = window.innerWidth;
+
+    console.log(vWidth);
+
+    if (aboutFromTop < window.innerHeight && vWidth > 700) {
       aboutTitle.style.fontSize =
         (window.innerHeight - aboutFromTop) * 0.04 + "px";
     }
-    if (workFromTop < window.innerHeight) {
+    if (workFromTop < window.innerHeight && vWidth > 700) {
       workTitle.style.fontSize =
         (window.innerHeight - workFromTop) * 0.04 + "px";
     }
-    if (skillsFromTop < window.innerHeight) {
+    if (skillsFromTop < window.innerHeight && vWidth > 700) {
       skillsTitle.style.fontSize =
-        (window.innerHeight - skillsFromTop) * 0.04 + "px";
+        (window.innerHeight - skillsFromTop && vWidth > 700) * 0.04 + "px";
     }
     if (contactFromTop < window.innerHeight) {
       contactTitle.style.fontSize =
