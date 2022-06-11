@@ -138,7 +138,7 @@ a[href*="git"]:hover {
 #front p {
   /* margin-top: 7rem; */
   width: 80%;
-  margin: 7rem auto 0;
+  margin: 6rem auto 0;
   /* margin-left: 3rem; */
   /* margin-right: 3rem; */
   text-align: center;
@@ -152,7 +152,7 @@ a[href*="git"]:hover {
   display: inline-flex;
   width: 180px;
   height: 55px;
-  margin-top: 6rem;
+  margin-top: 4rem;
   transform: translateX(30vw);
 }
 
@@ -198,12 +198,16 @@ a[href*="git"]:hover {
 /* ----------------------------------ABOUT ME */
 /* ******* */
 
+#about-me{
+  margin: 7vh auto 0;
+}
+
 #about-me,
 #my-work,
 #skills,
 #contact {
   font-size: 2rem;
-  margin: 7vh auto 14vh;
+  /* margin: 7vh auto 14vh; */
   display: inline-block;
 }
 
@@ -292,7 +296,7 @@ img[src*="cert"] {
 }
 
 #story-container {
-  height: 80vh;
+  /* height: 80vh; */
 }
 
 #story-text {
