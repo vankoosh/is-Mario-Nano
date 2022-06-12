@@ -36,6 +36,7 @@ window.addEventListener("DOMContentLoaded", () => {
   true
 );
 
+// CHANGE FONT SIZE BASED ON TOP EL POSITION
 window.addEventListener("scroll", () => {
   // let scrollPos = window.scrollY;
   // let aboutFromTop = aboutTitle.getBoundingClientRect().top;
