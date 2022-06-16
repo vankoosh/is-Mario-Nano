@@ -152,7 +152,7 @@ a[href*="git"]:hover {
   display: inline-flex;
   width: 180px;
   height: 55px;
-  margin-top: 4rem;
+  margin-top: 9rem;
   transform: translateX(30vw);
 }
 
@@ -198,16 +198,15 @@ a[href*="git"]:hover {
 /* ----------------------------------ABOUT ME */
 /* ******* */
 
-#about-me{
-  margin: 7vh auto 0;
-}
-
 #about-me,
 #my-work,
 #skills,
 #contact {
   font-size: 2rem;
   /* margin: 7vh auto 14vh; */
+  margin-left: 25vw;
+  margin-top: 9rem;
+  /* margin-top: 2rem; */
   display: inline-block;
 }
 
@@ -231,11 +230,6 @@ a[href*="git"]:hover {
   width: 30vw;
   margin: 1rem auto;
   display: block;
-}
-
-#skills {
-  display: inline-block;
-  outline: 1px solid black;
 }
 
 .skills-title {
@@ -315,10 +309,10 @@ img[src*="cert"] {
 
 #long-story {
   display: flex;
-  justify-content: end;
-  width: 100%;
-  margin-top: 10rem;
-  padding-right: 12rem;
+  justify-content: flex-end;
+  /* width: 100%; */
+  margin-top: 8rem;
+  padding-right: 10rem;
 }
 
 #long-story h5 {
@@ -330,10 +324,6 @@ img[src*="cert"] {
 /* ----------------MY-WORK */
 /* ******* */
 
-#my-work {
-  display: inline-block;
-  outline: 1px solid black;
-}
 
 #work-container {
   /* position: relative; */
@@ -419,10 +409,6 @@ img[src*="cert"] {
 /* ------------------CONTACT */
 /* ************* */
 
-#contact {
-  display: inline-block;
-  outline: 1px solid black;
-}
 
 #contact-container {
   padding-left: 5px;

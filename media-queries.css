@@ -5,6 +5,8 @@
     opacity: 1;
   }
 
+  .center80 {}
+
   #front {
     display: flex;
     max-width: 2960px;
@@ -36,6 +38,12 @@
     height: 80vh;
   }
 
+  #long-story {
+    /* width: 100%; */
+    margin-top: 10rem;
+    padding-right: 12rem;
+  }
+
   .work-card {
     display: flex;
     width: 50vw;
@@ -46,8 +54,13 @@
   #skills,
   #contact {
     /* font-size: 2rem; */
-    margin: 7vh auto 14vh;
-    /* display: inline-block; */
+    /* margin: 7vh auto 14vh; */
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 5px;
+    max-width: 2960px;
   }
 }
 
