@@ -202,19 +202,26 @@ a[href*="git"]:hover {
 #my-work,
 #skills,
 #contact {
-  font-size: 2rem;
+  font-size: 3rem;
+  width: 100vw;
+  text-align: center;
+  margin: 0 auto;
   /* margin: 7vh auto 14vh; */
-  margin-left: 25vw;
+  /* margin-left: 3rem; */
   margin-top: 9rem;
   /* margin-top: 2rem; */
-  display: inline-block;
+  display: block;
 }
 
 #about-container {
   position: relative;
   max-width: 2960px;
-  margin: 5rem auto 15rem;
-  padding-left: 5px;
+  margin: 1rem auto 15rem;
+  
+}
+
+#story-container h5 {
+  display: none;
 }
 
 #about-me::first-letter,
@@ -227,8 +234,8 @@ a[href*="git"]:hover {
 .horizontal-line {
   border: 1px solid var(--font-color);
   opacity: 0.5;
-  width: 30vw;
-  margin: 1rem auto;
+  width: 70vw;
+  margin: 0rem auto 3rem;
   display: block;
 }
 

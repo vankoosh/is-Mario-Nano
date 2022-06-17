@@ -7,6 +7,11 @@
 
   .center80 {}
 
+  .horizontal-line {
+    width: 30vw;
+    margin: 1rem auto;
+  }
+
   #front {
     display: flex;
     max-width: 2960px;
@@ -34,8 +39,25 @@
     font-size: calc(0.9vw + 0.5rem);
   }
 
+  #about-container {
+    margin: 5rem auto 15rem;
+    padding-left: 5px;
+  }
+
   #story-container {
     height: 80vh;
+  }
+
+  #story-container h5 {
+    display: block;
+  }
+
+  .skills-title {
+    display: block;
+    text-align: center;
+    font-size: calc(0.7vw + 0.5rem);
+    margin-top: 6rem;
+    color: #000;
   }
 
   #long-story {
@@ -61,6 +83,7 @@
     margin: 0 auto;
     padding-left: 5px;
     max-width: 2960px;
+    text-align: left;
   }
 }
 
