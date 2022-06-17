@@ -4,8 +4,8 @@
 
 #outline {
   position: fixed;
-  left: 3rem;
-  top: 50vh;
+  left: 1rem;
+  top: 1vh;
   z-index: 99999999;
 }
 
@@ -217,7 +217,10 @@ a[href*="git"]:hover {
   position: relative;
   max-width: 2960px;
   margin: 1rem auto 15rem;
-  
+}
+
+#story-container span:nth-child(1){
+  display: none;
 }
 
 #story-container h5 {
@@ -241,10 +244,11 @@ a[href*="git"]:hover {
 
 .skills-title {
   display: block;
-  text-align: center;
-  font-size: calc(0.7vw + 0.5rem);
+  text-align: left;
+  font-size: 1rem;
   margin-top: 6rem;
   color: #000;
+  margin-left: 15vw;
 }
 
 .skills-title::first-letter {

@@ -52,6 +52,10 @@
     display: block;
   }
 
+    #story-container span:nth-child(1) {
+      display: block;
+    }
+
   .skills-title {
     display: block;
     text-align: center;
@@ -86,6 +90,12 @@
     text-align: left;
   }
 }
+
+
+/*  *****+++ */
+/* +++++++++++++++900 BELOW */
+/* ++++++++++ */
+
 
 @media only screen and (min-width: 900px) {
   #hamburger-menu {
