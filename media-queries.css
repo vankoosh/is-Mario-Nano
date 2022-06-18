@@ -5,6 +5,14 @@
     opacity: 1;
   }
 
+  .material-symbols-outlined {
+    display: none;
+  }
+
+  .mobile-hidden{
+    display: block;
+  }
+
   .center80 {}
 
   .horizontal-line {
@@ -52,7 +60,7 @@
     display: block;
   }
 
-  #story-container span:nth-child(1) {
+  #story-container .horizontal-line {
     display: block;
   }
 
@@ -68,6 +76,14 @@
     /* width: 100%; */
     margin-top: 10rem;
     padding-right: 12rem;
+  }
+
+  .my-skills img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0;
   }
 
   .work-card {
