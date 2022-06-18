@@ -9,15 +9,6 @@
   z-index: 99999999;
 }
 
-.material-symbols-outlined{
-  display: block;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
-  transform: rotate(90deg);
-  margin-top: -2rem;
-}
-
 /* -----------------------------------NAVBAR */
 
 #nav-bar {
@@ -224,7 +215,7 @@ a[href*="git"]:hover {
   margin: 0rem auto 15rem;
 }
 
-#story-container span:nth-child(1){
+#story-container span:nth-child(1) {
   /* display: none; */
 }
 
@@ -264,12 +255,13 @@ a[href*="git"]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10vh;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 
 .my-skills div {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 .my-skills img {
@@ -278,20 +270,19 @@ a[href*="git"]:hover {
   margin-left: .5rem;
   margin-right: .5rem;
   margin-bottom: 3rem;
-  margin-top: 3rem;
 }
 
 #my-certs {
-  display: flex;
+  /* display: flex; */
   margin: 0 auto 15rem;
-  justify-content: space-around;
-  width: 50vw;
+  /* justify-content: space-around; */
+  /* width: 50vw; */
 }
 
 #my-certs div {
   display: flex;
   flex-direction: column;
-  width: 10vw;
+  /* width: 10vw; */
   align-items: center;
 }
 

@@ -9,7 +9,7 @@
     display: none;
   }
 
-  .mobile-hidden{
+  .mobile-hidden {
     display: block;
   }
 
@@ -78,12 +78,34 @@
     padding-right: 12rem;
   }
 
+  .my-skills {
+    margin-bottom: 10vh;
+  }
+
+  .my-skills div {
+    display: flex;
+    justify-content: center;
+  }
+
   .my-skills img {
     width: 4rem;
     height: 4rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 0;
+  }
+
+  #my-certs {
+    display: flex;
+    margin: 0 auto 15rem;
+    justify-content: space-around;
+    width: 50vw;
+  }
+
+  #my-certs div {
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 10vw;
+    /* align-items: center; */
   }
 
   .work-card {
