@@ -9,6 +9,12 @@
   z-index: 99999999;
 }
 
+.material-symbols-outlined{
+  font-size: 4rem;
+  display: block;
+  text-align: center;
+}
+
 /* -----------------------------------NAVBAR */
 
 #nav-bar {
@@ -205,22 +211,18 @@ a[href*="git"]:hover {
   font-size: 3rem;
   width: 100vw;
   text-align: center;
-  margin: 0 auto;
-  /* margin: 7vh auto 14vh; */
-  /* margin-left: 3rem; */
-  margin-top: 9rem;
-  /* margin-top: 2rem; */
+  margin: 9rem auto 1rem;
   display: block;
 }
 
 #about-container {
   position: relative;
   max-width: 2960px;
-  margin: 1rem auto 15rem;
+  margin: 0rem auto 15rem;
 }
 
 #story-container span:nth-child(1){
-  display: none;
+  /* display: none; */
 }
 
 #story-container h5 {
@@ -300,9 +302,7 @@ img[src*="cert"] {
   /* max-width: 7vw; */
 }
 
-#story-container {
-  /* height: 80vh; */
-}
+
 
 #story-text {
   width: 70%;
@@ -314,6 +314,7 @@ img[src*="cert"] {
   line-height: 2rem;
   letter-spacing: -0.1rem;
   word-spacing: -0.1rem;
+  margin-top: 2rem;
   /* margin: 0 auto; */
   text-align: center;
 }

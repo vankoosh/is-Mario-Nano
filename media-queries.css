@@ -52,9 +52,9 @@
     display: block;
   }
 
-    #story-container span:nth-child(1) {
-      display: block;
-    }
+  #story-container span:nth-child(1) {
+    display: block;
+  }
 
   .skills-title {
     display: block;
@@ -92,9 +92,9 @@
 }
 
 
-/*  *****+++ */
-/* +++++++++++++++900 BELOW */
-/* ++++++++++ */
+/*  ******** */
+/* ****************900 BELOW */
+/* ********* */
 
 
 @media only screen and (min-width: 900px) {
