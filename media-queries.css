@@ -98,7 +98,7 @@
     display: flex;
     margin: 0 auto 15rem;
     justify-content: space-around;
-    width: 50vw;
+    width: 80vw;
   }
 
   #my-certs div {
@@ -109,7 +109,7 @@
   }
 
   img[src*="cert"] {
-    max-width: 8vw;
+    width: 5rem;
   }
 
   .work-card {
@@ -206,6 +206,14 @@
   #hi-text h3 {
     font-size: calc(4vw - 1rem);
   }
+
+  #my-certs{
+    width: 70vw;
+  }
+
+    #my-certs div span{
+      font-size: 1.1rem;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -230,6 +238,10 @@
   .my-skills {
     flex-direction: row;
     justify-content: center;
+  }
+
+  #my-certs{
+    width: 50vw;
   }
 }
 

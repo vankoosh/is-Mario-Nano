@@ -297,6 +297,7 @@ img[src*="cert"] {
   height: auto;
   margin: 0 auto;
   width: 70vw;
+  max-width: 300px;
 }
 
 #story-text {
