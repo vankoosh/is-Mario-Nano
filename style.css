@@ -265,8 +265,8 @@ a[href*="git"]:hover {
 }
 
 .my-skills img {
-  width: 12vw;
-  height: 12vw;
+  width: 13vw;
+  height: 13vw;
   margin-left: .5rem;
   margin-right: .5rem;
   margin-bottom: 3rem;
@@ -287,14 +287,16 @@ a[href*="git"]:hover {
 }
 
 #my-certs div span {
+  font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 img[src*="cert"] {
   height: auto;
   margin: 0 auto;
-  /* max-width: 7vw; */
+  width: 70vw;
 }
 
 #story-text {
@@ -340,12 +342,12 @@ img[src*="cert"] {
 }
 
 .work-card {
-  width: 25rem;
+  /* width: 25rem; */
   /* display: flex; */
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3vh;
+  margin-bottom: 5rem;
   padding: 1rem;
   border-left: 1px solid #80808085;
   border-bottom: 1px solid #80808085;
@@ -355,24 +357,28 @@ img[src*="cert"] {
   border: 1px solid #0000007c;
   width: 18rem;
   height: auto;
+  display: block;
+  margin: 0 auto;
   object-fit: cover;
 }
 
 .work-card-text {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   max-width: 1500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  align-items: center;
 }
 
 .work-card-text h5 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  margin: 1rem 0;
 }
 
 .work-card-text p {
   font-size: 1rem;
-  margin-top: 0.5rem;
+  /* margin-top: 1rem; */
   margin-bottom: 1rem;
 }
 
@@ -381,7 +387,7 @@ img[src*="cert"] {
 }
 
 .work-card-tech-tags span {
-  margin-right: 2rem;
+  margin-right: 1rem;
   background-color: rgba(128, 128, 128, 0.253);
   padding: 0.1rem 0.5rem;
   border-radius: 0.5rem;
@@ -390,19 +396,17 @@ img[src*="cert"] {
 .work-card-btn-container {
   display: flex;
   margin-top: 1rem;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .work-card-btn {
-  color: rgb(255, 255, 255);
-  text-align: center;
   transition: color ease-in 0.2s;
-}
-
-.work-card-btn {
+  text-align: center;
   color: #fff;
   display: inline-block;
   padding: .4rem .5rem;
-  margin-right: 3rem;
+  margin-right: 0rem;
   background-color: #000;
 }
 
@@ -418,7 +422,7 @@ img[src*="cert"] {
 #contact-container {
   padding-left: 5px;
   position: relative;
-  width: 50%;
+  width: 90%;
   margin-top: 10vh;
   margin-left: auto;
   margin-right: auto;
@@ -447,6 +451,7 @@ img[src*="cert"] {
   width: 15rem;
   height: 2rem;
   margin-top: 1rem;
+  margin-bottom: 2rem;
   border-radius: 3px;
   background-color: #000;
   font-family: Alata, sans-serif;
@@ -459,6 +464,9 @@ img[src*="cert"] {
   display: none;
 }
 
+.desktop-hidden{
+  display: block;
+}
 
 
 

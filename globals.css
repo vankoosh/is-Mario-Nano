@@ -17,8 +17,8 @@ body {
   font-family: Source Code Pro, sans-serif;
   user-select: none;
   font-size: 100%;
-  /* width: 100vw; */
-  /* overflow-x: hidden; */
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
