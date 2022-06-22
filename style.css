@@ -205,7 +205,7 @@ a[href*="git"]:hover {
   font-size: 3rem;
   width: 100vw;
   text-align: center;
-  margin: 10rem auto 1rem;
+  margin: 15rem auto 1rem;
   display: block;
 }
 
@@ -334,17 +334,13 @@ img[src*="cert"] {
 
 
 #work-container {
-  /* position: relative; */
   max-width: 2960px;
   margin: 0 auto;
   margin-top: 7vh;
   margin-bottom: 5rem;
-  /* height: calc(100vh - 3rem); */
 }
 
 .work-card {
-  /* width: 25rem; */
-  /* display: flex; */
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
@@ -364,11 +360,9 @@ img[src*="cert"] {
 }
 
 .work-card-text {
-  /* margin-left: 1rem; */
   max-width: 1500px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
