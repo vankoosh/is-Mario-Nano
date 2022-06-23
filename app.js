@@ -55,19 +55,19 @@ window.addEventListener("scroll", () => {
 
     console.log(`The vWidth is ${vWidth}`);
 
-    if (aboutFromTop < window.innerHeight && vWidth > 700) {
+    if (aboutFromTop < window.innerHeight && vWidth > 900) {
       aboutTitle.style.fontSize =
         (window.innerHeight - aboutFromTop) * 0.04 + "px";
     }
-    if (workFromTop < window.innerHeight && vWidth > 700) {
+    if (workFromTop < window.innerHeight && vWidth > 900) {
       workTitle.style.fontSize =
         (window.innerHeight - workFromTop) * 0.04 + "px";
     }
-    if (skillsFromTop < window.innerHeight && vWidth > 700) {
+    if (skillsFromTop < window.innerHeight && vWidth > 900) {
       skillsTitle.style.fontSize =
         (window.innerHeight - skillsFromTop) * 0.04 + "px";
     }
-    if (contactFromTop < window.innerHeight && vWidth > 700) {
+    if (contactFromTop < window.innerHeight && vWidth > 900) {
       contactTitle.style.fontSize =
         (window.innerHeight - contactFromTop) * 0.04 + "px";
     }

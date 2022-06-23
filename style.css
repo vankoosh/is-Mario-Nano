@@ -122,8 +122,8 @@ a[href*="git"]:hover {
   display: inline-block;
   padding: 0.3rem;
   margin-left: 5rem;
-  left: 0rem;
-  top: -2.2rem;
+  left: 4rem;
+  top: -35px;
 }
 
 #hi-text h1 {
@@ -131,7 +131,7 @@ a[href*="git"]:hover {
   color: #fff;
   font-size: 3.5rem;
   padding: 0.3rem;
-  margin-left: 3rem;
+  margin-left: 6rem;
   /* width: 14rem; */
 }
 
@@ -256,7 +256,7 @@ a[href*="git"]:hover {
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 .my-skills div {
@@ -297,7 +297,7 @@ img[src*="cert"] {
   height: auto;
   margin: 0 auto;
   width: 70vw;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 #story-text {

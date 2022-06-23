@@ -30,13 +30,13 @@
   }
 
   #hi-text {
-    margin-top: 45vh;
+    margin-top: 41vh;
   }
 
   #front p {
-    margin-top: 50vh;
-    margin-left: 7rem;
-    font-size: 1.5rem;
+    margin-top: 40vh;
+    margin-left: 3rem;
+    font-size: 1.2rem;
   }
 
   #cta {
@@ -59,6 +59,8 @@
 
   #story-container h5 {
     display: block;
+    width: 70%;
+    font-size: 1.3rem;
   }
 
   #story-container .horizontal-line {
@@ -69,8 +71,10 @@
     display: block;
     text-align: center;
     font-size: calc(0.7vw + 0.5rem);
-    margin-top: 6rem;
+    margin: 6rem auto 0;
+    /* margin-top: 6rem; */
     color: #000;
+    /* margin-left: 0; */
   }
 
   #long-story {
@@ -107,6 +111,10 @@
     /* flex-direction: column; */
     width: 10vw;
     /* align-items: center; */
+  }
+
+  #my-certs div span {
+    font-size: 1rem;
   }
 
   img[src*="cert"] {
@@ -200,34 +208,35 @@
     width: 80%;
   }
 
+
+
   #hi-text h1 {
     font-size: calc(8vw - 1rem);
   }
 
   #hi-text h3 {
-    font-size: calc(4vw - 1rem);
+    /* font-size: calc(4vw - 1rem); */
+    font-size: 1.5rem;
   }
 
   #my-certs {
     width: 70vw;
   }
 
-  #my-certs div span {
-    font-size: 1.1rem;
-  }
+
 
 }
 
 @media only screen and (min-width: 1000px) {
-  
+
   .my-skills div:first-child {
     display: flex;
     justify-content: flex-end;
   }
-  
-  /* #story-pic {
-    display: none;
-  } */
+
+  #front p {
+    font-size: 1.3rem;
+  }
 
   .work-card {
     display: flex;
@@ -243,22 +252,44 @@
     margin-right: 5rem;
   }
 
+  #hi-text h3 {
+    font-size: 2.5rem;
+  }
+
+  #front p {
+    margin-top: 45vh;
+    font-size: calc(100vw / 80);
+  }
+
   .my-skills {
     flex-direction: row;
     justify-content: center;
   }
 
   #my-certs {
-    width: 50vw;
+    width: 60vw;
   }
 
-  .work-card{
+  .work-card {
     width: 40vw;
   }
 }
 
 
 @media (min-width: 1700px) {
+
+  #homeLink,
+  #aboutLink,
+  #workLink,
+  #contactLink {
+    /* margin-right: 2.8vw; */
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+  }
+
+  #my-certs{
+    margin-top: 4rem;
+  }
 
   .card-text p {
     font-size: calc(.6vw + .5rem);
@@ -271,10 +302,28 @@
 }
 
 @media (min-width: 1900px) {
+
+  #nav-bar img {
+    width: 1.8vw;
+  }
+
   #story-text p {
     line-height: 2rem;
     letter-spacing: -.01rem;
     word-spacing: -.1rem;
+  }
+
+  .my-skills img {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+
+  img[src*="cert"] {
+    width: 10vw;
+  }
+
+  #my-certs div span {
+    font-size: 1.5rem;
   }
 }
 
@@ -286,12 +335,23 @@
   #workLink,
   #contactLink {
     margin-right: 3vw;
-    font-weight: bold;
+    font-size: 2rem;
   }
 
-  #story-text p {
-    font-size: 3rem;
+  #nav-bar>div {
+    margin-top: 1rem;
   }
+
+  #front p {
+    margin-left: 7rem;
+  }
+
+
+  #story-text p {
+    font-size: 2rem;
+  }
+
+
 
   .card-text p {
     font-size: calc(.6vw + .5rem);
@@ -307,7 +367,13 @@
 
 @media (min-width: 2300px) {
   #hi-text h3 {
-    top: -5.5rem;
+    font-size: 4rem;
+    top: -65px;
+    left: 90px;
+  }
+
+  #story-container h5 {
+    font-size: 2rem;
   }
 }
 
@@ -353,12 +419,14 @@
 
 @media (min-width: 2600px) {
   #hi-text h3 {
-    top: -6rem;
+    font-size: 3.5rem;
   }
 }
 
 @media (min-width: 2900px) {
+
   #hi-text h3 {
-    top: -7rem;
+    font-size: 6rem;
+    top: -80px;
   }
 }
