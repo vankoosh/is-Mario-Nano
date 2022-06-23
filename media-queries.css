@@ -53,7 +53,8 @@
   }
 
   #story-container {
-    height: 80vh;
+    height: auto;
+    margin-bottom: 15rem;
   }
 
   #story-container h5 {
