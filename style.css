@@ -72,9 +72,7 @@ a[href*="git"]:hover {
 }
 
 #front {
-  /* display: flex; */
   position: relative;
-  /* width: 90%; */
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
@@ -98,7 +96,6 @@ a[href*="git"]:hover {
   background-color: var(--alt-color);
   left: calc(10vw + 5px);
   top: 50%;
-  /* bottom: -3500px; */
   opacity: 0;
 }
 
@@ -132,15 +129,11 @@ a[href*="git"]:hover {
   font-size: 3.5rem;
   padding: 0.3rem;
   margin-left: 6rem;
-  /* width: 14rem; */
 }
 
 #front p {
-  /* margin-top: 7rem; */
   width: 80%;
   margin: 6rem auto 0;
-  /* margin-left: 3rem; */
-  /* margin-right: 3rem; */
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
@@ -211,12 +204,7 @@ a[href*="git"]:hover {
 
 #about-container {
   position: relative;
-  /* max-width: 2960px; */
   margin: 0rem auto 15rem;
-}
-
-#story-container span:nth-child(1) {
-  /* display: none; */
 }
 
 #story-container h5 {
@@ -256,12 +244,6 @@ a[href*="git"]:hover {
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
-  /* margin-top: 4rem; */
-}
-
-.my-skills div {
-  /* display: flex; */
-  /* justify-content: center; */
 }
 
 .my-skills img {
@@ -273,16 +255,12 @@ a[href*="git"]:hover {
 }
 
 #my-certs {
-  /* display: flex; */
   margin: 0 auto 15rem;
-  /* justify-content: space-around; */
-  /* width: 50vw; */
 }
 
 #my-certs div {
   display: flex;
   flex-direction: column;
-  /* width: 10vw; */
   align-items: center;
 }
 
@@ -311,14 +289,12 @@ img[src*="cert"] {
   letter-spacing: -0.1rem;
   word-spacing: -0.1rem;
   margin-top: 2rem;
-  /* margin: 0 auto; */
   text-align: center;
 }
 
 #long-story {
   display: flex;
   justify-content: flex-end;
-  /* width: 100%; */
   margin-top: 8rem;
   padding-right: 10rem;
 }
@@ -334,10 +310,7 @@ img[src*="cert"] {
 
 
 #work-container {
-  /* max-width: 2960px; */
   margin: 7rem auto 10rem;
-  /* margin-top: 7vh; */
-  /* margin-bottom: 5rem; */
 }
 
 .work-card {
@@ -360,7 +333,6 @@ img[src*="cert"] {
 }
 
 .work-card-text {
-  /* max-width: 1500px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -373,7 +345,6 @@ img[src*="cert"] {
 
 .work-card-text p {
   font-size: 1rem;
-  /* margin-top: 1rem; */
   margin-bottom: 1rem;
 }
 
@@ -433,9 +404,15 @@ img[src*="cert"] {
   margin-bottom: 5rem;
 }
 
-#contact-container input {
+#contact-container input:not(:last-child) {
   width: 100%;
   height: 1.5rem;
+}
+
+#contact-container input,
+#contact-container label,
+#msg{
+  font-size: calc(.5vw + .5rem);
 }
 
 #msg {
@@ -443,17 +420,19 @@ img[src*="cert"] {
 }
 
 #contact-container input:last-child {
-  width: 15rem;
-  height: 2rem;
+  /* width: 15rem; */
+  /* height: 2rem; */
+  font-size: calc(.7vw + .5rem);
+  display: inline;
+  padding: 0.3rem 0.5rem;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
   border-radius: 3px;
   background-color: #000;
   font-family: Alata, sans-serif;
   color: #fff;
   text-align: center;
 }
-
 
 .mobile-hidden {
   display: none;
@@ -462,9 +441,6 @@ img[src*="cert"] {
 .desktop-hidden{
   display: block;
 }
-
-
-
 
 /* Style the Image Used to Trigger the Modal */
 #myImg {
