@@ -81,7 +81,7 @@ a[href*="git"]:hover {
   overflow-x: hidden;
 }
 
-.circle {
+#circle {
   position: absolute;
   width: 12px;
   height: 12px;
@@ -92,13 +92,13 @@ a[href*="git"]:hover {
   opacity: 0;
 }
 
-.line {
+#line {
   position: absolute;
   width: 1px;
   background-color: var(--alt-color);
   left: calc(10vw + 5px);
   top: 50%;
-  bottom: -3500px;
+  /* bottom: -3500px; */
   opacity: 0;
 }
 

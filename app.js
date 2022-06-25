@@ -27,6 +27,12 @@ import scrollTo from "./scrollTo.js";
 //   window.onresize = trackWindowSize;
 // }
 
+const setBottomVerLine = () => {
+  const bottomOfPage = document.querySelector("#contact-container").getBoundingClientRect().bottom;
+  const line = document.querySelector("#line");
+  line.style.bottom = "-" + (document.body.scrollHeight - vHeight) + "px";
+  console.log(document.body.scrollHeight);
+}
 
 window.addEventListener("DOMContentLoaded", () => {
   isVarsConnected();
@@ -73,6 +79,8 @@ window.addEventListener("scroll", () => {
     }
   };
   changeFontSize();
+  setBottomVerLine();
+
 });
 
 
