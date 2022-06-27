@@ -36,6 +36,7 @@ const setBottomVerLine = () => {
 window.addEventListener("DOMContentLoaded", () => {
   isVarsConnected();
   scrollTo();
+  setBottomVerLine();
   // trackWindowSize();  
   },
   true

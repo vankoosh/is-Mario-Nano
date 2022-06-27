@@ -146,7 +146,7 @@ a[href*="git"]:hover {
   width: 180px;
   height: 55px;
   margin-top: 9rem;
-  transform: translateX(30vw);
+  transform: translateX(-7rem);
 }
 
 #cta a {
