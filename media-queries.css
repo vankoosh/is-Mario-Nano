@@ -34,6 +34,7 @@
   #front p {
     margin-top: 40vh;
     margin-left: 3rem;
+    margin-right: 3rem;
     font-size: 1.2rem;
   }
 
@@ -209,7 +210,13 @@
     width: 80%;
   }
 
+  #front p{
+    margin-right: 0;
+  }
 
+  #cta{
+    display: inline-flex;
+  }
 
   #hi-text h1 {
     font-size: calc(8vw - 1rem);

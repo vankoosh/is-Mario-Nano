@@ -142,8 +142,8 @@ a[href*="git"]:hover {
 
 #cta {
   position: relative;
-  display: inline-flex;
-  width: 180px;
+  display: none;
+  width: 14rem;
   height: 55px;
   margin-top: 9rem;
   transform: translateX(-7rem);
@@ -163,7 +163,7 @@ a[href*="git"]:hover {
   position: absolute;
   content: "See my work";
   height: 55px;
-  width: 190px;
+  width: 14rem;
   display: flex;
   align-items: center;
   justify-content: center;
