@@ -220,11 +220,13 @@
 
   #hi-text h1 {
     font-size: calc(8vw - 1rem);
+    margin-left: 4rem;
   }
 
   #hi-text h3 {
     /* font-size: calc(4vw - 1rem); */
     font-size: 1.5rem;
+    margin-left: 3rem;
   }
 
   #my-certs {
@@ -254,7 +256,7 @@
   }
 
   #hi-text h3 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 
   #front p {
