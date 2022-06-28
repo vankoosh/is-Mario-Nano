@@ -15,51 +15,33 @@ import {
   scrollElem
 } from "./vars.js";
 
-// import { outlineToggler } from "./outlineToggler.js";
-
 import scrollTo from "./scrollTo.js";
 
 // ----------------- END OF IMPORTS
 
-// function trackWindowSize() {
-//   vHeightElem.textContent = window.innerHeight;
-//   vWidthElem.textContent = window.innerWidth;
-//   window.onresize = trackWindowSize;
-// }
 
 const setBottomVerLine = () => {
   const line = document.querySelector("#line");
   line.style.bottom = "-" + (document.body.scrollHeight - vHeight) + "px";
-  console.log(document.body.scrollHeight);
+  // console.log(document.body.scrollHeight);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
   isVarsConnected();
   scrollTo();
   setBottomVerLine();
-  // trackWindowSize();  
   },
   true
 );
 
 // CHANGE FONT SIZE BASED ON TOP EL POSITION
 window.addEventListener("scroll", () => {
-  // let scrollPos = window.scrollY;
-  // let aboutFromTop = aboutTitle.getBoundingClientRect().top;
-  // console.log(aboutFromTop);
-  // scrollElem.innerText = window.scrollY;
-  // hIh3.style.top = -scrollPos * 0.15 + "px";
-  // aboutTitle.style.fontSize = scrollPos * 0.03 + "px";
-  // workTitle.style.fontSize = (scrollPos - 1000) * 0.03 + "px";
-  // contactTitle.style.fontSize = (scrollPos - 3000) * 0.03 + "px";
 
   const changeFontSize = () => {
     let aboutFromTop = aboutTitle.getBoundingClientRect().top;
     let workFromTop = workTitle.getBoundingClientRect().top;
     let skillsFromTop = skillsTitle.getBoundingClientRect().top;
     let contactFromTop = contactTitle.getBoundingClientRect().top;
-
-    console.log(`The vWidth is ${vWidth}`);
 
     if (aboutFromTop < window.innerHeight && vWidth > 900) {
       aboutTitle.style.fontSize =
