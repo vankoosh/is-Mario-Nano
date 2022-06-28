@@ -8,7 +8,7 @@ export default function scrollTo() {
   aboutLink.addEventListener("click", () => {
     const fromTop = document.querySelector("#about-me").offsetTop;
     document.documentElement.scrollTo({
-      top: fromTop,
+      top: fromTop - 80,
       left: 0,
       behavior: "smooth",
     });
@@ -17,7 +17,7 @@ export default function scrollTo() {
   workLink.addEventListener("click", () => {
     const fromTop = document.querySelector("#my-work").offsetTop;
     document.documentElement.scrollTo({
-      top: fromTop,
+      top: fromTop - 150,
       left: 0,
       behavior: "smooth",
     });
@@ -26,7 +26,7 @@ export default function scrollTo() {
   contactLink.addEventListener("click", () => {
     const fromTop = document.querySelector("#contact").offsetTop;
     document.documentElement.scrollTo({
-      top: fromTop,
+      top: fromTop - 50,
       left: 0,
       behavior: "smooth",
     });
