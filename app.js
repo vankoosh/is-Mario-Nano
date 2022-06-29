@@ -16,6 +16,7 @@ import {
 } from "./vars.js";
 
 import scrollTo from "./scrollTo.js";
+// import showCV from './showCV.js';
 
 // ----------------- END OF IMPORTS
 
@@ -26,8 +27,6 @@ const setBottomVerLine = () => {
   const line = document.querySelector("#line");
   line.style.bottom = "-" + (document.body.scrollHeight - vHeight) + "px";
 };
-
-
 
 
 
