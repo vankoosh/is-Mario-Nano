@@ -19,23 +19,19 @@ import scrollTo from "./scrollTo.js";
 
 // ----------------- END OF IMPORTS
 
+
+
+// set the length of the horizontal line along the whole page according to the length of the body
 const setBottomVerLine = () => {
   const line = document.querySelector("#line");
   line.style.bottom = "-" + (document.body.scrollHeight - vHeight) + "px";
-  // console.log(document.body.scrollHeight);
 };
 
-window.addEventListener(
-  "DOMContentLoaded",
-  () => {
-    isVarsConnected();
-    scrollTo();
-    setBottomVerLine();
-  },
-  true
-);
 
-// CHANGE FONT SIZE BASED ON TOP EL POSITION
+
+
+
+// change fontsize on scroll function
 window.addEventListener("scroll", () => {
   const changeFontSize = () => {
     let aboutFromTop = aboutTitle.getBoundingClientRect().top;
@@ -83,8 +79,8 @@ window.addEventListener("scroll", () => {
   setBottomVerLine();
 });
 
-// and then add to html navbar items <div><a href="javascript:void(0)" id="homeLink">.home()</a></div>
 
+// add/remove outline button on every element on page
 let clicked = false;
 
 document.querySelector("#outline").addEventListener("click", () => {
@@ -102,3 +98,15 @@ document.querySelector("#outline").addEventListener("click", () => {
     }
   }
 });
+
+// on pageload function
+window.addEventListener(
+  "DOMContentLoaded",
+  () => {
+    isVarsConnected();
+    scrollTo();
+    setBottomVerLine();
+  },
+  true
+);
+

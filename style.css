@@ -211,6 +211,10 @@ a[href*="git"]:hover {
   display: none;
 }
 
+#hidden-story{
+  display:none;
+}
+
 #about-me::first-letter,
 #my-work::first-letter,
 #skills::first-letter,

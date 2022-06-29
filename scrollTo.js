@@ -17,7 +17,16 @@ export default function scrollTo() {
   workLink.addEventListener("click", () => {
     const fromTop = document.querySelector("#my-work").offsetTop;
     document.documentElement.scrollTo({
-      top: fromTop - 150,
+      top: fromTop - 140,
+      left: 0,
+      behavior: "smooth",
+    });
+  });
+
+  ctaLink.addEventListener("click", () => {
+    const fromTop = document.querySelector("#my-work").offsetTop;
+    document.documentElement.scrollTo({
+      top: fromTop - 140,
       left: 0,
       behavior: "smooth",
     });
