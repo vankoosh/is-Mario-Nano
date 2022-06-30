@@ -89,7 +89,6 @@ document.querySelector("#outline").addEventListener("click", () => {
     for (let item of list) {
       item.classList.add("outline");
       clicked = true;
-      console.log("Outline Btn Clicked");
     }
   } else {
     for (let item of list) {
@@ -106,7 +105,7 @@ window.addEventListener(
     isVarsConnected();
     scrollTo();
     setBottomVerLine();
-    showCV();
+    showCV(); 
   },
   true
 );
