@@ -65,6 +65,11 @@ a[href*="git"]:hover {
   border: 3px solid;
   border-radius: 2rem;
   padding: .1rem .3rem;
+  transition: background-color 0.4s;
+}
+
+#contactLink:hover{
+  background-color: #00000028;
 }
 
 /* --------------------------FRONTPAGE */
@@ -222,10 +227,6 @@ a[href*="git"]:hover {
   display: none;
 }
 
-#hidden-story{
-  display:none;
-}
-
 #about-me::first-letter,
 #my-work::first-letter,
 #skills::first-letter,
@@ -296,6 +297,7 @@ img[src*="cert"] {
 #story-text,
 #hidden-story {
   width: 70%;
+  height: 30vh;
   margin: 0 auto;
 }
 
@@ -320,6 +322,21 @@ img[src*="cert"] {
   font-size: calc(0.7vw + 0.5rem);
   color: var(--alt-color);
   cursor: pointer;
+}
+
+#cv{
+  display: flex;
+  justify-content: center;
+}
+
+#cv a{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  color: #fff;
+  /* background-color: #000; */
+  background: linear-gradient(-135deg, transparent 10px, #000 0);
+    background-repeat: no-repeat;
 }
 
 /* ****** */
