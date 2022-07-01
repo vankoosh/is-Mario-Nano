@@ -16,7 +16,8 @@ import {
 } from "./vars.js";
 
 import scrollTo from "./scrollTo.js";
-import showCV from './showCV.js';
+// import showCV from './showCV.js';
+import showCVwidth from './showCVwidth.js';
 
 // ----------------- END OF IMPORTS
 
@@ -105,7 +106,7 @@ window.addEventListener(
     isVarsConnected();
     scrollTo();
     setBottomVerLine();
-    showCV(); 
+    showCVwidth(); 
   },
   true
 );

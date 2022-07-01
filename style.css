@@ -223,6 +223,10 @@ a[href*="git"]:hover {
   margin: 0rem auto 15rem;
 }
 
+#story-conainer{
+  position: relative;
+}
+
 #story-container h5 {
   display: none;
 }
@@ -299,6 +303,17 @@ img[src*="cert"] {
   width: 70%;
   height: 30vh;
   margin: 0 auto;
+}
+
+#short-story{
+  opacity: 1;
+}
+
+#hidden-story{
+  position: absolute;
+  top: 5rem;
+  left: 15%;
+  opacity: 0;
 }
 
 #story-text p,
