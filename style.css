@@ -296,6 +296,11 @@ img[src*="cert"] {
   margin: 0 auto;
   width: 70vw;
   max-width: 400px;
+  transition: 0.3s;
+}
+
+img[src*="cert"]:hover{
+  opacity: 0.6;
 }
 
 #story-text,
@@ -337,9 +342,12 @@ img[src*="cert"] {
   font-size: calc(0.7vw + 0.5rem);
   color: var(--alt-color);
   cursor: pointer;
+  font-weight: bold;
+  letter-spacing: -0.1rem;
 }
 
 #cv{
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
 }
@@ -349,7 +357,7 @@ img[src*="cert"] {
   font-weight: bold;
   padding: 0.5rem;
   color: #fff;
-  /* background-color: #000; */
+  z-index: -10;
   background: linear-gradient(-135deg, transparent 10px, #000 0);
     background-repeat: no-repeat;
 }
@@ -493,14 +501,16 @@ img[src*="cert"] {
   display: block;
 }
 
+
+
 /* Style the Image Used to Trigger the Modal */
-#myImg {
+.certImg {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#myImg:hover {
+.certImg:hover {
   opacity: 0.7;
 }
 
@@ -510,7 +520,7 @@ img[src*="cert"] {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 1000;
   /* Sit on top */
   padding-top: 100px;
   /* Location of the box */
@@ -537,7 +547,7 @@ img[src*="cert"] {
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
+.caption {
   margin: auto;
   display: block;
   width: 80%;
@@ -550,7 +560,7 @@ img[src*="cert"] {
 
 /* Add Animation - Zoom in the Modal */
 .modal-content,
-#caption {
+.caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
