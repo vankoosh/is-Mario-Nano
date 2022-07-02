@@ -296,6 +296,7 @@ img[src*="Cert"] {
   margin: 0 auto;
   width: 70vw;
   max-width: 400px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
@@ -504,15 +505,7 @@ img[src*="Cert"]:hover{
 
 
 /* Style the Image Used to Trigger the Modal */
-.certImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-.certImg:hover {
-  opacity: 0.7;
-}
 
 /* The Modal (background) */
 .modal {
@@ -542,25 +535,12 @@ img[src*="Cert"]:hover{
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-.caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+  width: 500px;
+  /* max-width: 700px; */
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content,
-.caption {
+.modal-content {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -578,8 +558,8 @@ img[src*="Cert"]:hover{
 /* The Close Button */
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: 150px;
+  right: 350px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
