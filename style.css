@@ -291,7 +291,7 @@ a[href*="git"]:hover {
   margin-bottom: 2rem;
 }
 
-img[src*="cert"] {
+img[src*="Cert"] {
   height: auto;
   margin: 0 auto;
   width: 70vw;
@@ -299,7 +299,7 @@ img[src*="cert"] {
   transition: 0.3s;
 }
 
-img[src*="cert"]:hover{
+img[src*="Cert"]:hover{
   opacity: 0.6;
 }
 
