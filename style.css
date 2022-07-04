@@ -295,13 +295,9 @@ img[src*="Cert"] {
   height: auto;
   margin: 0 auto;
   width: 70vw;
-  max-width: 400px;
+  /* max-width: 400px; */
   cursor: pointer;
   transition: 0.3s;
-}
-
-img[src*="Cert"]:hover{
-  opacity: 0.6;
 }
 
 #story-text,
@@ -502,7 +498,9 @@ img[src*="Cert"]:hover{
   display: block;
 }
 
-
+/* ********** */
+/* **************** MODAL */
+/* ********** */
 
 /* Style the Image Used to Trigger the Modal */
 
