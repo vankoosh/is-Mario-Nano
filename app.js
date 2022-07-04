@@ -18,6 +18,7 @@ import {
 import scrollTo from "./scrollTo.js";
 // import showCV from './showCV.js';
 import showCVwidth from './showCVwidth.js';
+import Modal from './modal.js';
 
 // ----------------- END OF IMPORTS
 
@@ -106,7 +107,8 @@ window.addEventListener(
     isVarsConnected();
     scrollTo();
     setBottomVerLine();
-    showCVwidth(); 
+    showCVwidth();
+    Modal();
   },
   true
 );

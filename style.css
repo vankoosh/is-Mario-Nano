@@ -556,10 +556,10 @@ img[src*="Cert"] {
 /* The Close Button */
 .close {
   position: absolute;
-  top: 150px;
-  right: 350px;
+  top: 50px;
+  right: 80px;
   color: #f1f1f1;
-  font-size: 40px;
+  font-size: 80px;
   font-weight: bold;
   transition: 0.3s;
 }
