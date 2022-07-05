@@ -386,8 +386,9 @@
     transform: translateZ(-35px) rotateX(-90deg);
   }
 
-  #story-text p {
-    font-size: 2rem;
+  #story-text p,
+  #hidden-story p {
+    font-size: calc(100vw / 90);
   }
 
   .work-card img {

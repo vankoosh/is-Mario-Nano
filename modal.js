@@ -34,34 +34,54 @@ export default function Modal() {
   imgSS.onclick = function () {
     modalSS.style.display = "block";
     modalImgSS.src = this.src;
-    modalImgSS.style.width = "55vw";
+    if (window.innerWidth < 700) {
+      modalImgSS.style.width = "95vw";
+    } else {
+      modalImgSS.style.width = "55vw";
+    }
   };
 
   // Boostrap onclick event
   imgBS.onclick = function () {
     modalBS.style.display = "block";
     modalImgBS.src = this.src;
-    modalImgBS.style.width = "55vw";
+    if (window.innerWidth < 700) {
+      modalImgSS.style.width = "95vw";
+    } else {
+      modalImgSS.style.width = "55vw";
+    }
   };
 
   // JS onclick event
   imgJS.onclick = function () {
     modalJS.style.display = "block";
     modalImgJS.src = this.src;
-    modalImgJS.style.width = "55vw";
+    if (window.innerWidth < 700) {
+      modalImgJS.style.width = "95vw";
+    } else {
+      modalImgJS.style.width = "55vw";
+    }
   };
 
   // JS II onclick event
   imgJSS.onclick = function () {
     modalJSS.style.display = "block";
     modalImgJSS.src = this.src;
-    modalImgJSS.style.width = "55vw";
+    if (window.innerWidth < 700) {
+      modalImgJSS.style.width = "95vw";
+    } else {
+      modalImgJSS.style.width = "55vw";
+    }
   };
 
   // React II onclick event
   imgRE.onclick = function () {
     modalRE.style.display = "block";
     modalImgRE.src = this.src;
-    modalImgRE.style.width = "55vw";
+    if (window.innerWidth < 700) {
+      modalImgRE.style.width = "95vw";
+    } else {
+      modalImgRE.style.width = "55vw";
+    }
   };
 }
