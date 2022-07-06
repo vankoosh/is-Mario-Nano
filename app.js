@@ -33,7 +33,7 @@ const setBottomVerLine = () => {
 
 
 
-// change fontsize on scroll function
+// function to change fontsize on scroll 
 window.addEventListener("scroll", () => {
   const changeFontSize = () => {
     let aboutFromTop = aboutTitle.getBoundingClientRect().top;
@@ -100,6 +100,37 @@ document.querySelector("#outline").addEventListener("click", () => {
   }
 });
 
+const fadeInGreet = () => {
+  const hi = document.querySelector("#hi-text h3");
+  const name = document.querySelector("#hi-text h1");
+  const meet = document.querySelector("#meet");
+  const cta = document.querySelector("#cta");
+  const circle = document.querySelector("#circle");
+  const line = document.querySelector("#line");
+  
+  setTimeout(() => {
+    hi.style.transition = "0.8s"
+    hi.style.opacity = "1";
+    hi.style.top = "-35px";
+    circle.style.transition = "0.8s"
+    line.style.transition = "0.8s"
+    circle.style.left = "10vw"
+    line.style.left = "calc(10vw + 6px)";
+  }, 1000);
+  setTimeout(() => {
+    name.style.transition = "opacity 0.8s"
+    name.style.opacity = "1";
+  }, 1300);
+  setTimeout(() => {
+    meet.style.transition = "opacity 0.8s"
+    meet.style.opacity = "1";
+  }, 1600);
+  setTimeout(() => {
+    cta.style.transition = "opacity 0.8s"
+    cta.style.opacity = "1";
+  }, 1900);
+}
+
 // on pageload function
 window.addEventListener(
   "DOMContentLoaded",
@@ -109,6 +140,7 @@ window.addEventListener(
     setBottomVerLine();
     showCVwidth();
     Modal();
+    fadeInGreet();
   },
   true
 );
