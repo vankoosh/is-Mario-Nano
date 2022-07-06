@@ -3,6 +3,7 @@
 @import "hamburger.css";
 
 #outline {
+  display: none;
   position: fixed;
   left: 1rem;
   top: 1vh;
@@ -305,6 +306,10 @@ img[src*="Cert"] {
   width: 70%;
   height: 30vh;
   margin: 0 auto;
+}
+
+#long-story-short{
+  transition: opacity 0.5s;
 }
 
 #short-story{

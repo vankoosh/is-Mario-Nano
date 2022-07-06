@@ -20,7 +20,6 @@ export default function showCVwidth() {
         switchBtn.innerText = "Back to short story..."
       },300)
     } else {
-
       hiddenStory.style.opacity = "0";
       lss.style.opacity = "0";
       cv.style.zIndex = "-10";

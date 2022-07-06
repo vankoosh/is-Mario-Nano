@@ -46,9 +46,9 @@ export default function Modal() {
     modalBS.style.display = "block";
     modalImgBS.src = this.src;
     if (window.innerWidth < 700) {
-      modalImgSS.style.width = "95vw";
+      modalImgBS.style.width = "95vw";
     } else {
-      modalImgSS.style.width = "55vw";
+      modalImgBS.style.width = "55vw";
     }
   };
 
