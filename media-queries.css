@@ -20,7 +20,6 @@
 
   #front {
     display: flex;
-    /* max-width: 2960px; */
   }
 
   #front-pic {
@@ -58,7 +57,6 @@
 
   #story-container h5 {
     display: block;
-    /* width: 70%; */
     font-size: 1.3rem;
   }
 
@@ -71,13 +69,10 @@
     text-align: center;
     font-size: calc(0.7vw + 0.5rem);
     margin: 6rem auto 0;
-    /* margin-top: 6rem; */
     color: #000;
-    /* margin-left: 0; */
   }
 
   #long-story-btn {
-    /* width: 100%; */
     margin-top: 10rem;
     padding-right: 12rem;
   }
@@ -106,10 +101,7 @@
   }
 
   #my-certs div {
-    /* display: flex; */
-    /* flex-direction: column; */
     width: 10vw;
-    /* align-items: center; */
   }
 
   #my-certs div span {
@@ -121,9 +113,7 @@
   }
 
   .work-card {
-    /* display: flex; */
     width: 50vw;
-    /* margin-bottom: 3vh; */
   }
 
   .work-card img {
@@ -169,15 +159,20 @@
   #my-work,
   #skills,
   #contact {
-    /* font-size: 2rem; */
-    /* margin: 7vh auto 14vh; */
     display: block;
     position: relative;
     width: 80%;
     margin: 0 auto;
     padding-left: 5px;
-    /* max-width: 2960px; */
     text-align: left;
+  }
+
+  #skills{
+    margin-top: 25rem;
+  }
+
+  #my-work{
+    margin-top: 25rem;
   }
 }
 
@@ -224,7 +219,6 @@
   }
 
   #hi-text h3 {
-    /* font-size: calc(4vw - 1rem); */
     font-size: 1.5rem;
     margin-left: 3rem;
   }
@@ -296,9 +290,7 @@
   #aboutLink,
   #workLink,
   #contactLink {
-    /* margin-right: 2.8vw; */
     font-size: 1.3rem;
-    /* font-weight: bold; */
   }
 
   #my-certs {

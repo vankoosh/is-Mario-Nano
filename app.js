@@ -17,7 +17,7 @@ import {
 
 import scrollTo from "./scrollTo.js";
 // import showCV from './showCV.js';
-import showCVwidth from './showCVwidth.js';
+// import showCVwidth from './showCVwidth.js';
 import Modal from './modal.js';
 
 // ----------------- END OF IMPORTS
@@ -64,7 +64,7 @@ window.addEventListener("scroll", () => {
         (window.innerHeight - skillsFromTop) * 0.04 + "px";
     }
 
-    if (skillsFromTop < 0 && vWidth) {
+    if (skillsFromTop < 0 && vWidth > 900) {
       skillsTitle.style.fontSize = 10 + "px";
     }
 
@@ -138,7 +138,7 @@ window.addEventListener(
     isVarsConnected();
     scrollTo();
     setBottomVerLine();
-    showCVwidth();
+    // showCVwidth();
     Modal();
     fadeInGreet();
   },

@@ -10,17 +10,18 @@
   z-index: 99999999;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
-.show{
+.show {
   display: block;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
+
 /* -----------------------------------NAVBAR */
 
 #nav-bar {
@@ -69,7 +70,7 @@ a[href*="git"]:hover {
   transition: background-color 0.4s;
 }
 
-#contactLink:hover{
+#contactLink:hover {
   background-color: #00000028;
 }
 
@@ -151,7 +152,7 @@ a[href*="git"]:hover {
   opacity: 0;
 }
 
-#meet{
+#meet {
   opacity: 0;
 }
 
@@ -216,14 +217,20 @@ a[href*="git"]:hover {
 /* ----------------------------------ABOUT ME */
 /* ******* */
 
-#about-me,
+#about-me {
+  font-size: 3rem;
+  width: 100vw;
+  text-align: center;
+  margin: 1rem auto 1rem;
+  display: block;
+}
+
 #my-work,
-#skills,
 #contact {
   font-size: 3rem;
   width: 100vw;
   text-align: center;
-  margin: 15rem auto 1rem;
+  margin: 5rem auto 1rem;
   display: block;
 }
 
@@ -232,8 +239,9 @@ a[href*="git"]:hover {
   margin: 0rem auto 15rem;
 }
 
-#story-conainer{
+#story-container {
   position: relative;
+  height: 100vh;
 }
 
 #story-container h5 {
@@ -257,11 +265,12 @@ a[href*="git"]:hover {
 
 .skills-title {
   display: block;
-  text-align: left;
+  text-align: center;
   font-size: 1rem;
   margin-top: 6rem;
+  margin-bottom: 1rem;
   color: #000;
-  margin-left: 15vw;
+  /* margin-left: 15vw; */
 }
 
 .skills-title::first-letter {
@@ -272,6 +281,7 @@ a[href*="git"]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -316,15 +326,15 @@ img[src*="Cert"] {
   margin: 0 auto;
 }
 
-#long-story-short{
+#long-story-short {
   transition: opacity 0.5s;
 }
 
-#short-story{
+#short-story {
   opacity: 1;
 }
 
-#hidden-story{
+#hidden-story {
   position: absolute;
   top: 5rem;
   left: 15%;
@@ -356,20 +366,20 @@ img[src*="Cert"] {
   letter-spacing: -0.1rem;
 }
 
-#cv{
+#cv {
   margin-top: 5rem;
   display: flex;
   justify-content: center;
 }
 
-#cv a{
+#cv a {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 0.5rem;
   color: #fff;
-  z-index: -10;
+  z-index: 10;
   background: linear-gradient(-135deg, transparent 10px, #000 0);
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 /* ****** */
@@ -480,7 +490,7 @@ img[src*="Cert"] {
 
 #contact-container input,
 #contact-container label,
-#msg{
+#msg {
   font-size: calc(.5vw + .5rem);
 }
 
@@ -507,8 +517,13 @@ img[src*="Cert"] {
   display: none;
 }
 
-.desktop-hidden{
+.desktop-hidden {
   display: block;
+}
+
+footer {
+  display: block;
+  text-align: center;
 }
 
 /* ********** */
