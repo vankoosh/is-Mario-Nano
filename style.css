@@ -255,6 +255,14 @@ a[href*="git"]:hover {
   color: var(--alt-color);
 }
 
+#skills {
+  font-size: 3rem;
+  width: 100vw;
+  text-align: center;
+  margin: 10rem auto 1rem;
+  display: block;
+}
+
 .horizontal-line {
   border: 1px solid var(--font-color);
   opacity: 0.5;
