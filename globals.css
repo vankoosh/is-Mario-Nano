@@ -14,7 +14,7 @@
 body {
   background-color: var(--bg-color);
   color: var(--font-color);
-  font-family: Source Code Pro, sans-serif;
+  font-family: "Source Code Pro", "sans-serif";
   user-select: none;
   font-size: 100%;
   width: 100vw;
@@ -36,7 +36,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: Alata, sans-serif;
+  font-family: "Recife Display", "sans-serif";
 }
 
 .outline{
