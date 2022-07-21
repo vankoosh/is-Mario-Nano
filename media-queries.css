@@ -18,16 +18,8 @@
     margin: 1rem auto;
   }
 
-  #front {
+  #front-section {
     display: flex;
-  }
-
-  #front-pic {
-    display: none;
-  }
-
-  #hi-text {
-    /* margin-top: 41vh; */
   }
 
   #meet {
@@ -200,11 +192,11 @@
     justify-content: flex-end;
   }
 
-  #front {
+  #front-section {
     width: 80%;
   }
 
-  #front p {
+  #front-section p {
     margin-right: 0;
   }
 
@@ -320,7 +312,7 @@
     width: 1.8vw;
   }
 
-  #story-text p {
+  #story-container p {
     line-height: 2rem;
     letter-spacing: -.01rem;
     word-spacing: -.1rem;
@@ -358,7 +350,7 @@
     margin-top: 1rem;
   }
 
-  #front p {
+  #front-section p {
     margin-left: 7rem;
   }
 
@@ -381,8 +373,7 @@
     transform: translateZ(-35px) rotateX(-90deg);
   }
 
-  #story-text p,
-  #hidden-story p {
+  #story-container p {
     font-size: calc(100vw / 90);
   }
 
@@ -449,7 +440,7 @@
     border-radius: 3rem;
   }
 
-  #story-text p {
+  #story-container p {
     line-height: 3rem;
   }
 

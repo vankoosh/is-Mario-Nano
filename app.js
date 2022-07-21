@@ -83,22 +83,22 @@ window.addEventListener("scroll", () => {
 
 
 // add/remove outline button on every element on page
-let clicked = false;
+// let clicked = false;
 
-document.querySelector("#outline").addEventListener("click", () => {
-  const list = document.getElementsByTagName("*");
-  if (!clicked) {
-    for (let item of list) {
-      item.classList.add("outline");
-      clicked = true;
-    }
-  } else {
-    for (let item of list) {
-      item.classList.remove("outline");
-      clicked = false;
-    }
-  }
-});
+// document.querySelector("#outline").addEventListener("click", () => {
+//   const list = document.getElementsByTagName("*");
+//   if (!clicked) {
+//     for (let item of list) {
+//       item.classList.add("outline");
+//       clicked = true;
+//     }
+//   } else {
+//     for (let item of list) {
+//       item.classList.remove("outline");
+//       clicked = false;
+//     }
+//   }
+// });
 
 const fadeInGreet = () => {
   const hi = document.querySelector("#hi-text p:first-child");

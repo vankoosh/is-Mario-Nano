@@ -2,24 +2,17 @@
 @import "globals.css";
 @import "hamburger.css";
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 #outline {
   display: inline-block;
   position: fixed;
   left: 1rem;
   top: 1vh;
   z-index: 99999999;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 /* -----------------------------------NAVBAR */
@@ -89,10 +82,9 @@ a[href*="git"]:hover {
   opacity: 0.5;
 }
 
-#front {
+#front-section {
   position: relative;
   margin: 0 auto;
-  /* width: 100vw; */
   height: 100vh;
   overflow-x: hidden;
 }
@@ -238,10 +230,6 @@ a[href*="git"]:hover {
   height: 100vh;
 }
 
-#story-container h5 {
-  display: none;
-}
-
 #about-me::first-letter,
 #my-work::first-letter,
 #skills::first-letter,
@@ -272,7 +260,6 @@ a[href*="git"]:hover {
   margin-top: 6rem;
   margin-bottom: 1rem;
   color: #000;
-  /* margin-left: 15vw; */
 }
 
 .skills-title::first-letter {
@@ -321,30 +308,11 @@ img[src*="Cert"] {
   transition: 0.3s;
 }
 
-#story-text {
+#story-container p {
   width: 70%;
   height: 30vh;
   margin: 0 auto;
-}
-
-#long-story-short {
-  transition: opacity 0.5s;
-}
-
-#short-story {
-  opacity: 1;
-}
-
-#hidden-story {
-  position: absolute;
-  top: 5rem;
-  left: 15%;
-  opacity: 0;
-}
-
-#story-text p {
   font-size: 1.25rem;
-  /* line-height: 2rem; */
   letter-spacing: -0.1rem;
   word-spacing: -0.1rem;
   margin-top: 2rem;
@@ -388,7 +356,7 @@ img[src*="Cert"] {
 
 
 #work-container {
-  margin: 7rem auto 10rem;
+  padding: 7rem auto 10rem;
 }
 
 .work-card {
