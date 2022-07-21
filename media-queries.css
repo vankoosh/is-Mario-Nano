@@ -27,12 +27,12 @@
   }
 
   #hi-text {
-    margin-top: 41vh;
+    /* margin-top: 41vh; */
   }
 
-  #front p {
-    margin-top: 40vh;
-    margin-left: 3rem;
+  #meet {
+    margin-top: 43vh;
+    margin-left: 5rem;
     margin-right: 3rem;
     font-size: 1.2rem;
   }
@@ -212,12 +212,12 @@
     display: inline-flex;
   }
 
-  #hi-text h1 {
+  #hi-text p:last-child {
     font-size: calc(8vw - 1rem);
     margin-left: 4rem;
   }
 
-  #hi-text h3 {
+  #hi-text p:first-child {
     font-size: 1.5rem;
     margin-left: 3rem;
   }
@@ -259,11 +259,11 @@
     margin-right: 5rem;
   }
 
-  #hi-text h3 {
+  #hi-text p:first-child {
     font-size: 2.1rem;
   }
 
-  #front p {
+  #meet {
     margin-top: 45vh;
     font-size: calc(100vw / 80);
   }
@@ -419,9 +419,9 @@
 /* ********* */
 
 @media (min-width: 2300px) {
-  #hi-text h3 {
+  #hi-text p:first-child {
     font-size: 4rem;
-    top: -65px;
+    top: -150px;
     left: 90px;
   }
 
@@ -498,7 +498,7 @@
 /* ********* */
 
 @media (min-width: 2600px) {
-  #hi-text h3 {
+  #hi-text p:first-child {
     font-size: 3.5rem;
   }
 
@@ -513,7 +513,7 @@
 
 @media (min-width: 2900px) {
 
-  #hi-text h3 {
+  #hi-text p:first-child {
     font-size: 6rem;
     top: -80px;
   }

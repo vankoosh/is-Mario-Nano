@@ -3,7 +3,7 @@
 @import "hamburger.css";
 
 #outline {
-  display: none;
+  display: inline-block;
   position: fixed;
   left: 1rem;
   top: 1vh;
@@ -92,7 +92,7 @@ a[href*="git"]:hover {
 #front {
   position: relative;
   margin: 0 auto;
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   overflow-x: hidden;
 }
@@ -118,17 +118,13 @@ a[href*="git"]:hover {
 }
 
 #hi-text {
-  margin-top: 10vh;
+  margin-top: 43vh;
   position: relative;
+  font-family: "Alata", "sans-serif";
+  font-weight: bold;
 }
 
-#my-pic {
-  margin-left: 7rem;
-  margin-top: 3rem;
-  width: 15rem;
-}
-
-#hi-text h3 {
+#hi-text p:first-child {
   position: absolute;
   background-color: rgb(0, 0, 0);
   color: var(--alt-color);
@@ -143,8 +139,9 @@ a[href*="git"]:hover {
   opacity: 0;
 }
 
-#hi-text h1 {
+#hi-text p:last-child {
   background-color: black;
+  display: inline-block;
   color: #fff;
   font-size: 3.5rem;
   padding: 0.3rem;
@@ -154,9 +151,6 @@ a[href*="git"]:hover {
 
 #meet {
   opacity: 0;
-}
-
-#front p {
   width: 80%;
   margin: 6rem auto 0;
   text-align: center;
@@ -327,8 +321,7 @@ img[src*="Cert"] {
   transition: 0.3s;
 }
 
-#story-text,
-#hidden-story {
+#story-text {
   width: 70%;
   height: 30vh;
   margin: 0 auto;
@@ -349,8 +342,7 @@ img[src*="Cert"] {
   opacity: 0;
 }
 
-#story-text p,
-#hidden-story p {
+#story-text p {
   font-size: 1.25rem;
   /* line-height: 2rem; */
   letter-spacing: -0.1rem;

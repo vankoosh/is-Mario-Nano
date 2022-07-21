@@ -101,8 +101,8 @@ document.querySelector("#outline").addEventListener("click", () => {
 });
 
 const fadeInGreet = () => {
-  const hi = document.querySelector("#hi-text h3");
-  const name = document.querySelector("#hi-text h1");
+  const hi = document.querySelector("#hi-text p:first-child");
+  const name = document.querySelector("#hi-text p:last-child");
   const meet = document.querySelector("#meet");
   const cta = document.querySelector("#cta");
   const circle = document.querySelector("#circle");
@@ -111,7 +111,7 @@ const fadeInGreet = () => {
   setTimeout(() => {
     hi.style.transition = "0.8s"
     hi.style.opacity = "1";
-    hi.style.top = "-35px";
+    vWidth < 2300 ? (hi.style.top = "-35px") : (hi.style.top = "-70px");
     circle.style.transition = "0.8s"
     line.style.transition = "0.8s"
     circle.style.left = "10vw"
