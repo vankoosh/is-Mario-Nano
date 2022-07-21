@@ -202,7 +202,7 @@ a[href*="git"]:hover {
 #contact {
   display: block;
   width: 100vw;
-  margin: 5rem auto 1rem;
+  margin: 20rem auto 1rem;
   font-size: 3rem;
   text-align: center;
 }
