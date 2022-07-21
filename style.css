@@ -69,19 +69,6 @@ a[href*="git"]:hover {
 
 /* --------------------------FRONTPAGE */
 
-#video-banner {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-  opacity: 0.5;
-}
-
 #front-section {
   position: relative;
   margin: 0 auto;
@@ -91,64 +78,64 @@ a[href*="git"]:hover {
 
 #circle {
   position: absolute;
+  left: -10px;
+  top: 50vh;
   width: 12px;
   height: 12px;
   background-color: var(--alt-color);
-  left: -10px;
-  top: 50vh;
   border-radius: 15px;
   opacity: 0;
 }
 
 #line {
   position: absolute;
-  width: 1px;
-  background-color: var(--alt-color);
   left: -10px;
   top: 50%;
+  width: 1px;
+  background-color: var(--alt-color);
   opacity: 0;
 }
 
 #hi-text {
-  margin-top: 43vh;
   position: relative;
+  margin-top: 43vh;
   font-family: "Alata", "sans-serif";
   font-weight: bold;
 }
 
 #hi-text p:first-child {
   position: absolute;
+  top: -95px;
+  left: 4rem;
+  display: inline-block;
+  margin-left: 7rem;
+  padding: 0.3rem;
+  border: 3px solid #fff;
   background-color: rgb(0, 0, 0);
   color: var(--alt-color);
-  border: 3px solid #fff;
   font-size: 1.5rem;
-  display: inline-block;
-  padding: 0.3rem;
-  margin-left: 7rem;
-  left: 4rem;
-  top: -95px;
   z-index: 99;
   opacity: 0;
 }
 
 #hi-text p:last-child {
-  background-color: black;
   display: inline-block;
+  margin-left: 9rem;
+  padding: 0.3rem;
+  background-color: black;
   color: #fff;
   font-size: 3.5rem;
-  padding: 0.3rem;
-  margin-left: 9rem;
   opacity: 0;
 }
 
 #meet {
-  opacity: 0;
-  width: 80%;
   margin: 6rem auto 0;
+  width: 80%;
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.5em;
+  opacity: 0;
 }
 
 #cta {
@@ -172,11 +159,11 @@ a[href*="git"]:hover {
 
 #cta a:before,
 #cta a:after {
+  display: flex;
   position: absolute;
   content: "See my work";
   height: 55px;
   width: 14rem;
-  display: flex;
   align-items: center;
   justify-content: center;
   border: 5px solid #000;
@@ -213,11 +200,11 @@ a[href*="git"]:hover {
 
 #my-work,
 #contact {
-  font-size: 3rem;
-  width: 100vw;
-  text-align: center;
-  margin: 5rem auto 1rem;
   display: block;
+  width: 100vw;
+  margin: 5rem auto 1rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 #about-container {
@@ -238,27 +225,27 @@ a[href*="git"]:hover {
 }
 
 #skills {
-  font-size: 3rem;
-  width: 100vw;
-  text-align: center;
-  margin: 10rem auto 1rem;
   display: block;
+  width: 100vw;
+  margin: 10rem auto 1rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .horizontal-line {
-  border: 1px solid var(--font-color);
-  opacity: 0.5;
+  display: block;
   width: 70vw;
   margin: 0rem auto 3rem;
-  display: block;
+  border: 1px solid var(--font-color);
+  opacity: 0.5;
 }
 
 .skills-title {
   display: block;
-  text-align: center;
-  font-size: 1rem;
   margin-top: 6rem;
   margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
   color: #000;
 }
 
@@ -293,17 +280,16 @@ a[href*="git"]:hover {
 }
 
 #my-certs div span {
+  margin-bottom: 2rem;
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 img[src*="Cert"] {
   height: auto;
-  margin: 0 auto;
   width: 70vw;
-  /* max-width: 400px; */
+  margin: 0 auto;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -335,19 +321,19 @@ img[src*="Cert"] {
 }
 
 #cv {
-  margin-top: 5rem;
   display: flex;
+  margin-top: 5rem;
   justify-content: center;
 }
 
 #cv a {
+  padding: 0.5rem;
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 0.5rem;
   color: #fff;
-  z-index: 10;
   background: linear-gradient(-135deg, transparent 10px, #000 0);
   background-repeat: no-repeat;
+  z-index: 10;
 }
 
 /* ****** */
@@ -370,11 +356,11 @@ img[src*="Cert"] {
 }
 
 .work-card img {
-  border: 1px solid #0000007c;
-  width: 18rem;
-  height: auto;
   display: block;
   margin: 0 auto;
+  width: 18rem;
+  height: auto;
+  border: 1px solid #0000007c;
   object-fit: cover;
 }
 
@@ -385,13 +371,13 @@ img[src*="Cert"] {
 }
 
 .work-card-text h5 {
-  font-size: 1.5rem;
   margin: 1rem 0;
+  font-size: 1.5rem;
 }
 
 .work-card-text p {
-  font-size: 1rem;
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 .work-card-tech-tags {
@@ -400,26 +386,26 @@ img[src*="Cert"] {
 
 .work-card-tech-tags span {
   margin-right: 1rem;
-  background-color: rgba(128, 128, 128, 0.253);
   padding: 0.1rem 0.5rem;
+  background-color: rgba(128, 128, 128, 0.253);
   border-radius: 0.5rem;
 }
 
 .work-card-btn-container {
   display: flex;
-  margin-top: 1rem;
   width: 100%;
+  margin-top: 1rem;
   justify-content: space-around;
 }
 
 .work-card-btn {
-  transition: color ease-in 0.2s;
+  display: inline-block;
+  margin-right: 0rem;
+  padding: .4rem .5rem;
   text-align: center;
   color: #fff;
-  display: inline-block;
-  padding: .4rem .5rem;
-  margin-right: 0rem;
   background-color: #000;
+  transition: color ease-in 0.2s;
 }
 
 .work-card-btn:hover {
@@ -432,23 +418,23 @@ img[src*="Cert"] {
 
 
 #contact-container {
-  padding-left: 5px;
   position: relative;
   width: 90%;
   height: 75vh;
   margin-top: 12vh;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 5px;
 }
 
 #contact-container h1 {
-  text-align: center;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 #contact-container p {
-  text-align: center;
   margin-bottom: 5rem;
+  text-align: center;
 }
 
 #contact-container input:not(:last-child) {
@@ -467,15 +453,13 @@ img[src*="Cert"] {
 }
 
 #contact-container input:last-child {
-  /* width: 15rem; */
-  /* height: 2rem; */
-  font-size: calc(.7vw + .5rem);
   display: inline;
-  padding: 0.3rem 0.5rem;
   margin-top: 1rem;
   margin-bottom: 6rem;
+  padding: 0.3rem 0.5rem;
   border-radius: 3px;
   background-color: #000;
+  font-size: calc(.7vw + .5rem);
   font-family: Alata, sans-serif;
   color: #fff;
   text-align: center;
@@ -504,25 +488,16 @@ footer {
 /* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1000;
-  /* Sit on top */
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
@@ -530,7 +505,6 @@ footer {
   margin: auto;
   display: block;
   width: 500px;
-  /* max-width: 700px; */
 }
 
 /* Add Animation - Zoom in the Modal */
