@@ -15,6 +15,17 @@ html {
   z-index: 99999999;
 }
 
+video{
+  object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -2;
+}
+
 /* -----------------------------------NAVBAR */
 
 #nav-bar {
@@ -98,7 +109,7 @@ a[href*="git"]:hover {
 
 #hi-text {
   position: relative;
-  margin-top: 43vh;
+  margin-top: 37vh;
   font-family: "Alata", "sans-serif";
   font-weight: bold;
 }
@@ -190,6 +201,10 @@ a[href*="git"]:hover {
 /* ----------------------------------ABOUT ME */
 /* ******* */
 
+#about-section{
+  margin-top: var(--section-margin-top);
+}
+
 #about-me {
   font-size: 3rem;
   width: 100vw;
@@ -202,7 +217,7 @@ a[href*="git"]:hover {
 #contact {
   display: block;
   width: 100vw;
-  margin: 20rem auto 1rem;
+  margin: 5rem auto 1rem;
   font-size: 3rem;
   text-align: center;
 }
@@ -340,6 +355,9 @@ img[src*="Cert"] {
 /* ----------------MY-WORK */
 /* ******* */
 
+#work-section{
+  margin-top: var(--section-margin-top);
+}
 
 #work-container {
   padding: 7rem auto 10rem;
@@ -416,6 +434,9 @@ img[src*="Cert"] {
 /* ------------------CONTACT */
 /* ************* */
 
+#contact-section{
+  margin-top: var(--section-margin-top);
+}
 
 #contact-container {
   position: relative;
