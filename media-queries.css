@@ -191,7 +191,7 @@
         rgba(254, 255, 255, 0) 100%); */
     justify-content: flex-end;
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
   }
 
   #front-section {
