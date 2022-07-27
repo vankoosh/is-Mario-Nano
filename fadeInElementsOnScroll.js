@@ -7,11 +7,13 @@ const fadeInElementsOnScroll = () => {
 
   if (storyElem.getBoundingClientRect().top - window.scrollY < 0) {
     storyElem.style.opacity = "1";
+    storyElem.style.marginTop = "2rem";
   }
 
   if (cv.getBoundingClientRect().top - window.scrollY < 0) {
     setTimeout(() => {
       cv.style.opacity = "1";
+      cv.style.marginTop = "5rem";
     }, 1000);
   }
 
