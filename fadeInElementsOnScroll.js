@@ -14,7 +14,7 @@ const fadeInElementsOnScroll = () => {
     setTimeout(() => {
       cv.style.opacity = "1";
       cv.style.marginTop = "5rem";
-    }, 1000);
+    }, 1500);
   }
 
 };

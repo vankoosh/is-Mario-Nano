@@ -316,9 +316,9 @@ img[src*="Cert"] {
   font-size: 1.25rem;
   letter-spacing: -0.1rem;
   word-spacing: -0.1rem;
-  margin-top: 4rem;
+  margin-top: 10rem;
   text-align: center;
-  transition: 2s;
+  transition: all 1s;
   opacity: 0;
 }
 
@@ -339,9 +339,9 @@ img[src*="Cert"] {
 
 #cv {
   display: flex;
-  margin-top: 7rem;
+  margin-top: 10rem;
   justify-content: center;
-  transition: 2s;
+  transition: all 1s;
   opacity: 0;
 }
 
