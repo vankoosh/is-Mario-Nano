@@ -311,10 +311,10 @@ a[href*="git"]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15rem;
+  margin-top: 8rem;
   margin-bottom: 2rem;
   opacity: 0;
-  transition: all 1.5s;
+  transition: all 1s;
   width: 100vw;
 }
 
@@ -338,6 +338,9 @@ a[href*="git"]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5rem;
+  opacity: 0;
+  transition: all 1s;
 }
 
 #my-certs div span {
@@ -383,7 +386,7 @@ img[src*="Cert"] {
 }
 
 #work-container {
-  padding: 7rem auto 10rem;
+  margin: 7rem auto 10rem;
 }
 
 .work-card {
