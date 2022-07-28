@@ -308,8 +308,10 @@ a[href*="git"]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 25rem;
   margin-bottom: 2rem;
+  opacity: 0;
+  transition: all 1s;
 }
 
 .my-skills img {
