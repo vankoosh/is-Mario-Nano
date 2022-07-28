@@ -109,7 +109,7 @@ a[href*="git"]:hover {
 
 #hi-text {
   position: relative;
-  margin-top: 40vh;
+  margin-top: 37vh;
   font-family: "Alata", "sans-serif";
   font-weight: bold;
 }
@@ -232,11 +232,47 @@ a[href*="git"]:hover {
   height: 100vh;
 }
 
+#story-container p{
+  position: relative;
+  width: 70%;
+  height: 30vh;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  letter-spacing: -0.1rem;
+  word-spacing: -0.1rem;
+  margin-top: 14rem;
+  text-align: center;
+  transition: opacity 1s,
+    margin-top 1s;
+  opacity: 0;
+}
+
 #about-me::first-letter,
 #my-work::first-letter,
 #skills::first-letter,
 #contact::first-letter {
   color: var(--alt-color);
+}
+
+#cv {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 12rem;
+  justify-content: center;
+  transition: opacity 1s, margin-top 1s;
+  opacity: 0;
+}
+
+#cv a {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(-135deg, transparent 10px, #000 0);
+  background-repeat: no-repeat;
+  z-index: 10;
 }
 
 #skills {
@@ -309,19 +345,8 @@ img[src*="Cert"] {
   transition: 0.3s;
 }
 
-#story-container p {
-  width: 70%;
-  height: 30vh;
-  margin: 0 auto;
-  font-size: 1.25rem;
-  letter-spacing: -0.1rem;
-  word-spacing: -0.1rem;
-  margin-top: 10rem;
-  text-align: center;
-  transition: all 1s;
-  opacity: 0;
-}
 
+/* 
 #long-story-btn {
   display: flex;
   justify-content: flex-end;
@@ -335,25 +360,9 @@ img[src*="Cert"] {
   cursor: pointer;
   font-weight: bold;
   letter-spacing: -0.1rem;
-}
+} */
 
-#cv {
-  display: flex;
-  margin-top: 10rem;
-  justify-content: center;
-  transition: all 1s;
-  opacity: 0;
-}
 
-#cv a {
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  background: linear-gradient(-135deg, transparent 10px, #000 0);
-  background-repeat: no-repeat;
-  z-index: 10;
-}
 
 /* ****** */
 /* ----------------MY-WORK */

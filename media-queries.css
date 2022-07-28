@@ -45,11 +45,11 @@
     height: auto;
     margin-bottom: 15rem;
   }
-
+/* 
   #story-container h5 {
     display: block;
     font-size: 1.3rem;
-  }
+  } */
 
   #story-container .horizontal-line {
     display: block;
@@ -217,7 +217,7 @@
   }
 
   #cv{
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
   }
 
   #my-certs {
@@ -418,9 +418,9 @@
     font-size: 4rem;
   }
 
-  #story-container h5 {
+  /* #story-container h5 {
     font-size: 2rem;
-  }
+  } */
 
   #contact-container h1 {
     font-size: 3rem;
@@ -510,4 +510,8 @@
     top: -80px;
     font-size: 6rem;
   }
+
+    #story-container p{
+      margin-top: 10rem;
+    }
 }
