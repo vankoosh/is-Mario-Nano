@@ -46,12 +46,6 @@
     margin-bottom: 15rem;
   }
 
-  /* 
-  #story-container h5 {
-    display: block;
-    font-size: 1.3rem;
-  } */
-
   #story-container .horizontal-line {
     display: block;
   }
@@ -170,6 +164,10 @@
   #my-work {
     margin-top: 25rem;
   }
+
+  #contact{
+    margin-top: 10rem;
+  }
 }
 
 
@@ -219,10 +217,6 @@
   #hi-text p:first-child {
     margin-left: 3rem;
     font-size: 1.5rem;
-  }
-
-  #cv {
-    /* margin-top: 5rem; */
   }
 
   #my-certs {

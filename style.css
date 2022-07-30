@@ -202,7 +202,7 @@ a[href*="git"]:hover {
 /* ******* */
 
 #about-section{
-  margin-top: var(--section-margin-top);
+  margin-top: 5rem;
 }
 
 #about-me {
@@ -217,7 +217,7 @@ a[href*="git"]:hover {
 #contact {
   display: block;
   width: 100vw;
-  margin: 5rem auto 1rem;
+  margin: 20rem auto 1rem;
   font-size: 3rem;
   text-align: center;
 }
@@ -278,7 +278,7 @@ a[href*="git"]:hover {
 #skills {
   display: block;
   width: 100vw;
-  margin: 10rem auto 1rem;
+  margin: 20rem auto 1rem;
   font-size: 3rem;
   text-align: center;
 }
@@ -468,7 +468,7 @@ img[src*="Cert"] {
   position: relative;
   width: 90%;
   height: 75vh;
-  margin-top: 12vh;
+  margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 5px;
