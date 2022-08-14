@@ -1,3 +1,5 @@
+@import "globals.css";
+
 @media only screen and (min-width: 700px) {
 
   #circle,
@@ -165,7 +167,7 @@
     margin-top: 25rem;
   }
 
-  #contact{
+  #contact {
     margin-top: 10rem;
   }
 }
@@ -182,7 +184,8 @@
   }
 
   #nav-bar {
-    display: flex;
+    display: none;
+    /* display: flex; */
     position: fixed;
     width: 100%;
     margin: 0 auto;
@@ -193,8 +196,33 @@
         rgba(255, 255, 255, 1) 85%,
         rgba(254, 255, 255, 0) 100%); */
     justify-content: flex-end;
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
+  }
+
+  #nav__small {
+    position: fixed;
+    bottom: 2rem;
+    left: 50vw;
+    transform: translate(-50%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 0.7rem 2rem;
+    z-index: 999;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--font-color);
+    outline: 1px solid grey;
+  }
+
+  .nav__small-link:not(:last-child){
+    margin-right: 1rem;
+  }
+
+  .material-symbols-outlined{
+    vertical-align: middle;
+    font-size: 2rem;
   }
 
   #front-section {
@@ -498,7 +526,7 @@
     font-size: 3.5rem;
   }
 
-  .skills-title{
+  .skills-title {
     margin: 12rem auto 0;
   }
 
