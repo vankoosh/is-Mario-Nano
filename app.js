@@ -15,7 +15,7 @@ import {
   scrollElem,
 } from "./vars.js";
 
-import scrollTo from "./scrollTo.js";
+// import scrollTo from "./scrollTo.js";
 // import showCV from './showCV.js';
 // import showCVwidth from './showCVwidth.js';
 import Modal from './modal.js';
@@ -26,7 +26,7 @@ import fadeInElementsOnScroll from "./fadeInElementsOnScroll.js";
 
 
 
-// set the length of the horizontal line along the whole page according to the length of the body
+// set the length of the vertical line along the whole page according to the length of the body
 const setBottomVerLine = () => {
   const line = document.querySelector("#line");
   line.style.bottom = "-" + (document.body.scrollHeight - vHeight) + "px";
@@ -34,51 +34,52 @@ const setBottomVerLine = () => {
 
 
 
-// function to change fontsize on scroll 
+// function to change letter spacing on scroll 
 window.addEventListener("scroll", () => {
-  const changeFontSize = () => {
+  const changeLetterSpacing = () => {
     let aboutFromTop = aboutTitle.getBoundingClientRect().top;
     let workFromTop = workTitle.getBoundingClientRect().top;
     let skillsFromTop = skillsTitle.getBoundingClientRect().top;
     let contactFromTop = contactTitle.getBoundingClientRect().top;
 
     if (aboutFromTop < window.innerHeight && vWidth > 900) {
-      aboutTitle.style.fontSize =
-        (window.innerHeight - aboutFromTop) * 0.04 + "px";
+      aboutTitle.style.letterSpacing =
+        (window.innerHeight - aboutFromTop) * 0.017 + "px";
     }
 
-    if (aboutFromTop < 0 && vWidth > 900) {
-      aboutTitle.style.fontSize = 10 + "px";
+    if (aboutFromTop < -50 && vWidth > 900) {
+      aboutTitle.style.letterSpacing = 1 + "px";
     }
 
     if (workFromTop < window.innerHeight && vWidth > 900) {
-      workTitle.style.fontSize =
-        (window.innerHeight - workFromTop) * 0.04 + "px";
+      workTitle.style.letterSpacing =
+        (window.innerHeight - workFromTop) * 0.017 + "px";
     }
 
-    if (workFromTop < 0 && vWidth > 900) {
-      workTitle.style.fontSize = 10 + "px";
+    if (workFromTop < -50 && vWidth > 900) {
+      workTitle.style.letterSpacing = 1 + "px";
     }
 
     if (skillsFromTop < window.innerHeight && vWidth > 900) {
-      skillsTitle.style.fontSize =
-        (window.innerHeight - skillsFromTop) * 0.04 + "px";
+      skillsTitle.style.letterSpacing =
+        (window.innerHeight - skillsFromTop) * 0.017 + "px";
     }
 
-    if (skillsFromTop < 0 && vWidth > 900) {
-      skillsTitle.style.fontSize = 10 + "px";
+    if (skillsFromTop < -50 && vWidth > 900) {
+      skillsTitle.style.letterSpacing = 1 + "px";
     }
 
     if (contactFromTop < window.innerHeight && vWidth > 900) {
-      contactTitle.style.fontSize =
-        (window.innerHeight - contactFromTop) * 0.04 + "px";
+      contactTitle.style.letterSpacing =
+        (window.innerHeight - contactFromTop) * 0.017 + "px";
     }
-    if (contactFromTop < 0 && vWidth) {
-      contactTitle.style.fontSize = 10 + "px";
+
+    if (contactFromTop < -50 && vWidth) {
+      contactTitle.style.letterSpacing = 1 + "px";
     }
   };
 
-  changeFontSize();
+  changeLetterSpacing();
   setBottomVerLine();
   fadeInElementsOnScroll();
 });
@@ -110,6 +111,7 @@ const fadeInGreet = () => {
   const cta = document.querySelector("#cta");
   const circle = document.querySelector("#circle");
   const line = document.querySelector("#line");
+  const navbar = document.querySelector("#nav__small");
   
   setTimeout(() => {
     hi.style.transition = "0.8s"
@@ -131,6 +133,7 @@ const fadeInGreet = () => {
   setTimeout(() => {
     cta.style.transition = "opacity 0.8s"
     cta.style.opacity = "1";
+    navbar.style.bottom = "2.5rem";
   }, 1900);
 }
 

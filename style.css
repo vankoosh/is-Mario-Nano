@@ -32,6 +32,10 @@ video{
   display: none;
 }
 
+#nav__small{
+  display: none;
+}
+
 #nav-bar>div {
   margin-top: .5rem;
 }
@@ -203,6 +207,7 @@ a[href*="git"]:hover {
 
 #about-section{
   margin-top: 5rem;
+  scroll-margin-top: 2rem;
 }
 
 #about-me {
@@ -383,6 +388,7 @@ img[src*="Cert"] {
 
 #work-section{
   margin-top: var(--section-margin-top);
+  scroll-margin-top: 2rem;
 }
 
 #work-container {
@@ -506,7 +512,7 @@ img[src*="Cert"] {
   padding: 0.3rem 0.5rem;
   border-radius: 3px;
   background-color: #000;
-  font-size: calc(.7vw + .5rem);
+  font-size: calc(.7vw + .9rem);
   font-family: Alata, sans-serif;
   color: #fff;
   text-align: center;
