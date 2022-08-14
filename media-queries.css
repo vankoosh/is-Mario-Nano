@@ -202,27 +202,36 @@
 
   #nav__small {
     position: fixed;
-    bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+    bottom: 2.5rem;
     left: 50vw;
     transform: translate(-50%);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border-radius: 25px;
+    border-radius: 50px;
     padding: 0.7rem 2rem;
     z-index: 999;
     font-weight: bold;
-    font-size: 1.5rem;
     color: var(--font-color);
-    outline: 1px solid grey;
+    outline: 1px solid var(--alt-color);
   }
 
-  .nav__small-link:not(:last-child){
-    margin-right: 1rem;
+  .nav__small-link {
+    border-radius: 40px;
+    transition: all 0.5s;
+    /* outline: 1px solid black; */
   }
-
-  .material-symbols-outlined{
+  
+  .nav__small-link:hover {
+    background-color: #bb83f05b;
+  }
+  
+  .material-symbols-outlined {
+    padding: 0.3rem;
+    font-size: 2.5rem;
+    color: var(--alt-color);
     vertical-align: middle;
-    font-size: 2rem;
   }
 
   #front-section {
@@ -310,13 +319,6 @@
 
 @media (min-width: 1700px) {
 
-  #homeLink,
-  #aboutLink,
-  #workLink,
-  #contactLink {
-    font-size: 1.3rem;
-  }
-
   #my-certs {
     margin-top: 4rem;
   }
@@ -366,14 +368,6 @@
 /* ********* */
 
 @media (min-width: 2000px) {
-
-  #homeLink,
-  #aboutLink,
-  #workLink,
-  #contactLink {
-    margin-right: 3vw;
-    font-size: 2rem;
-  }
 
   #nav-bar>div {
     margin-top: 1rem;
@@ -443,6 +437,10 @@
 /* ********* */
 
 @media (min-width: 2300px) {
+  .material-symbols-outlined{
+    font-size: 4.5rem;
+  }
+
   #hi-text p:first-child {
     top: -150px;
     left: 90px;
@@ -467,11 +465,6 @@
 /* ********* */
 
 @media (min-width: 2500px) {
-
-  #contactLink {
-    border: 5px solid;
-    border-radius: 3rem;
-  }
 
   #story-container p {
     line-height: 3rem;
@@ -540,6 +533,15 @@
 /* ********* */
 
 @media (min-width: 2900px) {
+
+  #nav__small{
+    border-radius: 80px;
+    padding: 1.5rem 3rem;
+  }
+
+  .material-symbols-outlined {
+      font-size: 6.5rem;
+    }
 
   #hi-text p:first-child {
     top: -80px;

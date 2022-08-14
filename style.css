@@ -58,7 +58,7 @@ a[href*="git"]:hover {
   width: 1.5rem;
 }
 
-#homeLink,
+/* #homeLink,
 #aboutLink,
 #workLink,
 #contactLink {
@@ -76,7 +76,7 @@ a[href*="git"]:hover {
 
 #contactLink:hover {
   background-color: #00000028;
-}
+} */
 
 /* --------------------------FRONTPAGE */
 
