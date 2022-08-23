@@ -222,19 +222,16 @@
   .nav__small-link {
     border-radius: 40px;
     transition: all 0.5s;
+    padding: 0.2rem;
   }
   
   .nav__small-link:hover {
     background-color: #bb83f05b;
   }
 
-
-  
-  .material-symbols-outlined {
-    padding: 0.3rem;
-    font-size: 2.5rem;
-    color: var(--alt-color);
-    vertical-align: middle;
+  .nav__small-link img{
+    width: 3rem;
+    height: 3rem;
   }
 
   #front-section {
