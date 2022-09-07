@@ -234,6 +234,19 @@
     height: 3rem;
   }
 
+  .social-slider{
+    position: fixed;
+    top: 60vh;
+    right: 0.5rem;
+    z-index: 999;
+    width: auto;
+    display: inline-block;
+    /* align-items: flex-end; */
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    font-size: 1rem;
+  }
+
   #front-section {
     width: 80%;
   }
@@ -381,6 +394,10 @@
     margin-left: 7rem;
   }
 
+  .social-slider{
+    font-size: 1.5rem;
+  }
+
   #cta,
   #cta a:before,
   #cta a:after {
@@ -469,6 +486,10 @@
 /* ********* */
 
 @media (min-width: 2500px) {
+
+  .social-slider {
+      font-size: 2rem;
+    }
 
   #story-container p {
     line-height: 3rem;
