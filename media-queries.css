@@ -241,7 +241,6 @@
     z-index: 999;
     width: auto;
     display: inline-block;
-    /* align-items: flex-end; */
     transform: rotate(180deg);
     writing-mode: vertical-rl;
     font-size: 1rem;

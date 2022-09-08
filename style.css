@@ -462,6 +462,13 @@ img[src*="Cert"] {
   color: var(--alt-color);
 }
 
+#heatmap {
+  /* background-color: #bb83f0; */
+  width: 50vw;
+  -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+
 /* ************ */
 /* ------------------CONTACT */
 /* ************* */
