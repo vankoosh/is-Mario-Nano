@@ -234,7 +234,7 @@
     height: 3rem;
   }
 
-  .social-slider{
+  .social{
     position: fixed;
     top: 60vh;
     right: 0.5rem;
@@ -393,7 +393,7 @@
     margin-left: 7rem;
   }
 
-  .social-slider{
+  .social{
     font-size: 1.5rem;
   }
 
@@ -486,7 +486,7 @@
 
 @media (min-width: 2500px) {
 
-  .social-slider {
+  .social {
       font-size: 2rem;
     }
 

@@ -405,6 +405,10 @@ img[src*="Cert"] {
   border-bottom: 1px solid #80808085;
 }
 
+.work-card:last-child{
+  margin-top: 5rem;
+}
+
 .work-card img {
   display: block;
   margin: 0 auto;
