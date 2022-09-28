@@ -85,7 +85,7 @@ window.addEventListener("scroll", () => {
 });
 
 
-// add/remove outline button on every element on page
+// add/remove outline button on every element on page. purely for development purposes
 
 // let clicked = false;
 
