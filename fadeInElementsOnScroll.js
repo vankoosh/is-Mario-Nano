@@ -8,7 +8,6 @@ const fadeInElementsOnScroll = () => {
   const cert4 = document.querySelector("#cert4");
   const cert5 = document.querySelector("#cert5");
 
-  console.log(cv.getBoundingClientRect().top - window.scrollY);
 
   if (storyElem.getBoundingClientRect().top - window.scrollY < -50) {
     storyElem.style.opacity = "1";
