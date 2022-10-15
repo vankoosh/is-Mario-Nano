@@ -13,7 +13,7 @@ let vHeight = window.innerHeight;
 let vWidth = window.innerWidth;
 
 const isVarsConnected = () => {
-  console.log('module vars.js is loaded...')
+  // console.log('module vars.js is loaded...')
 }
 
 export {
