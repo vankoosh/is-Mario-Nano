@@ -1,6 +1,5 @@
 export default function scrollTo() {
-  console.log("module scrollTo.js loaded...");
-
+  
   homeLink.addEventListener("click", () => {
     document.documentElement.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   });

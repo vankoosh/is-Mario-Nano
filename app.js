@@ -1,40 +1,29 @@
-import {
-  // hIh3,
-  aboutTitle,
-  aboutLink,
-  workLink,
-  workTitle,
-  skillsTitle,
-  contactLink,
-  contactTitle,
-  vHeightElem,
-  vWidthElem,
-  isVarsConnected,
-  vHeight,
-  vWidth,
-  scrollElem,
-} from "./vars.js";
-
-// import scrollTo from "./scrollTo.js";
-// import showCV from './showCV.js';
-// import showCVwidth from './showCVwidth.js';
+// import scrollTo from "./scrollTo.js"; 
+// import showCV from './showCV.js';   
+// import showCVwidth from './showCVwidth.js'; 
 import Modal from './modal.js';
 import fadeInElementsOnScroll from "./fadeInElementsOnScroll.js";
-
 // ----------------- END OF IMPORTS
 
+// -----------GENERAL VARS
+const aboutTitle = document.querySelector("#about-me");
+const workTitle = document.querySelector("#my-work");
+const skillsTitle = document.querySelector("#skills");
+const contactTitle = document.querySelector("#contact");
+let vHeight = window.innerHeight;
+let vWidth = window.innerWidth;
 
 
 
 // set the length of the vertical line along the whole page according to the length of the body
-const setBottomVerLine = () => {
+function setBottomVerLine(){
   const line = document.querySelector("#line");
   line.style.bottom = "-" + (document.body.scrollHeight - vHeight) + "px";
 }
 
 
 
-// function to change letter spacing on scroll 
+// function to change letter spacing on scroll on big section names
 window.addEventListener("scroll", () => {
   const changeLetterSpacing = () => {
     let aboutFromTop = aboutTitle.getBoundingClientRect().top;
@@ -104,6 +93,8 @@ window.addEventListener("scroll", () => {
 //   }
 // });
 
+
+//  fade in landing page elements with onload listener and setTimeouts
 const fadeInGreet = () => {
   const hi = document.querySelector("#hi-text p:first-child");
   const name = document.querySelector("#hi-text p:last-child");
@@ -141,7 +132,6 @@ const fadeInGreet = () => {
 window.addEventListener(
   "DOMContentLoaded",
   () => {
-    isVarsConnected();
     scrollTo();
     setBottomVerLine();
     // showCVwidth();

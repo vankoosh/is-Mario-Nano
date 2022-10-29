@@ -1,3 +1,6 @@
+// this TOTALLY needs to be refactored and simplified with a function factory
+// 
+
 export default function Modal() {
   // SASS certificate
   const modalSS = document.getElementById("myModalSS");

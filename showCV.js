@@ -1,3 +1,5 @@
+// fade in CV button 
+
 export default function showCV() {
   const shortStory = document.querySelector("#story-text");
   const hiddenStory = document.querySelector("#hidden-story");
@@ -22,11 +24,5 @@ export default function showCV() {
       hiddenStory.classList.remove("fade-in");
       shortStory.classList.add("fade-in");
     }
-  })
-
-  storyBtn.addEventListener("click", () => {
-    const styleStory = getComputedStyle(shortStory).opacity;
-    const styleHidden = getComputedStyle(hiddenStory).opacity;
-
   })
 }

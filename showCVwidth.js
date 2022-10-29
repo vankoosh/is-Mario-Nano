@@ -1,3 +1,5 @@
+// module to show or hide paragraph with text
+
 export default function showCVwidth() {
   const shortStory = document.querySelector("#story-text");
   const hiddenStory = document.querySelector("#hidden-story");
