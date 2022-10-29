@@ -69,7 +69,7 @@ window.addEventListener("scroll", () => {
     }
   };
 
-  nameSticky();
+  // nameSticky();
 
   changeLetterSpacing();
   setBottomVerLine();
