@@ -1,7 +1,7 @@
 // import scrollTo from "./scrollTo.js";
 // import showCV from './showCV.js';
 // import showCVwidth from './showCVwidth.js'; 
-import nameSticky from './nameSticky.js';
+// import nameSticky from './nameSticky.js';
 import Modal from './modal.js';
 import fadeInElementsOnScroll from "./fadeInElementsOnScroll.js";
 // ----------------- END OF IMPORTS
