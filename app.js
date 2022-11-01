@@ -1,18 +1,15 @@
 // import scrollTo from "./scrollTo.js";
 // import showCV from './showCV.js';
 // import showCVwidth from './showCVwidth.js'; 
-// import nameSticky from './nameSticky.js';
 import Modal from './modal.js';
 import fadeInElementsOnScroll from "./fadeInElementsOnScroll.js";
 // ----------------- END OF IMPORTS
 
-// -----------GENERAL VARS
+// -----------GLOBAL VARIABLES
 const aboutTitle = document.querySelector("#about-me");
 const workTitle = document.querySelector("#my-work");
 const skillsTitle = document.querySelector("#skills");
 const contactTitle = document.querySelector("#contact");
-
-
 let vHeight = window.innerHeight;
 let vWidth = window.innerWidth;
 
@@ -25,7 +22,32 @@ function setBottomVerLine(){
 }
 
 
+// #############
+// -----------------------OUTLINER
+// #############
+// add/remove outline button on every element on page. purely for development purposes
 
+// let clicked = false;
+
+// document.querySelector("#outline").addEventListener("click", () => {
+//   const list = document.getElementsByTagName("*");
+//   if (!clicked) {
+//     for (let item of list) {
+//       item.classList.add("outline");
+//       clicked = true;
+//     }
+//   } else {
+//     for (let item of list) {
+//       item.classList.remove("outline");
+//       clicked = false;
+//     }
+//   }
+// });
+
+
+// ############
+// ----------------------------ONSCROLL
+// ############
 window.addEventListener("scroll", () => {
   // function to change letter spacing on scroll on big section names
   (() => {
@@ -70,45 +92,24 @@ window.addEventListener("scroll", () => {
       contactTitle.style.letterSpacing = 1 + "px";
     }
   })();
-
   
-//TODO needs finetuning
-  
-  // if (document.querySelector("#hi-text").getBoundingClientRect().top < 0) {
-  //   document.querySelector(".mario-name").style.opacity = 0;
-  //   document.querySelector("#small-mario-name").style.opacity = 1;
+  // if big name leaves viewport, show small mario
+  if (document.querySelector("#hi-text").getBoundingClientRect().top < 0) {
+    document.querySelector(".mario-name").style.opacity = 0;
+    document.querySelector("#small-mario-name").style.opacity = 1;
 
-  // } else {
-  //   document.querySelector(".mario-name").style.opacity = 1;
-  //   document.querySelector("#small-mario-name").style.opacity = 0;
-  // }
+    // otherwise keep small mario hidden
+  } else {
+    document.querySelector(".mario-name").style.opacity = 1;
+    document.querySelector("#small-mario-name").style.opacity = 0;
+  }
 
-
-
-  // nameSticky();
   setBottomVerLine();
   fadeInElementsOnScroll();
 });
 
 
-// add/remove outline button on every element on page. purely for development purposes
 
-// let clicked = false;
-
-// document.querySelector("#outline").addEventListener("click", () => {
-//   const list = document.getElementsByTagName("*");
-//   if (!clicked) {
-//     for (let item of list) {
-//       item.classList.add("outline");
-//       clicked = true;
-//     }
-//   } else {
-//     for (let item of list) {
-//       item.classList.remove("outline");
-//       clicked = false;
-//     }
-//   }
-// });
 
 
 //################
