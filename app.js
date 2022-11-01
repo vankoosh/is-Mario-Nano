@@ -11,6 +11,8 @@ const aboutTitle = document.querySelector("#about-me");
 const workTitle = document.querySelector("#my-work");
 const skillsTitle = document.querySelector("#skills");
 const contactTitle = document.querySelector("#contact");
+
+
 let vHeight = window.innerHeight;
 let vWidth = window.innerWidth;
 
@@ -24,9 +26,9 @@ function setBottomVerLine(){
 
 
 
-// function to change letter spacing on scroll on big section names
 window.addEventListener("scroll", () => {
-  const changeLetterSpacing = () => {
+  // function to change letter spacing on scroll on big section names
+  (() => {
     let aboutFromTop = aboutTitle.getBoundingClientRect().top;
     let workFromTop = workTitle.getBoundingClientRect().top;
     let skillsFromTop = skillsTitle.getBoundingClientRect().top;
@@ -67,11 +69,23 @@ window.addEventListener("scroll", () => {
     if (contactFromTop < -50 && vWidth) {
       contactTitle.style.letterSpacing = 1 + "px";
     }
-  };
+  })();
+
+  
+//TODO needs finetuning
+  
+  // if (document.querySelector("#hi-text").getBoundingClientRect().top < 0) {
+  //   document.querySelector(".mario-name").style.opacity = 0;
+  //   document.querySelector("#small-mario-name").style.opacity = 1;
+
+  // } else {
+  //   document.querySelector(".mario-name").style.opacity = 1;
+  //   document.querySelector("#small-mario-name").style.opacity = 0;
+  // }
+
+
 
   // nameSticky();
-
-  changeLetterSpacing();
   setBottomVerLine();
   fadeInElementsOnScroll();
 });
@@ -97,50 +111,58 @@ window.addEventListener("scroll", () => {
 // });
 
 
-//  fade in landing page elements with onload listener and setTimeouts
-const fadeInGreet = () => {
-  const hi = document.querySelector("#hi-text p:first-child");
-  const name = document.querySelector("#hi-text p:last-child");
-  const meet = document.querySelector("#meet");
-  const cta = document.querySelector("#cta");
-  const circle = document.querySelector("#circle");
-  const line = document.querySelector("#line");
-  const navbar = document.querySelector("#nav__small");
-  
-  setTimeout(() => {
-    hi.style.transition = "0.8s"
-    hi.style.opacity = "1";
-    vWidth < 2300 ? (hi.style.top = "-35px") : (hi.style.top = "-70px");
-    circle.style.transition = "0.8s"
-    line.style.transition = "0.8s"
-    circle.style.left = "10vw"
-    line.style.left = "calc(10vw + 6px)";
-  }, 1000);
-  setTimeout(() => {
-    name.style.transition = "opacity 0.8s"
-    name.style.opacity = "1";
-  }, 1300);
-  setTimeout(() => {
-    meet.style.transition = "opacity 0.8s"
-    meet.style.opacity = "1";
-  }, 1600);
-  setTimeout(() => {
-    cta.style.transition = "opacity 0.8s"
-    cta.style.opacity = "1";
-    navbar.style.bottom = "2.5rem";
-  }, 1900);
-}
+//################
+// ---------------------------------ONLOAD
+//################
 
-// on pageload function
 window.addEventListener(
   "DOMContentLoaded",
   () => {
+     (() => {
+       //hi container margin top always half of vHeight minus half of name elem offsetHeight to center it independently of elem height
+       document.querySelector("#hi-text").style.marginTop =
+         vHeight / 2 -
+         document.querySelector(".mario-name").offsetHeight / 2 +
+         "px";
+    })();
     
+    //fade in landing page elements right after onload
+    (() => {
+      const hi = document.querySelector("#hi-text p:first-child");
+      const name = document.querySelector("#hi-text p:last-child");
+      const meet = document.querySelector("#meet");
+      const cta = document.querySelector("#cta");
+      const circle = document.querySelector("#circle");
+      const line = document.querySelector("#line");
+      const navbar = document.querySelector("#nav__small");
+
+      setTimeout(() => {
+        hi.style.transition = "0.8s";
+        hi.style.opacity = "1";
+        vWidth < 2300 ? (hi.style.top = "-35px") : (hi.style.top = "-70px");
+        circle.style.transition = "0.8s";
+        line.style.transition = "0.8s";
+        circle.style.left = "10vw";
+        line.style.left = "calc(10vw + 6px)";
+      }, 1000);
+      setTimeout(() => {
+        // name.style.transition = "opacity 0.8s";
+        name.style.opacity = "1";
+      }, 1300);
+      setTimeout(() => {
+        meet.style.transition = "opacity 0.8s";
+        meet.style.opacity = "1";
+      }, 1600);
+      setTimeout(() => {
+        cta.style.transition = "opacity 0.8s";
+        cta.style.opacity = "1";
+        navbar.style.bottom = "2.5rem";
+      }, 1900);
+    })();
+
     scrollTo();
     setBottomVerLine();
-    // showCVwidth();
     Modal();
-    fadeInGreet();
   },
   true
 );

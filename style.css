@@ -82,6 +82,18 @@ video{
   opacity: 0;
 }
 
+#small-mario-name{
+  position: fixed;
+  top: 0;
+  font-family: "Silkscreen", "Arial";
+  padding: 0.1rem;
+  background-color: #000;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s;
+  font-size: 3rem;
+}
+
 #hi-text {
   position: relative;
   margin-top: 37vh;
@@ -102,6 +114,7 @@ video{
   font-size: 1.5rem;
   z-index: 99;
   opacity: 0;
+  transition: all 0.8s;
 }
 
 #hi-text p:last-child {
@@ -112,6 +125,7 @@ video{
   color: #fff;
   font-size: 3.5rem;
   opacity: 0;
+  transition: all 1s ease-in-out;
 }
 
 #meet {
