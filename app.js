@@ -25,6 +25,7 @@ function setBottomVerLine(){
 // #############
 // -----------------------OUTLINER
 // #############
+
 // add/remove outline button on every element on page. purely for development purposes
 
 // let clicked = false;
@@ -48,8 +49,9 @@ function setBottomVerLine(){
 // ############
 // ----------------------------ONSCROLL
 // ############
+
 window.addEventListener("scroll", () => {
-  // function to change letter spacing on scroll on big section names
+  // function to change letter spacing on scroll on big section headers
   (() => {
     let aboutFromTop = aboutTitle.getBoundingClientRect().top;
     let workFromTop = workTitle.getBoundingClientRect().top;
@@ -94,9 +96,21 @@ window.addEventListener("scroll", () => {
   })();
   
   // if big name leaves viewport, show small mario
-  if (document.querySelector("#hi-text").getBoundingClientRect().top < 0) {
+  if (document.querySelector("#circle").getBoundingClientRect().top < 0) {
+
+    let height = Math.max(
+      document.body.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.clientHeight,
+      document.documentElement.scrollHeight,
+      document.documentElement.offsetHeight
+    );
+
+    console.log(height)
     document.querySelector(".mario-name").style.opacity = 0;
     document.querySelector("#small-mario-name").style.opacity = 1;
+    // document.querySelector("#small-mario-name").style.top = 1;
+    console.log()
 
     // otherwise keep small mario hidden
   } else {
@@ -119,8 +133,9 @@ window.addEventListener("scroll", () => {
 window.addEventListener(
   "DOMContentLoaded",
   () => {
+
+    //hi container margin top always half of vHeight minus half of name elem offsetHeight to center it independently of elem height
      (() => {
-       //hi container margin top always half of vHeight minus half of name elem offsetHeight to center it independently of elem height
        document.querySelector("#hi-text").style.marginTop =
          vHeight / 2 -
          document.querySelector(".mario-name").offsetHeight / 2 +

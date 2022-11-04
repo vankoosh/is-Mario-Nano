@@ -85,13 +85,14 @@ video{
 #small-mario-name{
   position: fixed;
   top: 0;
-  font-family: "Silkscreen", "Arial";
-  padding: 0.1rem;
-  background-color: #000;
-  color: #fff;
+  width: calc(10vw + 6px);
+  /* font-family: "Silkscreen", "Arial"; */
+  /* padding: 0.1rem; */
+  /* background-color: #000; */
+  /* color: #fff; */
   opacity: 0;
   transition: all 0.5s;
-  font-size: 3rem;
+  /* font-size: 3rem; */
 }
 
 #hi-text {
