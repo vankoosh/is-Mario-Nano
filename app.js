@@ -96,7 +96,7 @@ window.addEventListener("scroll", () => {
   })();
   
   // if big name leaves viewport, show small mario
-  if (document.querySelector("#circle").getBoundingClientRect().top < 0) {
+  if (document.querySelector("#circle").getBoundingClientRect().top < 0 && vWidth > 900) {
 
     let height = Math.max(
       document.body.scrollHeight,
@@ -106,7 +106,6 @@ window.addEventListener("scroll", () => {
       document.documentElement.offsetHeight
     );
 
-    console.log(height)
     document.querySelector(".mario-name").style.opacity = 0;
     document.querySelector("#small-mario-name").style.opacity = 1;
     // document.querySelector("#small-mario-name").style.top = 1;
