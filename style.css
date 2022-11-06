@@ -1,6 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import "globals.css";
 @import "hamburger.css";
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.color-picker>fieldset {
+  z-index: 5;
+  border: 0;
+  position: fixed;
+  right: -4rem;
+  top: 3rem;
+  transform: rotate(90deg);
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  padding: 1rem 3rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.color-picker input[type="radio"] {
+  appearance: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  outline: 3px solid var(--radio-color, currentColor);
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+
+.color-picker input[type="radio"]:checked {
+  background-color: var(--radio-color);
+}
+/* 
+.color-picker input[type="radio"]#light {
+  --radio-color: gray;
+} */
+
+.color-picker input[type="radio"]#pink {
+  --radio-color: #bb83f0;
+}
+
+.color-picker input[type="radio"]#blue {
+  --radio-color: blue;
+}
+
+.color-picker input[type="radio"]#green {
+  --radio-color: green;
+}
+
+.color-picker input[type="radio"]#dark {
+  --radio-color: brown;
+}
+
+.pink {
+  --alt-color: #bb83f0;
+}
+
+.blue {
+  --alt-color: blue;
+}
+
+.green {
+  --alt-color: green;
+}
+
+.dark {
+  --alt-color: brown;
+}
+
+:root:has(#pink:checked) {
+  --alt-color: #bb83f0;
+}
+
+:root:has(#blue:checked) {
+  --alt-color: blue;
+}
+
+:root:has(#green:checked) {
+  --alt-color: green;
+}
+
+:root:has(#dark:checked) {
+  --alt-color: brown;
+}
+
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
 
 
 html {
@@ -123,7 +223,7 @@ video{
   margin-left: 9rem;
   padding: 0.3rem;
   background-color: black;
-  color: #fff;
+  color: var(--alt-color);
   font-size: 3.5rem;
   opacity: 0;
   transition: all 0.3s ease-in-out;

@@ -96,26 +96,13 @@ window.addEventListener("scroll", () => {
   })();
   
   // if big name leaves viewport, show small mario
-  if (document.querySelector("#circle").getBoundingClientRect().top < 0 && vWidth > 900) {
-
-    let height = Math.max(
-      document.body.scrollHeight,
-      document.body.offsetHeight,
-      document.documentElement.clientHeight,
-      document.documentElement.scrollHeight,
-      document.documentElement.offsetHeight
-    );
-
-    document.querySelector(".mario-name").style.opacity = 0;
-    document.querySelector("#small-mario-name").style.opacity = 1;
-    // document.querySelector("#small-mario-name").style.top = 1;
-    console.log()
-
-    // otherwise keep small mario hidden
-  } else {
-    document.querySelector(".mario-name").style.opacity = 1;
-    document.querySelector("#small-mario-name").style.opacity = 0;
-  }
+  // if (document.querySelector("#circle").getBoundingClientRect().top < 0 && vWidth > 900) {
+  //   document.querySelector(".mario-name").style.opacity = 0;
+  //   document.querySelector("#small-mario-name").style.opacity = 1;
+  // } else {
+  //   document.querySelector(".mario-name").style.opacity = 1;
+  //   document.querySelector("#small-mario-name").style.opacity = 0;
+  // }
 
   setBottomVerLine();
   fadeInElementsOnScroll();
