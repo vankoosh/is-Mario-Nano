@@ -95,15 +95,6 @@ window.addEventListener("scroll", () => {
     }
   })();
   
-  // if big name leaves viewport, show small mario
-  // if (document.querySelector("#circle").getBoundingClientRect().top < 0 && vWidth > 900) {
-  //   document.querySelector(".mario-name").style.opacity = 0;
-  //   document.querySelector("#small-mario-name").style.opacity = 1;
-  // } else {
-  //   document.querySelector(".mario-name").style.opacity = 1;
-  //   document.querySelector("#small-mario-name").style.opacity = 0;
-  // }
-
   setBottomVerLine();
   fadeInElementsOnScroll();
 });

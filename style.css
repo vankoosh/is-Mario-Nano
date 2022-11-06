@@ -20,22 +20,21 @@
   z-index: 5;
   border: 0;
   position: fixed;
-  right: -4rem;
+  right: -1rem;
   top: 3rem;
   transform: rotate(90deg);
   display: flex;
   gap: 1rem;
   width: fit-content;
-  padding: 1rem 3rem;
-  border-radius: 0 0 1rem 1rem;
+  /* padding: 1rem 3rem; */
 }
 
 .color-picker input[type="radio"] {
   appearance: none;
   width: 0.5rem;
   height: 0.5rem;
-  outline: 3px solid var(--radio-color, currentColor);
-  outline-offset: 3px;
+  outline: 2px solid var(--radio-color, currentColor);
+  outline-offset: 1px;
   border-radius: 50%;
 }
 
@@ -60,7 +59,7 @@
 }
 
 .color-picker input[type="radio"]#dark {
-  --radio-color: brown;
+  --radio-color: red;
 }
 
 .pink {
@@ -76,7 +75,7 @@
 }
 
 .dark {
-  --alt-color: brown;
+  --alt-color: red;
 }
 
 :root:has(#pink:checked) {
@@ -92,7 +91,7 @@
 }
 
 :root:has(#dark:checked) {
-  --alt-color: brown;
+  --alt-color: red;
 }
 
 /* --------------------------------------------------------------------------- */
@@ -180,19 +179,6 @@ video{
   width: 1px;
   background-color: var(--alt-color);
   opacity: 0;
-}
-
-#small-mario-name{
-  position: fixed;
-  top: 0;
-  width: calc(10vw + 6px);
-  /* font-family: "Silkscreen", "Arial"; */
-  /* padding: 0.1rem; */
-  /* background-color: #000; */
-  /* color: #fff; */
-  opacity: 0;
-  transition: all 0.5s;
-  /* font-size: 3rem; */
 }
 
 #hi-text {
@@ -341,10 +327,17 @@ video{
 }
 
 
-#about-me::first-letter,
+/* #about-me::first-letter,
 #my-work::first-letter,
 #skills::first-letter,
 #contact::first-letter {
+  color: var(--alt-color);
+} */
+
+#about-me,
+#my-work,
+#skills,
+#contact {
   color: var(--alt-color);
 }
 

@@ -56,9 +56,9 @@
     display: block;
   }
 
-    #cv {
-      left: 85%;
-    }
+  #cv {
+    left: 85%;
+  }
 
   .skills-title {
     display: block;
@@ -232,18 +232,18 @@
     transition: all 0.5s;
     padding: 0.3rem 0.3rem 0.2rem;
   }
-  
+
   .nav__small-link:hover {
     background-color: #bb83f05b;
   }
 
-  .nav__small-link img{
+  .nav__small-link img {
     width: 3rem;
     height: 3rem;
     transition: all 0.5s;
   }
 
-  .social{
+  .social {
     position: fixed;
     top: 60vh;
     right: 0.5rem;
@@ -307,7 +307,7 @@
     margin-bottom: 3vh;
   }
 
-    
+
 }
 
 /* ******** */
@@ -380,7 +380,7 @@
     word-spacing: -.1rem;
     font-size: 1.1rem;
   }
-  
+
   .my-skills img {
     width: 4.5vw;
     height: 4.5vw;
@@ -409,8 +409,21 @@
     margin-left: 7rem;
   }
 
-  .social{
+  .social {
     font-size: 1.5rem;
+  }
+
+  #meet {
+    font-size: 2.2rem;
+  }
+
+    .color-picker>fieldset{
+      top: 5rem;
+    }
+
+  .color-picker input[type="radio"] {
+    width: 1rem;
+    height: 1rem;
   }
 
   #cta,
@@ -477,7 +490,7 @@
 /* ********* */
 
 @media (min-width: 2300px) {
-  .material-symbols-outlined{
+  .material-symbols-outlined {
     font-size: 4.5rem;
   }
 
@@ -507,7 +520,11 @@
 @media (min-width: 2500px) {
 
   .social {
-      font-size: 2rem;
+    font-size: 2rem;
+  }
+
+    #meet {
+      font-size: 2.8rem;
     }
 
   #story-container p {
@@ -578,14 +595,18 @@
 
 @media (min-width: 2900px) {
 
-  #nav__small{
+  #nav__small {
     border-radius: 80px;
     padding: 1.5rem 3rem;
   }
 
-  .material-symbols-outlined {
-      font-size: 6.5rem;
+    #meet {
+      font-size: 3.2rem;
     }
+
+  .material-symbols-outlined {
+    font-size: 6.5rem;
+  }
 
   #hi-text p:first-child {
     top: -80px;
