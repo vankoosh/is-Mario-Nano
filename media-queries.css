@@ -119,6 +119,7 @@
   .work-card img {
     display: inline-block;
     margin: 0;
+    width: 18rem;
   }
 
   .work-card-text {
