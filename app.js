@@ -118,14 +118,6 @@ window.addEventListener("scroll", () => {
 window.addEventListener(
   "DOMContentLoaded",
   () => {
-
-    //hi container margin top always half of vHeight minus half of name elem offsetHeight to center it independently of elem height
-     (() => {
-       document.querySelector("#hi-text").style.marginTop =
-         vHeight / 2 -
-         document.querySelector(".mario-name").offsetHeight / 2 +
-         "px";
-    })();
     
     //fade in landing page elements right after onload
     (() => {

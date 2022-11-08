@@ -189,26 +189,6 @@
 
 
 @media only screen and (min-width: 900px) {
-  #hamburger-menu {
-    display: none;
-  }
-
-  #nav-bar {
-    display: none;
-    /* display: flex; */
-    position: fixed;
-    width: 100%;
-    margin: 0 auto;
-    top: 0;
-    z-index: 999;
-    /* background: linear-gradient(180deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 1) 85%,
-        rgba(254, 255, 255, 0) 100%); */
-    justify-content: flex-end;
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
-  }
 
   #nav__small {
     position: fixed;
@@ -255,7 +235,7 @@
     writing-mode: vertical-rl;
     font-size: 1rem;
   }
-
+  
   #front-section {
     width: 80%;
   }
@@ -418,9 +398,9 @@
     font-size: 2.2rem;
   }
 
-    .color-picker>fieldset{
-      top: 5rem;
-    }
+  .color-picker>fieldset {
+    top: 5rem;
+  }
 
   .color-picker input[type="radio"] {
     width: 1rem;
@@ -501,9 +481,9 @@
     font-size: 4rem;
   }
 
-  /* #story-container h5 {
-    font-size: 2rem;
-  } */
+  #hi-text {
+    margin-top: 42vh;
+  }
 
   #contact-container h1 {
     font-size: 3rem;
@@ -524,9 +504,9 @@
     font-size: 2rem;
   }
 
-    #meet {
-      font-size: 2.8rem;
-    }
+  #meet {
+    font-size: 2.8rem;
+  }
 
   #story-container p {
     line-height: 3rem;
@@ -601,9 +581,9 @@
     padding: 1.5rem 3rem;
   }
 
-    #meet {
-      font-size: 3.2rem;
-    }
+  #meet {
+    font-size: 3.2rem;
+  }
 
   .material-symbols-outlined {
     font-size: 6.5rem;
