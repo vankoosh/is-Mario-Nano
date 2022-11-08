@@ -1,7 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import "globals.css";
 @import "hamburger.css";
-/* ---------------------------------------------------------------------------- */
+
+.hidden{
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#outline {
+  display: inline-block;
+  position: fixed;
+  left: 1rem;
+  top: 1vh;
+  z-index: 99999999;
+}
+
+video{
+  object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -2;
+}
+
+.water-icon{
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+/* ------------------- */
+/* COLOR THEME PICKER */
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -22,7 +58,7 @@
   display: flex;
   gap: 1rem;
   width: fit-content;
-  /* padding: 1rem 3rem; */
+  width: -moz-fit-content;
 }
 
 .color-picker input[type="radio"] {
@@ -37,10 +73,6 @@
 .color-picker input[type="radio"]:checked {
   background-color: var(--radio-color);
 }
-/* 
-.color-picker input[type="radio"]#light {
-  --radio-color: gray;
-} */
 
 .color-picker input[type="radio"]#pink {
   --radio-color: #bb83f0;
@@ -90,34 +122,8 @@
   --alt-color: red;
 }
 
-/* --------------------------------------------------------------------------- */
-
-.hidden{
-  display: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-#outline {
-  display: inline-block;
-  position: fixed;
-  left: 1rem;
-  top: 1vh;
-  z-index: 99999999;
-}
-
-video{
-  object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
-    z-index: -2;
-}
+/* END OF COLOR THEME PICKER*/
+/* ------------------------ */
 
 /* -----------------------------------NAVBAR */
 

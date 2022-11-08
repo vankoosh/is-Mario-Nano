@@ -5,7 +5,11 @@ import Modal from './modal.js';
 import fadeInElementsOnScroll from "./fadeInElementsOnScroll.js";
 // ----------------- END OF IMPORTS
 
+
+// #############
 // -----------GLOBAL VARIABLES
+// #############
+
 const aboutTitle = document.querySelector("#about-me");
 const workTitle = document.querySelector("#my-work");
 const skillsTitle = document.querySelector("#skills");
@@ -21,12 +25,16 @@ function setBottomVerLine(){
   line.style.bottom = "-" + (document.body.scrollHeight - vHeight) + "px";
 }
 
+document.querySelector(".water-icon").addEventListener("click", () => {
+document.querySelector(".video").classList.toggle("hidden")
+});
+
 
 // #############
 // -----------------------OUTLINER
+// add/remove outline button on every element on page. purely for development purposes
 // #############
 
-// add/remove outline button on every element on page. purely for development purposes
 
 // let clicked = false;
 
@@ -47,7 +55,7 @@ function setBottomVerLine(){
 
 
 // ############
-// ----------------------------ONSCROLL
+// ----------------------------window.ONSCROLL
 // ############
 
 window.addEventListener("scroll", () => {
@@ -104,7 +112,7 @@ window.addEventListener("scroll", () => {
 
 
 //################
-// ---------------------------------ONLOAD
+// ---------------------------------window.ONLOAD
 //################
 
 window.addEventListener(
@@ -153,7 +161,7 @@ window.addEventListener(
       }, 1900);
     })();
 
-    scrollTo();
+    // scrollTo();
     setBottomVerLine();
     Modal();
   },
