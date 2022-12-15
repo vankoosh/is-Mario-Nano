@@ -36,6 +36,7 @@ video{
   left: 0.5rem;
   width: 1.5vw;
   height: 1.5vw;
+  z-index: 9999;
 }
 
 /* ------------------- */
