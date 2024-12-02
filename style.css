@@ -2,7 +2,7 @@
 @import "globals.css";
 @import "hamburger.css";
 
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -18,18 +18,18 @@ html {
   z-index: 99999999;
 }
 
-video{
+video {
   object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
-    z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: -2;
 }
 
-.water-icon{
+.water-icon {
   position: fixed;
   display: inline;
   top: 0.5rem;
@@ -135,7 +135,7 @@ video{
   display: none;
 }
 
-#nav__small{
+#nav__small {
   display: none;
 }
 
@@ -220,7 +220,7 @@ video{
   opacity: 0;
   transition: all 0.3s ease-in-out;
   user-select: none;
-    -webkit-user-select: none;
+  -webkit-user-select: none;
 }
 
 #meet {
@@ -229,7 +229,7 @@ video{
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.5em;
-  font-family: "Alata","Arial";
+  font-family: "Alata", "Arial";
   opacity: 0;
   text-align: center;
 }
@@ -286,7 +286,7 @@ video{
 /* ----------------------------------ABOUT ME */
 /* ******* */
 
-#about-section{
+#about-section {
   margin-top: 5rem;
   scroll-margin-top: 2rem;
 }
@@ -318,29 +318,22 @@ video{
   height: 100vh;
 }
 
-#story-container p{
+#story-container p {
   position: relative;
   width: 70%;
   height: 30vh;
   margin: 0 auto;
-  /* font-size: 1.25rem; */
-  /* letter-spacing: 0.09rem; */
-  /* word-spacing: -0.1rem; */
   margin-top: 14rem;
   text-align: center;
   font-family: "Source Code Pro", "Arial";
   transition: opacity 1.5s,
-  margin-top 1.5s;
+    margin-top 1.5s;
   opacity: 0;
 }
 
-
-/* #about-me::first-letter,
-#my-work::first-letter,
-#skills::first-letter,
-#contact::first-letter {
-  color: var(--alt-color);
-} */
+.home__yoo-link {
+  text-decoration: underline;
+}
 
 #about-me,
 #my-work,
@@ -428,7 +421,7 @@ video{
   margin: 0 auto 15rem;
 }
 
-#certs-mt{
+#certs-mt {
   margin-top: 25rem;
 }
 
@@ -479,7 +472,7 @@ img[src*="Cert"] {
 /* ----------------MY-WORK */
 /* ******* */
 
-#work-section{
+#work-section {
   margin-top: var(--section-margin-top);
   scroll-margin-top: 2rem;
 }
@@ -498,7 +491,7 @@ img[src*="Cert"] {
   border-bottom: 1px solid #80808085;
 }
 
-.work-card:last-child{
+.work-card:last-child {
   margin-top: 5rem;
 }
 
@@ -563,14 +556,14 @@ img[src*="Cert"] {
 #heatmap {
   width: 90vw;
   -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 
 /* ************ */
 /* ------------------CONTACT */
 /* ************* */
 
-#contact-section{
+#contact-section {
   margin-top: var(--section-margin-top);
 }
 
