@@ -1,4 +1,4 @@
-// this TOTALLY needs to be refactored and simplified with a function factory
+// this TOTALLY needs to be refactored and simplified 
 // 
 
 export default function Modal() {
