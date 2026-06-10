@@ -39,9 +39,6 @@ video {
   z-index: 9999;
 }
 
-/* ------------------- */
-/* COLOR THEME PICKER */
-
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -126,11 +123,6 @@ video {
   --alt-color: red;
 }
 
-/* END OF COLOR THEME PICKER*/
-/* ------------------------ */
-
-/* -----------------------------------NAVBAR */
-
 #nav-bar {
   display: none;
 }
@@ -155,12 +147,9 @@ video {
   width: 1.5rem;
 }
 
-
-/* --------------------------FRONTPAGE */
-
 #front-section {
   position: relative;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   height: 100vh;
   overflow-x: hidden;
 }
@@ -187,7 +176,8 @@ video {
 
 #hi-text {
   position: relative;
-  margin-top: 37vh;
+  width: 50%;
+  margin-top: 8rem;
   font-family: "Silkscreen", "Arial";
   font-weight: bold;
 }
@@ -195,9 +185,8 @@ video {
 #hi-text p:first-child {
   position: absolute;
   top: -95px;
-  left: 4rem;
+  left: 5rem;
   display: inline-block;
-  margin-left: 7rem;
   padding: 0.3rem;
   border: 3px solid #fff;
   background-color: rgb(0, 0, 0);
@@ -212,8 +201,8 @@ video {
 
 #hi-text p:last-child {
   display: inline-block;
-  margin-left: 9rem;
   padding: 0.3rem;
+  margin: 0 0 0 3rem;
   background-color: black;
   color: var(--alt-color);
   font-size: 3.5rem;
@@ -224,9 +213,11 @@ video {
 }
 
 #meet {
-  margin: 6rem auto 0;
-  width: 80%;
-  font-size: 1.5rem;
+  margin: 4rem 0 0;
+  width: 100%;
+  padding-right: 3rem;
+  padding-left: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   line-height: 1.5em;
   font-family: "Alata", "Arial";
@@ -282,10 +273,6 @@ video {
   transform: translateZ(-25px) rotateX(-90deg);
 }
 
-/* ******* */
-/* ----------------------------------ABOUT ME */
-/* ******* */
-
 #about-section {
   margin-top: 5rem;
   scroll-margin-top: 2rem;
@@ -303,14 +290,14 @@ video {
 #contact {
   display: block;
   width: 100vw;
-  margin: 20rem auto 1rem;
+  margin: 0 auto 1rem;
   font-size: 3rem;
   text-align: center;
 }
 
 #about-container {
   position: relative;
-  margin: 0rem auto 15rem;
+  margin: 0rem auto 0rem;
 }
 
 #story-container {
@@ -369,7 +356,7 @@ video {
 #skills {
   display: block;
   width: 100vw;
-  margin: 20rem auto 1rem;
+  margin: 5rem auto 1rem;
   font-size: 3rem;
   text-align: center;
 }
@@ -384,7 +371,7 @@ video {
 
 .skills-title {
   display: block;
-  margin-top: 6rem;
+  margin-top: 5rem;
   margin-bottom: 1rem;
   text-align: center;
   font-size: 1rem;
@@ -396,33 +383,26 @@ video {
 }
 
 .my-skills {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin-top: 8rem;
   margin-bottom: 2rem;
+  padding: 0 12%;
   opacity: 0;
   transition: all 1s;
-  width: 100vw;
+  width: 100%;
 }
 
 .my-skills img {
-  width: 13vw;
-  height: 13vw;
-  margin-left: .5rem;
-  margin-right: .5rem;
-  margin-bottom: 3rem;
+  width: 19%;
+  max-width: 4rem;
+  margin: 1rem;
 }
 
 #my-certs {
-  margin: 0 auto 15rem;
-}
-
-#certs-mt {
-  margin-top: 25rem;
+  margin: 0 auto 0;
 }
 
 #my-certs div {
@@ -449,36 +429,13 @@ img[src*="Cert"] {
   transition: 0.3s;
 }
 
-
-/* 
-#long-story-btn {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 8rem;
-  padding-right: 10rem;
-}
-
-#long-story-btn p {
-  font-size: calc(0.7vw + 0.5rem);
-  color: var(--alt-color);
-  cursor: pointer;
-  font-weight: bold;
-  letter-spacing: -0.1rem;
-} */
-
-
-
-/* ****** */
-/* ----------------MY-WORK */
-/* ******* */
-
 #work-section {
-  margin-top: var(--section-margin-top);
+  margin-top: 5rem;
   scroll-margin-top: 2rem;
 }
 
 #work-container {
-  margin: 5rem auto 10rem;
+  margin: 5rem auto 0;
 }
 
 .work-card {
@@ -489,10 +446,6 @@ img[src*="Cert"] {
   padding: 1rem;
   border-left: 1px solid #80808085;
   border-bottom: 1px solid #80808085;
-}
-
-.work-card:last-child {
-  margin-top: 5rem;
 }
 
 .work-card img {
@@ -559,14 +512,6 @@ img[src*="Cert"] {
   backdrop-filter: blur(12px);
 }
 
-/* ************ */
-/* ------------------CONTACT */
-/* ************* */
-
-#contact-section {
-  margin-top: var(--section-margin-top);
-}
-
 #contact-container {
   position: relative;
   width: 90%;
@@ -628,14 +573,6 @@ footer {
   text-align: center;
 }
 
-/* ********** */
-/* **************** MODAL */
-/* ********** */
-
-/* Style the Image Used to Trigger the Modal */
-
-
-/* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
@@ -650,14 +587,12 @@ footer {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* Modal Content (Image) */
 .modal-content {
   margin: auto;
   display: block;
   width: 500px;
 }
 
-/* Add Animation - Zoom in the Modal */
 .modal-content {
   animation-name: zoom;
   animation-duration: 0.6s;
@@ -673,7 +608,6 @@ footer {
   }
 }
 
-/* The Close Button */
 .close {
   position: absolute;
   top: 50px;
@@ -691,7 +625,6 @@ footer {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;

@@ -26,8 +26,9 @@
 
   #meet {
     margin-top: 37vh;
-    margin-left: 5rem;
-    margin-right: 3rem;
+    /* margin-left: 5rem; */
+    /* margin-right: 3rem; */
+    padding: 0 2rem 0;
     font-size: 1rem;
   }
 
@@ -83,8 +84,8 @@
   }
 
   .my-skills img {
-    width: 4rem;
-    height: 4rem;
+    max-width: 4rem;
+    /* height: 4rem; */
     margin-left: 1rem;
     margin-right: 1rem;
   }
@@ -363,8 +364,8 @@
   }
 
   .my-skills img {
-    width: 4.5vw;
-    height: 4.5vw;
+    /* width: 4.5vw; */
+    /* height: 4.5vw; */
   }
 
   img[src*="Cert"] {

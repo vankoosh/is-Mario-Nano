@@ -44,7 +44,7 @@ h5 {
   outline: 1px solid black;
 }
 
-/* SCROLL BAR */
+/* ----------------------------------SCROLL BAR */
 body::-webkit-scrollbar {
   width: 0.8em;
 }
@@ -60,5 +60,3 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid #fff;
   border-radius: 0.4em;
 }
-
-/* SCROLL BAR END */

@@ -139,9 +139,9 @@ window.addEventListener(
         line.style.left = "calc(10vw + 6px)";
       }, 1000);
       setTimeout(() => {
-        // name.style.transition = "opacity 0.8s";
+        name.style.transition = "opacity 4s";
         name.style.opacity = "1";
-      }, 1300);
+      }, 10);
       setTimeout(() => {
         meet.style.transition = "opacity 0.8s";
         meet.style.opacity = "1";
@@ -159,4 +159,3 @@ window.addEventListener(
   },
   true
 );
-

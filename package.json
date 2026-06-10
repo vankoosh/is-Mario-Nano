@@ -1,0 +1,20 @@
+{
+  "name": "is-mario-nano",
+  "version": "1.0.0",
+  "description": "Personal website of Mario Nano. Welcome :)",
+  "homepage": "https://github.com/vankoosh/is-Mario-Nano#readme",
+  "bugs": {
+    "url": "https://github.com/vankoosh/is-Mario-Nano/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vankoosh/is-Mario-Nano.git"
+  },
+  "license": "ISC",
+  "author": "Mario Nano",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
