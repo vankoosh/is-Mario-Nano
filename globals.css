@@ -1,4 +1,5 @@
 :root {
+	font-size: 16px;
 	--font-color: #000000c2;
 	--bg-color: #ffffff;
 	--alt-color: #bb83f0;
@@ -40,11 +41,6 @@ h5 {
 	font-family: "Alata", "sans-serif";
 }
 
-.outline {
-	outline: 1px solid black;
-}
-
-/* ----------------------------------SCROLL BAR */
 body::-webkit-scrollbar {
 	width: 0.8em;
 }

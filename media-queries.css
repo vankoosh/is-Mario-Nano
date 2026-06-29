@@ -1,9 +1,9 @@
-@import "globals.css";
+/*@import "globals.css";*/
 
 @media only screen and (min-width: 700px) {
 
-	#circle,
-	#line {
+	.circle,
+	.line {
 		opacity: 1;
 	}
 
@@ -20,44 +20,42 @@
 		margin: 1rem auto;
 	}
 
-	#front-section {
+	.front-section {
 		display: flex;
 	}
 
-	#meet {
+	.meet {
 		margin-top: 37vh;
-		/* margin-left: 5rem; */
-		/* margin-right: 3rem; */
 		padding: 0 2rem 0;
 		font-size: 1rem;
 	}
 
-	#cta {
+	.cta {
 		margin-top: 70vh;
 	}
 
-	#cta a {
+	.cta a {
 		font-size: calc(0.9vw + 0.5rem);
 	}
 
-	#about-container {
+	.about-container {
 		margin: 12vh auto 15rem;
 	}
 
-	#story-container {
+	.story-container {
 		height: auto;
 		margin-bottom: 15rem;
 	}
 
-	#story-container p {
+	.story-container p {
 		text-align: left;
 	}
 
-	#story-container .horizontal-line {
+	.story-container .horizontal-line {
 		display: block;
 	}
 
-	#cv {
+	.cv {
 		left: 85%;
 	}
 
@@ -69,7 +67,7 @@
 		color: #000;
 	}
 
-	#long-story-btn {
+	.long-story-btn {
 		margin-top: 10rem;
 		padding-right: 12rem;
 	}
@@ -90,22 +88,22 @@
 		margin-right: 1rem;
 	}
 
-	#my-certs {
+	.my-certs {
 		display: flex;
 		margin: 0 auto 15rem;
 		justify-content: space-around;
 		width: 80vw;
 	}
 
-	#certs-mt {
+	.certs-mt {
 		margin-top: 17rem;
 	}
 
-	#my-certs div {
+	.my-certs div {
 		width: 10vw;
 	}
 
-	#my-certs div span {
+	.my-certs div span {
 		font-size: 1rem;
 	}
 
@@ -153,14 +151,14 @@
 		margin-right: 3rem;
 	}
 
-	#contact-container {
+	.contact-container {
 		width: 50%;
 	}
 
-	#about-me,
-	#my-work,
-	#skills,
-	#contact {
+	.about-me,
+	.my-work,
+	.skills,
+	.contact {
 		display: block;
 		position: relative;
 		width: 80%;
@@ -170,15 +168,15 @@
 		font-size: 2rem;
 	}
 
-	#skills {
+	.skills {
 		margin-top: 25rem;
 	}
 
-	#my-work {
+	.my-work {
 		margin-top: 25rem;
 	}
 
-	#contact {
+	.contact {
 		margin-top: 10rem;
 	}
 }
@@ -189,7 +187,7 @@
 
 @media only screen and (min-width: 900px) {
 
-	#nav__small {
+	.nav__small {
 		position: fixed;
 		display: flex;
 		gap: 1rem;
@@ -235,37 +233,37 @@
 		font-size: 1rem;
 	}
 
-	#front-section {
+	.front-section {
 		width: 80%;
 	}
 
-	#front-section p {
+	.front-section p {
 		margin-right: 0;
 	}
 
-	#cta {
+	.cta {
 		display: inline-flex;
 	}
 
-	#hi-text p:last-child {
+	.hi-text p:last-child {
 		margin-left: 4rem;
 		font-size: calc(8vw - 1rem);
 	}
 
-	#hi-text p:first-child {
+	.hi-text p:first-child {
 		margin-left: 3rem;
 		font-size: 1.5rem;
 	}
 
-	#my-certs {
+	.my-certs {
 		width: 70vw;
 	}
 
-	#contact-container input:last-child {
+	.contact-container input:last-child {
 		font-size: calc(.7vw + .5rem);
 	}
 
-	#heatmap {
+	.heatmap {
 		width: 50vw;
 	}
 }
@@ -295,15 +293,15 @@
 
 @media (min-width: 1300px) {
 
-	#nav-bar div:nth-child(6) {
+	.nav-bar div:nth-child(6) {
 		margin-right: 5rem;
 	}
 
-	#hi-text p:first-child {
+	.hi-text p:first-child {
 		font-size: 2.1rem;
 	}
 
-	#meet {
+	.meet {
 		margin-top: 45vh;
 		font-size: 1.2rem;
 	}
@@ -314,7 +312,7 @@
 		/* margin-top: 4rem; */
 	}
 
-	#my-certs {
+	.my-certs {
 		width: 60vw;
 	}
 
@@ -329,7 +327,7 @@
 
 @media (min-width: 1700px) {
 
-	#my-certs {
+	.my-certs {
 		margin-top: 4rem;
 	}
 
@@ -349,11 +347,11 @@
 
 @media (min-width: 1900px) {
 
-	#nav-bar img {
+	.nav-bar img {
 		width: 1.8vw;
 	}
 
-	#story-container p {
+	.story-container p {
 		line-height: 1.8rem;
 		letter-spacing: -.005rem;
 		word-spacing: -.1rem;
@@ -369,7 +367,7 @@
 		width: 10vw;
 	}
 
-	#my-certs div span {
+	.my-certs div span {
 		font-size: 1.5rem;
 	}
 }
@@ -380,11 +378,11 @@
 
 @media (min-width: 2000px) {
 
-	#nav-bar > div {
+	.nav-bar > div {
 		margin-top: 1rem;
 	}
 
-	#front-section p {
+	.front-section p {
 		margin-left: 7rem;
 	}
 
@@ -392,7 +390,7 @@
 		font-size: 1.5rem;
 	}
 
-	#meet {
+	.meet {
 		font-size: 2.2rem;
 	}
 
@@ -405,34 +403,34 @@
 		height: 1rem;
 	}
 
-	#cta,
-	#cta a:before,
-	#cta a:after {
+	.cta,
+	.cta a:before,
+	.cta a:after {
 		width: 18rem;
 		height: 5rem;
 	}
 
-	#cta a:before {
+	.cta a:before {
 		transform: rotateY(0deg) translateZ(35px);
 	}
 
-	#cta a:after {
+	.cta a:after {
 		transform: rotateX(90deg) translateZ(35px);
 	}
 
-	#cta a:hover {
+	.cta a:hover {
 		transform: translateZ(-35px) rotateX(-90deg);
 	}
 
-	#story-container p {
+	.story-container p {
 		font-size: calc(100vw / 90);
 	}
 
-	#cv {
+	.cv {
 		font-size: 1.3rem;
 	}
 
-	#certs-mt {
+	.certs-mt {
 		margin-top: 20rem;
 	}
 
@@ -459,7 +457,7 @@
 		font-size: calc(1vw + .6rem);
 	}
 
-	#contact-container input {
+	.contact-container input {
 		height: 3rem;
 	}
 }
@@ -473,21 +471,21 @@
 		font-size: 4.5rem;
 	}
 
-	#hi-text p:first-child {
+	.hi-text p:first-child {
 		top: -150px;
 		left: 90px;
 		font-size: 4rem;
 	}
 
-	#hi-text {
+	.hi-text {
 		margin-top: 42vh;
 	}
 
-	#contact-container h1 {
+	.contact-container h1 {
 		font-size: 3rem;
 	}
 
-	#contact-container p {
+	.contact-container p {
 		font-size: 1.7rem;
 	}
 }
@@ -502,11 +500,11 @@
 		font-size: 2rem;
 	}
 
-	#meet {
+	.meet {
 		font-size: 2.8rem;
 	}
 
-	#story-container p {
+	.story-container p {
 		line-height: 3rem;
 	}
 
@@ -538,13 +536,13 @@
 		font-size: 2rem;
 	}
 
-	#contact-container input,
-	#contact-container label,
-	#msg {
+	.contact-container input,
+	.contact-container label,
+	.msg {
 		font-size: calc(.9vw + .6rem);
 	}
 
-	#contact-container input:not(:last-child) {
+	.contact-container input:not(:last-child) {
 		width: 100%;
 		height: 3rem;
 	}
@@ -555,7 +553,7 @@
 /* ********* */
 
 @media (min-width: 2600px) {
-	#hi-text p:first-child {
+	.hi-text p:first-child {
 		font-size: 3.5rem;
 	}
 
@@ -563,7 +561,7 @@
 		margin: 12rem auto 0;
 	}
 
-	#contact-container input:last-child {
+	.contact-container input:last-child {
 		margin-bottom: 10rem;
 	}
 }
@@ -574,12 +572,12 @@
 
 @media (min-width: 2900px) {
 
-	#nav__small {
+	.nav__small {
 		border-radius: 80px;
 		padding: 1.5rem 3rem;
 	}
 
-	#meet {
+	.meet {
 		font-size: 3.2rem;
 	}
 
@@ -587,12 +585,12 @@
 		font-size: 6.5rem;
 	}
 
-	#hi-text p:first-child {
+	.hi-text p:first-child {
 		top: -80px;
 		font-size: 6rem;
 	}
 
-	#story-container p {
+	.story-container p {
 		margin-top: 10rem;
 	}
 }

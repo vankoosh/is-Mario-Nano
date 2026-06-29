@@ -15,9 +15,15 @@
 	"type": "commonjs",
 	"main": "app.js",
 	"scripts": {
+		"lint": "stylelint \"**/*.css\"",
+		"watch-css": "gulp",
+		"start": "gulp",
 		"dev": "browser-sync start --server --files \"*.html, *.css, *.js\""
 	},
 	"devDependencies": {
-		"browser-sync": "^3.0.4"
+		"browser-sync": "^3.0.4",
+		"gulp": "^5.0.1",
+		"gulp-stylelint": "^13.0.0",
+		"stylelint": "^13.13.1"
 	}
 }

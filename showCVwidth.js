@@ -1,12 +1,12 @@
 // module to show or hide paragraph with text
 
 export default function showCVwidth() {
-	const shortStory = document.querySelector("#story-text");
-	const hiddenStory = document.querySelector("#hidden-story");
-	const storyBtn = document.querySelector("#long-story-btn p");
-	const cv = document.querySelector("#cv a");
-	const lss = document.querySelector("#long-story-short");
-	const switchBtn = document.querySelector("#long-story-btn p");
+	const shortStory = document.querySelector(".story-text");
+	const hiddenStory = document.querySelector(".hidden-story");
+	const storyBtn = document.querySelector(".long-story-btn p");
+	const cv = document.querySelector(".cv a");
+	const lss = document.querySelector(".long-story-short");
+	const switchBtn = document.querySelector(".long-story-btn p");
 
 	storyBtn.addEventListener("click", () => {
 

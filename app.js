@@ -9,16 +9,16 @@ import fadeInElementsOnScroll from "./fadeInElementsOnScroll.js";
 // -----------GLOBAL VARIABLES
 // #############
 
-const aboutTitle = document.querySelector("#about-me");
-const workTitle = document.querySelector("#my-work");
-const skillsTitle = document.querySelector("#skills");
-const contactTitle = document.querySelector("#contact");
+const aboutTitle = document.querySelector(".about-me");
+const workTitle = document.querySelector(".my-work");
+const skillsTitle = document.querySelector(".skills");
+const contactTitle = document.querySelector(".contact");
 let vHeight = window.innerHeight;
 let vWidth = window.innerWidth;
 
 // set the length of the vertical line along the whole page according to the length of the body
 function setBottomVerLine() {
-	const line = document.querySelector("#line");
+	const line = document.querySelector(".line");
 	line.style.bottom = "-" + (document.body.scrollHeight - vHeight) + "px";
 }
 
@@ -111,13 +111,13 @@ window.addEventListener(
 
 		//fade in landing page elements right after onload
 		(() => {
-			const hi = document.querySelector("#hi-text p:first-child");
-			const name = document.querySelector("#hi-text p:last-child");
-			const meet = document.querySelector("#meet");
-			const cta = document.querySelector("#cta");
-			const circle = document.querySelector("#circle");
-			const line = document.querySelector("#line");
-			const navbar = document.querySelector("#nav__small");
+			const hi = document.querySelector(".hi-text p:first-child");
+			const name = document.querySelector(".hi-text p:last-child");
+			const meet = document.querySelector(".meet");
+			const cta = document.querySelector(".cta");
+			const circle = document.querySelector(".circle");
+			const line = document.querySelector(".line");
+			const navbar = document.querySelector(".nav__small");
 
 			setTimeout(() => {
 				hi.style.transition = "0.8s";

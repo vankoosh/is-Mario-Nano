@@ -1,9 +1,9 @@
 // fade in CV button
 
 export default function showCV() {
-	const shortStory = document.querySelector("#story-text");
-	const hiddenStory = document.querySelector("#hidden-story");
-	const storyBtn = document.querySelector("#long-story-btn p");
+	const shortStory = document.querySelector(".story-text");
+	const hiddenStory = document.querySelector(".hidden-story");
+	const storyBtn = document.querySelector(".long-story-btn p");
 
 	storyBtn.addEventListener("click", () => {
 		if (hiddenStory.classList.contains("hide")) {

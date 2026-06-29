@@ -3,28 +3,28 @@
 
 export default function Modal() {
 	// SASS certificate
-	const modalSS = document.getElementById("myModalSS");
-	const imgSS = document.getElementById("certImgSass");
-	const modalImgSS = document.getElementById("imgSS");
+	const modalSS = document.querySelector(".myModalSS");
+	const imgSS = document.querySelector(".certImgSass");
+	const modalImgSS = document.querySelector(".imgSS");
 	// Bootstrap certificate
-	const modalBS = document.getElementById("myModalBS");
-	const imgBS = document.getElementById("certImgBS");
-	const modalImgBS = document.getElementById("imgBS");
+	const modalBS = document.querySelector(".myModalBS");
+	const imgBS = document.querySelector(".certImgBS");
+	const modalImgBS = document.querySelector(".imgBS");
 
 	// JS certificate
-	const modalJS = document.getElementById("myModalJS");
-	const imgJS = document.getElementById("certImgJS");
-	const modalImgJS = document.getElementById("imgJS");
+	const modalJS = document.querySelector(".myModalJS");
+	const imgJS = document.querySelector(".certImgJS");
+	const modalImgJS = document.querySelector(".imgJS");
 
 	// JS II certificate
-	const modalJSS = document.getElementById("myModalJSS");
-	const imgJSS = document.getElementById("certImgJSS");
-	const modalImgJSS = document.getElementById("imgJSS");
+	const modalJSS = document.querySelector(".myModalJSS");
+	const imgJSS = document.querySelector(".certImgJSS");
+	const modalImgJSS = document.querySelector(".imgJSS");
 
 	// React II certificate
-	const modalRE = document.getElementById("myModalRE");
-	const imgRE = document.getElementById("certImgRE");
-	const modalImgRE = document.getElementById("imgRE");
+	const modalRE = document.querySelector(".myModalRE");
+	const imgRE = document.querySelector(".certImgRE");
+	const modalImgRE = document.querySelector(".imgRE");
 
 	// give each modal background functionality to close on click
 	document.querySelectorAll(".modal").forEach((modal) => {

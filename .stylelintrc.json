@@ -1,0 +1,10 @@
+{
+	"rules": {
+		"block-no-empty": true,
+		"property-no-unknown": true,
+		"declaration-no-important": true,
+		"unit-no-unknown": true,
+		"selector-type-no-unknown": true,
+		"at-rule-empty-line-before": "always"
+	}
+}

@@ -9,29 +9,29 @@
 </head>
 <body>
 	<!-- Trigger the Modal -->
-	<img id="myImg" src="IMGS\CertBOOT-1145x871.webp" style="max-width:200px" alt="Bootstrap Certificate">
+	<img class="myImg" src="IMGS\CertBOOT-1145x871.webp" style="max-width:200px" alt="Bootstrap Certificate">
 
 	<!-- The Modal -->
-	<div id="myModal" class="modal">
+	<div class="myModal modal">
 
 		<!-- The Close Button -->
 		<span class="close">&times;</span>
 
 		<!-- Modal Content (The Image) -->
-		<img class="modal-content" id="img01">
+		<img class="modal-content img01">
 
 		<!-- Modal Caption (Image Text) -->
-		<div id="caption"></div>
+		<div class="caption"></div>
 	</div>
 
 	<script>
 		// Get the modal
-		var modal = document.getElementById("myModal");
+		var modal = document.querySelector(".myModal");
 
 		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var img = document.getElementById("myImg");
-		var modalImg = document.getElementById("img01");
-		var captionText = document.getElementById("caption");
+		var img = document.querySelector(".myImg");
+		var modalImg = document.querySelector(".img01");
+		var captionText = document.querySelector(".caption");
 		img.onclick = function () {
 			modal.style.display = "block";
 			modalImg.src = this.src;

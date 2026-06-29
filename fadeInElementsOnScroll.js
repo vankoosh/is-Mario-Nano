@@ -1,12 +1,12 @@
 const fadeInElementsOnScroll = () => {
-	const storyElem = document.querySelector("#story-container p");
-	const cv = document.querySelector("#cv");
+	const storyElem = document.querySelector(".story-container p");
+	const cv = document.querySelector(".cv");
 	const skills = document.querySelector(".my-skills");
-	const cert1 = document.querySelector("#cert1");
-	const cert2 = document.querySelector("#cert2");
-	const cert3 = document.querySelector("#cert3");
-	const cert4 = document.querySelector("#cert4");
-	const cert5 = document.querySelector("#cert5");
+	const cert1 = document.querySelector(".cert1");
+	const cert2 = document.querySelector(".cert2");
+	const cert3 = document.querySelector(".cert3");
+	const cert4 = document.querySelector(".cert4");
+	const cert5 = document.querySelector(".cert5");
 
 	if (storyElem.getBoundingClientRect().top - window.scrollY < -50) {
 		storyElem.style.opacity = "1";
