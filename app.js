@@ -3,11 +3,6 @@
 // import showCVwidth from './showCVwidth.js';
 import Modal from './modal.js';
 import fadeInElementsOnScroll from "./fadeInElementsOnScroll.js";
-// ----------------- END OF IMPORTS
-
-// #############
-// -----------GLOBAL VARIABLES
-// #############
 
 const aboutTitle = document.querySelector(".about-me");
 const workTitle = document.querySelector(".my-work");
@@ -26,32 +21,6 @@ document.querySelector(".water-icon").addEventListener("click", () => {
 	document.querySelector(".video").classList.toggle("hidden")
 });
 
-// #############
-// -----------------------OUTLINER
-// add/remove outline button on every element on page. purely for development purposes
-// #############
-
-// let clicked = false;
-
-// document.querySelector("#outline").addEventListener("click", () => {
-//   const list = document.getElementsByTagName("*");
-//   if (!clicked) {
-//     for (let item of list) {
-//       item.classList.add("outline");
-//       clicked = true;
-//     }
-//   } else {
-//     for (let item of list) {
-//       item.classList.remove("outline");
-//       clicked = false;
-//     }
-//   }
-// });
-
-// ############
-// ----------------------------window.ONSCROLL
-// ############
-
 window.addEventListener("scroll", () => {
 	// function to change letter spacing on scroll on big section headers
 	(() => {
@@ -60,36 +29,36 @@ window.addEventListener("scroll", () => {
 		let skillsFromTop = skillsTitle.getBoundingClientRect().top;
 		let contactFromTop = contactTitle.getBoundingClientRect().top;
 
-		if (aboutFromTop < window.innerHeight && vWidth > 900) {
+		if (aboutFromTop < vHeight && vWidth > 991) {
 			aboutTitle.style.letterSpacing =
-				(window.innerHeight - aboutFromTop) * 0.017 + "px";
+				(vHeight - aboutFromTop) * 0.017 + "px";
 		}
 
-		if (aboutFromTop < -50 && vWidth > 900) {
+		if (aboutFromTop < -50 && vWidth > 991) {
 			aboutTitle.style.letterSpacing = 1 + "px";
 		}
 
-		if (workFromTop < window.innerHeight && vWidth > 900) {
+		if (workFromTop < vHeight && vWidth > 991) {
 			workTitle.style.letterSpacing =
-				(window.innerHeight - workFromTop) * 0.017 + "px";
+				(vHeight - workFromTop) * 0.017 + "px";
 		}
 
-		if (workFromTop < -50 && vWidth > 900) {
+		if (workFromTop < -50 && vWidth > 991) {
 			workTitle.style.letterSpacing = 1 + "px";
 		}
 
-		if (skillsFromTop < window.innerHeight && vWidth > 900) {
+		if (skillsFromTop < vHeight && vWidth > 991) {
 			skillsTitle.style.letterSpacing =
-				(window.innerHeight - skillsFromTop) * 0.017 + "px";
+				(vHeight - skillsFromTop) * 0.017 + "px";
 		}
 
-		if (skillsFromTop < -50 && vWidth > 900) {
+		if (skillsFromTop < -50 && vWidth > 991) {
 			skillsTitle.style.letterSpacing = 1 + "px";
 		}
 
-		if (contactFromTop < window.innerHeight && vWidth > 900) {
+		if (contactFromTop < vHeight && vWidth > 991) {
 			contactTitle.style.letterSpacing =
-				(window.innerHeight - contactFromTop) * 0.017 + "px";
+				(vHeight - contactFromTop) * 0.017 + "px";
 		}
 
 		if (contactFromTop < -50 && vWidth) {
@@ -100,10 +69,6 @@ window.addEventListener("scroll", () => {
 	setBottomVerLine();
 	fadeInElementsOnScroll();
 });
-
-//################
-// ---------------------------------window.ONLOAD
-//################
 
 window.addEventListener(
 	"DOMContentLoaded",
