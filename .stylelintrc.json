@@ -5,6 +5,18 @@
 		"declaration-no-important": true,
 		"unit-no-unknown": true,
 		"selector-type-no-unknown": true,
-		"at-rule-empty-line-before": "always"
+		"at-rule-empty-line-before": "always",
+		"rule-empty-line-before": [
+			"always",
+			{
+				"except": ["first-nested"]
+			}
+		],
+		"declaration-empty-line-before": "never",
+		"block-closing-brace-empty-line-before": "never",
+		"block-closing-brace-newline-after": "always",
+		"max-empty-lines": 1,
+		"indentation": "tab",
+		"no-duplicate-selectors": true
 	}
 }

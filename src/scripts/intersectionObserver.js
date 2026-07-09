@@ -1,5 +1,3 @@
-const btn = document.querySelector('.data-layer')
-
 const observer = new MutationObserver((mutations) => {
 	mutations.forEach((mutation) => {
 		if (mutation.type === 'childList') {
@@ -10,4 +8,4 @@ const observer = new MutationObserver((mutations) => {
 	});
 });
 
-// observer.observe(window, { childList: true, subtree: true });
+observer.observe(window, { childList: true, subtree: true });

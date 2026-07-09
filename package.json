@@ -12,16 +12,17 @@
 	},
 	"license": "ISC",
 	"author": "Mario Nano",
-	"type": "commonjs",
+	"type": "module",
 	"main": "app.js",
 	"scripts": {
-		"lint": "stylelint \"**/*.css\"",
-		"watch-css": "gulp",
 		"start": "gulp",
 		"dev": "browser-sync start --server --files \"*.html, *.css, *.js\""
 	},
 	"devDependencies": {
+		"@eslint/js": "^10.0.1",
 		"browser-sync": "^3.0.4",
+		"eslint": "^10.6.0",
+		"globals": "^17.7.0",
 		"gulp": "^5.0.1",
 		"gulp-stylelint": "^13.0.0",
 		"stylelint": "^13.13.1"

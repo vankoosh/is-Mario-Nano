@@ -1,6 +1,3 @@
-// this TOTALLY needs to be refactored and simplified
-//
-
 export default function Modal() {
 	// SASS certificate
 	const modalSS = document.querySelector(".myModalSS");
@@ -25,6 +22,10 @@ export default function Modal() {
 	const modalRE = document.querySelector(".myModalRE");
 	const imgRE = document.querySelector(".certImgRE");
 	const modalImgRE = document.querySelector(".imgRE");
+
+	const modalPHP = document.querySelector(".myModalPHP");
+	const imgPHP = document.querySelector(".certImgPHP");
+	const modalImgPHP = document.querySelector(".imgPHP");
 
 	// give each modal background functionality to close on click
 	document.querySelectorAll(".modal").forEach((modal) => {
@@ -85,6 +86,15 @@ export default function Modal() {
 			modalImgRE.style.width = "95vw";
 		} else {
 			modalImgRE.style.width = "55vw";
+		}
+	};
+	imgPHP.onclick = function () {
+		modalPHP.style.display = "block";
+		modalImgPHP.src = this.src;
+		if (window.innerWidth < 700) {
+			modalImgPHP.style.width = "95vw";
+		} else {
+			modalImgPHP.style.width = "55vw";
 		}
 	};
 }
