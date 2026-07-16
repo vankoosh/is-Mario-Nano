@@ -49,10 +49,9 @@ window.addEventListener('load', () => {
 		hi.style.transition = '0.8s';
 		hi.style.opacity = '1';
 		vWidth < 2300 ? (hi.style.top = '-35px') : (hi.style.top = '-70px');
-		circle.style.transition = '0.8s';
-		line.style.transition = '0.8s';
-		circle.style.left = '10vw';
-		line.style.left = 'calc(10vw + 6px)';
+		circle.style.left = vWidth < 992 ? 'calc(5rem - 6px)' : 'calc(8rem - 6px)';
+		line.style.left = vWidth < 992 ? '5rem' : '8rem';
+
 	}, 1000);
 	setTimeout(() => {
 		name.style.transition = 'opacity 4s';
@@ -65,7 +64,6 @@ window.addEventListener('load', () => {
 	setTimeout(() => {
 		cta.style.transition = 'opacity 0.8s';
 		cta.style.opacity = '1';
-		// navbar.style.bottom = "2.5rem";
 	}, 1900);
 
 	setBottomVerLine();
