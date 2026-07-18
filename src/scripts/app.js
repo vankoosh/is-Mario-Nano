@@ -15,35 +15,29 @@ const navbar = document.querySelector(".nav__small");
 let vHeight = window.innerHeight;
 let vWidth = window.innerWidth;
 
-// set the length of the vertical line along the whole page according to the length of the body
-function setBottomVerLine() {
-	line.style.bottom = '-' + (document.body.scrollHeight - vHeight) + 'px';
-}
-
 function setFooterDate() {
 	footerDate.textContent = new Date().getFullYear();
 }
 
 waterIcon.addEventListener('click', () => {
-	document.querySelector('.video').classList.toggle('hidden')
+	document.querySelector('.video').classList.toggle('show-video')
 });
 
 window.addEventListener('scroll', () => {
 	sectionTitles.forEach((title) => {
 		const fromTop = title.getBoundingClientRect().top;
 
-		if (fromTop < vHeight && vWidth > 767) {
+		if (fromTop < vHeight && vWidth >= 768) {
 			title.style.letterSpacing = (vHeight - fromTop) * 0.015 + 'px';
 		}
 
-		if (fromTop < -50 && vWidth > 767) {
+		if (fromTop < -50 && vWidth >= 768) {
 			title.style.letterSpacing = '1px';
 		}
 	});
 
 	syncLine();
 	syncCircleStaticScale();
-	setBottomVerLine();
 	fadeInElementsOnScroll();
 
 	const distanceFromBottom = document.body.scrollHeight - window.scrollY - vHeight;
@@ -55,7 +49,6 @@ function syncCircleStatic() {
 	if (window.innerWidth >= 768) {
 		const circleLeft = circle.getBoundingClientRect().left;
 		circleStatic.style.left = circleLeft + 'px';
-		circleStatic.style.opacity = 1;
 	}
 }
 
@@ -78,8 +71,8 @@ function syncLine() {
 	const bottom = Math.max(circleRect.bottom, staticRect.bottom);
 	line.style.position = 'fixed';
 	line.style.left = circleRect.left + circleRect.width / 2 + 'px';
-	line.style.top = top + 'px';
-	line.style.height = (bottom - top) + 'px';
+	line.style.top = (top + 5) + 'px';
+	line.style.height = (bottom - top - 5) + 'px';
 	line.style.bottom = '';
 }
 
@@ -98,6 +91,8 @@ window.addEventListener('load', () => {
 		vWidth < 2300 ? (hi.style.top = '-35px') : (hi.style.top = '-70px');
 		circle.style.left = vWidth < 992 ? 'calc(5rem - 6px)' : 'calc(8rem - 6px)';
 		line.style.left = vWidth < 992 ? '5rem' : '8rem';
+		circleStatic.style.opacity = 1;
+		circle.style.opacity = 1;
 		syncCircleStatic();
 		syncLine();
 		syncCircleStaticScale();
@@ -115,8 +110,10 @@ window.addEventListener('load', () => {
 		cta.style.transition = 'opacity 0.8s';
 		cta.style.opacity = '1';
 	}, 1900);
+	setTimeout(() => {
+		navbar.style.bottom = '0.5rem';
+	}, 1900);
 
-	setBottomVerLine();
 	Modal();
 	setFooterDate();
 	},

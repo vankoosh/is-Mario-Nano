@@ -1,5 +1,5 @@
-.hidden {
-	opacity: 0;
+.show-video {
+	opacity: 0.3;
 }
 
 .mobile-hidden {
@@ -23,7 +23,7 @@ video {
 	position: fixed;
 	top: 0;
 	left: 0;
-	opacity: 0.3;
+	opacity: 0;
 	z-index: -2;
 	transition: opacity 2s ease;
 }
@@ -114,6 +114,7 @@ video {
 	border-radius: 15px;
 	background-color: var(--alt-color);
 	opacity: 0;
+	transition: transform 0.4s ease;
 }
 
 .circle {
@@ -131,7 +132,6 @@ video {
 	}
 
 	.circle-static {
-		left: calc(var(--side-padding-lg) - 2.5rem);
 		top: calc(44vh + 4.09rem);
 	}
 }
@@ -142,13 +142,15 @@ video {
 	opacity: 0;
 }
 
+@media (min-width: 768px) {
+	.line {
+		opacity: 1;
+	}
+}
+
 .circle,
 .line {
 	transition: opacity 0.8s ease;
-}
-
-.circle-static {
-	transition: transform 0.4s ease;
 }
 
 .horizontal-line {
@@ -215,7 +217,6 @@ section:not(:first-of-type):not(:last-of-type) {
 		width: 100%;
 	}
 
-	.circle,
 	.line {
 		opacity: 1;
 	}
@@ -229,7 +230,7 @@ section:not(:first-of-type):not(:last-of-type) {
 	/* TODO: make navbar highlight section icon where one is */
 	position: fixed;
 	display: flex;
-	bottom: 0.5rem;
+	bottom: -5rem;
 	left: 50vw;
 	transform: translate(-50%);
 	backdrop-filter: blur(10px);
