@@ -32,8 +32,8 @@ video {
 	position: fixed;
 	top: 0.5rem;
 	left: 0.5rem;
-	width: 1.5vw;
-	height: 1.5vw;
+	width: 2rem;
+	height: 2rem;
 	z-index: 9999;
 	cursor: pointer;
 }
@@ -145,6 +145,10 @@ video {
 .circle,
 .line {
 	transition: opacity 0.8s ease;
+}
+
+.circle-static {
+	transition: transform 0.4s ease;
 }
 
 .horizontal-line {

@@ -42,6 +42,7 @@ window.addEventListener('scroll', () => {
 	});
 
 	syncLine();
+	syncCircleStaticScale();
 	setBottomVerLine();
 	fadeInElementsOnScroll();
 
@@ -56,6 +57,18 @@ function syncCircleStatic() {
 		circleStatic.style.left = circleLeft + 'px';
 		circleStatic.style.opacity = 1;
 	}
+}
+
+function syncCircleStaticScale() {
+	const circleRect = circle.getBoundingClientRect();
+	const staticRect = circleStatic.getBoundingClientRect();
+	const intersects = (
+		circleRect.left < staticRect.right &&
+		circleRect.right > staticRect.left &&
+		circleRect.top < staticRect.bottom &&
+		circleRect.bottom > staticRect.top
+	);
+	circleStatic.style.transform = intersects ? 'scale(1.5)' : 'scale(1)';
 }
 
 function syncLine() {
@@ -75,6 +88,7 @@ window.addEventListener('resize', () => {
 	vWidth = window.innerWidth;
 	syncCircleStatic();
 	syncLine();
+	syncCircleStaticScale();
 });
 
 window.addEventListener('load', () => {
@@ -86,6 +100,7 @@ window.addEventListener('load', () => {
 		line.style.left = vWidth < 992 ? '5rem' : '8rem';
 		syncCircleStatic();
 		syncLine();
+		syncCircleStaticScale();
 
 	}, 1000);
 	setTimeout(() => {
