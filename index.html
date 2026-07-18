@@ -10,7 +10,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge; IE=EmulateIE10; IE=EmulateIE11">
 	<meta
 		name="viewport"
-		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover"
+		content="width=device-width, initial-scale=1.0, viewport-fit=cover"
 	/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="application-name" content="Mario Nano Web Developer Portfolio Website">
@@ -42,11 +42,33 @@
 	<link rel="shortcut icon" type="image/x-icon" href="src/images/MN-Logo.png" />
 	<meta
 		name="description"
-		content="Mario Nano web developer portfolio website"
+		content="Mario Nano is a frontend web developer specializing in HTML, CSS, JavaScript, React, and Craft CMS. View projects, certificates, and get in touch."
 	/>
-	<title>Mario Nano Web Dev</title>
+	<meta property="og:title" content="Mario Nano | Frontend Web Developer Portfolio" />
+	<meta property="og:description" content="Frontend web developer specializing in HTML, CSS, JavaScript, React, and Craft CMS. View projects, certificates, and get in touch." />
+	<meta property="og:image" content="https://mario-nano.com/src/images/MN-Logo.png" />
+	<meta property="og:url" content="https://mario-nano.com/" />
+	<meta property="og:type" content="website" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Mario Nano | Frontend Web Developer Portfolio" />
+	<meta name="twitter:description" content="Frontend web developer specializing in HTML, CSS, JavaScript, React, and Craft CMS. View projects, certificates, and get in touch." />
+	<meta name="twitter:image" content="https://mario-nano.com/src/images/MN-Logo.png" />
+	<title>Mario Nano | Web Developer Portfolio</title>
 </head>
 <body>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Mario Nano",
+		"url": "https://mario-nano.com",
+		"jobTitle": "Frontend Web Developer",
+		"sameAs": [
+			"https://www.linkedin.com/in/mario-nano-5343a4212/",
+			"https://github.com/vankoosh"
+		]
+	}
+	</script>
 	<form class="color-picker mobile-hidden" action="">
 		<fieldset>
 			<legend class="visually-hidden">Pick a color scheme</legend>
@@ -70,27 +92,27 @@
 	</video>
 	<nav class="nav__small">
 		<a
-			href="#front-section" class="homeLink nav__small-link"
+			href="#front-section" class="homeLink nav__small-link" aria-label="Home"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
 				<path fill="#bb83f0" d="M8 42V18L24.1 6 40 18v24H28.3V27.75h-8.65V42Zm3-3h5.65V24.75H31.3V39H37V19.5L24.1 9.75 11 19.5Zm13-14.65Z"/>
 			</svg>
 		</a>
-		<a href="#about-section" class="nav__small-link">
+		<a href="#about-section" class="nav__small-link" aria-label="About me">
 			<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
 				<path fill="#bb83f0" d="M24 23.95q-3.3 0-5.4-2.1-2.1-2.1-2.1-5.4 0-3.3 2.1-5.4 2.1-2.1 5.4-2.1 3.3 0 5.4 2.1 2.1 2.1 2.1 5.4 0 3.3-2.1 5.4-2.1 2.1-5.4 2.1ZM8 40v-4.7q0-1.9.95-3.25T11.4 30q3.35-1.5 6.425-2.25Q20.9 27 24 27q3.1 0 6.15.775 3.05.775 6.4 2.225 1.55.7 2.5 2.05.95 1.35.95 3.25V40Zm3-3h26v-1.7q0-.8-.475-1.525-.475-.725-1.175-1.075-3.2-1.55-5.85-2.125Q26.85 30 24 30t-5.55.575q-2.7.575-5.85 2.125-.7.35-1.15 1.075Q11 34.5 11 35.3Zm13-16.05q1.95 0 3.225-1.275Q28.5 18.4 28.5 16.45q0-1.95-1.275-3.225Q25.95 11.95 24 11.95q-1.95 0-3.225 1.275Q19.5 14.5 19.5 16.45q0 1.95 1.275 3.225Q22.05 20.95 24 20.95Zm0-4.5ZM24 37Z"/>
 			</svg>
 		</a>
-		<a href="#certificates-section" class="nav__small-link">
+		<a href="#certificates-section" class="nav__small-link" aria-label="Certificates">
 				<svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M402.5-482.5Q370-515 370-560t32.5-77.5Q435-670 480-670t77.5 32.5Q590-605 590-560t-32.5 77.5Q525-450 480-450t-77.5-32.5ZM244-40v-304q-45-47-64.5-103T160-560q0-136 92-228t228-92q136 0 228 92t92 228q0 57-19.5 113T716-344v304l-236-79-236 79Zm420.5-335.5Q740-451 740-560t-75.5-184.5Q589-820 480-820t-184.5 75.5Q220-669 220-560t75.5 184.5Q371-300 480-300t184.5-75.5ZM304-124l176-55 176 55v-171q-40 29-86 42t-90 13q-44 0-90-13t-86-42v171Zm176-86Z"/>
 				</svg>
 		</a>
-		<a href="#work-section" class="workLink nav__small-link">
+		<a href="#work-section" class="workLink nav__small-link" aria-label="Work">
 			<svg xmlns="http://www.w3.org/2000/svg" height="44" width="44">
 				<path fill="#bb83f0" d="m19.4 44-1-6.3q-.95-.35-2-.95t-1.85-1.25l-5.9 2.7L4 30l5.4-3.95q-.1-.45-.125-1.025Q9.25 24.45 9.25 24q0-.45.025-1.025T9.4 21.95L4 18l4.65-8.2 5.9 2.7q.8-.65 1.85-1.25t2-.9l1-6.35h9.2l1 6.3q.95.35 2.025.925Q32.7 11.8 33.45 12.5l5.9-2.7L44 18l-5.4 3.85q.1.5.125 1.075.025.575.025 1.075t-.025 1.05q-.025.55-.125 1.05L44 30l-4.65 8.2-5.9-2.7q-.8.65-1.825 1.275-1.025.625-2.025.925l-1 6.3ZM24 30.5q2.7 0 4.6-1.9 1.9-1.9 1.9-4.6 0-2.7-1.9-4.6-1.9-1.9-4.6-1.9-2.7 0-4.6 1.9-1.9 1.9-1.9 4.6 0 2.7 1.9 4.6 1.9 1.9 4.6 1.9Zm0-3q-1.45 0-2.475-1.025Q20.5 25.45 20.5 24q0-1.45 1.025-2.475Q22.55 20.5 24 20.5q1.45 0 2.475 1.025Q27.5 22.55 27.5 24q0 1.45-1.025 2.475Q25.45 27.5 24 27.5Zm0-3.5Zm-2.2 17h4.4l.7-5.6q1.65-.4 3.125-1.25T32.7 32.1l5.3 2.3 2-3.6-4.7-3.45q.2-.85.325-1.675.125-.825.125-1.675 0-.85-.1-1.675-.1-.825-.35-1.675L40 17.2l-2-3.6-5.3 2.3q-1.15-1.3-2.6-2.175-1.45-.875-3.2-1.125L26.2 7h-4.4l-.7 5.6q-1.7.35-3.175 1.2-1.475.85-2.625 2.1L10 13.6l-2 3.6 4.7 3.45q-.2.85-.325 1.675-.125.825-.125 1.675 0 .85.125 1.675.125.825.325 1.675L8 30.8l2 3.6 5.3-2.3q1.2 1.2 2.675 2.05Q19.45 35 21.1 35.4Z"/>
 			</svg>
 		</a>
-		<a href="#contact-section" class="contactLink nav__small-link">
+		<a href="#contact-section" class="contactLink nav__small-link" aria-label="Contact">
 			<svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
 				<path fill="#bb83f0" d="M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm17-15.1L7 13.75V37h34V13.75Zm0-3L40.8 11H7.25ZM7 13.75V11v26Z"/>
 			</svg>
@@ -119,7 +141,7 @@
 	</section>
 	<section id="about-section" class="about-section">
 		<span class="horizontal-line desktop-hidden"></span>
-		<h1 class="section-title">.about_me()</h1>
+ 	<h2 class="section-title">.about_me()</h2>
 		<div class="about-section__story-container">
 			<div class="about-section__story-text">
 					I'm <b>Mario Nano</b>.<br />
@@ -149,79 +171,79 @@
 	</section>
 	<section id="skills-section" class="skills-section">
 		<span class="horizontal-line desktop-hidden"></span>
-		<h1 class="section-title">.my_skills()</h1>
+ 	<h2 class="section-title">.my_skills()</h2>
 		<div class="skills-section__skills-container">
-			<img src="./src/images/html5logo.png" alt="" />
-			<img src="./src/images/css3logo.png" alt="" />
-			<img src="./src/images/jslogo.png" alt="" />
-			<img src="./src/images/php.png" alt="" />
-			<img src="./src/images/logo-craft-cms.svg" alt="" />
-			<img src="./src/images/twig-logo.png" alt="" />
-			<img src="./src/images/sass.png" alt="" />
-			<img src="./src/images/reactLogo.png" alt="" />
-			<img src="./src/images/jquerylogo.png" alt="" />
-			<img src="./src/images/bigGitLogo.png" alt="" />
-			<img src="./src/images/boot.png" alt="" />
-			<img src="./src/images/logoGIMP.png" alt="" />
+ 		<img src="./src/images/html5logo.png" alt="HTML5 logo" />
+			<img src="./src/images/css3logo.png" alt="CSS3 logo" />
+			<img src="./src/images/jslogo.png" alt="JavaScript logo" />
+			<img src="./src/images/php.png" alt="PHP logo" />
+			<img src="./src/images/logo-craft-cms.svg" alt="Craft CMS logo" />
+			<img src="./src/images/twig-logo.png" alt="Twig logo" />
+			<img src="./src/images/sass.png" alt="SASS logo" />
+			<img src="./src/images/reactLogo.png" alt="React logo" />
+			<img src="./src/images/jquerylogo.png" alt="jQuery logo" />
+			<img src="./src/images/bigGitLogo.png" alt="Git logo" />
+			<img src="./src/images/boot.png" alt="Bootstrap logo" />
+			<img src="./src/images/logoGIMP.png" alt="GIMP logo" />
 		</div>
 	</section>
 	<section id="certificates-section" class="certificates-section">
 		<span class="horizontal-line desktop-hidden"></span>
-		<h1 class="section-title">.my_certificates()</h1>
+ 	<h2 class="section-title">.my_certificates()</h2>
 		<div class="certificates-section__certs-container">
 			<div class="cert1 certificates-section__cert-image-container">
-				<img class="certImgSass certificates-section__cert-image" src="./src/images/CertSASS-1145x871.webp" alt="" />
+    <img class="certImgSass certificates-section__cert-image" src="./src/images/CertSASS-1145x871.webp" alt="SASS certificate" />
 				<span class="certificates-section__cert-name">SASS</span>
 			</div>
 			<span class="myModalSS modal">
-				<img class="modal-content imgSS" alt=""/>
+    <img class="modal-content imgSS" alt="SASS certificate full view"/>
 			</span>
 			<div class="cert2 certificates-section__cert-image-container">
-				<img class="certImgBS certificates-section__cert-image" src="./src/images/CertBOOT-1145x871.webp" alt="" />
+    <img class="certImgBS certificates-section__cert-image" src="./src/images/CertBOOT-1145x871.webp" alt="Bootstrap certificate" />
 				<span class="certificates-section__cert-name">BOOTSTRAP</span>
 			</div>
 			<span class="myModalBS modal">
-				<img class="modal-content imgBS" alt=""/>
+    <img class="modal-content imgBS" alt="Bootstrap certificate full view"/>
 			</span>
 			<div class="cert3 certificates-section__cert-image-container">
-				<img class="certImgJS certificates-section__cert-image" src="./src/images/CertJS-1145x871.webp" alt="" />
+    <img class="certImgJS certificates-section__cert-image" src="./src/images/CertJS-1145x871.webp" alt="JavaScript certificate" />
 				<span class="certificates-section__cert-name">JAVASCRIPT</span>
 			</div>
 			<span class="myModalJS modal">
-				<img class="modal-content imgJS" alt=""/>
+    <img class="modal-content imgJS" alt="JavaScript certificate full view"/>
 			</span>
 			<div class="cert4 certificates-section__cert-image-container">
-				<img class="certImgJSS certificates-section__cert-image" src="./src/images/CertJS-II-1145x871.webp" alt="" />
+    <img class="certImgJSS certificates-section__cert-image" src="./src/images/CertJS-II-1145x871.webp" alt="JavaScript II certificate" />
 				<span class="certificates-section__cert-name">JAVASCRIPT II </span>
 			</div>
 			<span class="myModalJSS modal">
-				<img class="modal-content imgJSS" alt=""/>
+    <img class="modal-content imgJSS" alt="JavaScript II certificate full view"/>
 			</span>
 			<div class="cert5 certificates-section__cert-image-container">
-				<img class="certImgRE certificates-section__cert-image" src="./src/images/CertREACT-1145x871.webp" alt="" />
+    <img class="certImgRE certificates-section__cert-image" src="./src/images/CertREACT-1145x871.webp" alt="React JS certificate" />
 				<span class="certificates-section__cert-name">REACT JS</span>
 			</div>
 			<span class="myModalRE modal">
-				<img class="modal-content imgRE" alt=""/>
+    <img class="modal-content imgRE" alt="React JS certificate full view"/>
 			</span>
 			<div class="cert6 certificates-section__cert-image-container">
-				<img class="certImgPHP certificates-section__cert-image" src="./src/images/CertPHP.webp" alt="" />
+    <img class="certImgPHP certificates-section__cert-image" src="./src/images/CertPHP.webp" alt="PHP certificate" />
 				<span class="certificates-section__cert-name">PHP</span>
 			</div>
 			<span class="myModalPHP modal">
-				<img class="modal-content imgPHP" alt=""/>
+    <img class="modal-content imgPHP" alt="PHP certificate full view"/>
 			</span>
 		</div>
 	</section>
 	<section id="work-section" class="work-section">
 		<span class="horizontal-line desktop-hidden"></span>
-		<h1 class="section-title">.my_work()</h1>
+ 	<h2 class="section-title">.my_work()</h2>
 		<div class="work-section__work-container">
 			<div class="work-section__work-card">
 				<img
 					src="./src/images/barnDoor.jpg"
 					width="300"
-					alt=""
+					alt="Barn Door project screenshot"
 					class="work-section__work-card-thumb"
 				/>
 				<div class="work-section__work-card-text">
@@ -235,12 +257,13 @@
 					><span>JS</span>
 					</div>
 					<div class="work-section__work-card-btn-container">
-						<a href="https://barn-door.sk/" target="_blank">
+						<a href="https://barn-door.sk/" target="_blank" rel="noopener noreferrer">
 							<div class="work-section__work-card-btn">Live&nbsp;Version</div>
 						</a>
 						<a
 							href="https://github.com/vankoosh/BARN-DOOR-PROJECT"
 							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<div class="work-section__work-card-btn">Github</div>
 						</a>
@@ -251,7 +274,7 @@
 				<img
 					src="./src/images/mysite.webp"
 					width="300"
-					alt=""
+					alt="Mario Nano portfolio website screenshot"
 					class="work-section__work-card-thumb"
 				/>
 				<div class="work-section__work-card-text">
@@ -261,12 +284,13 @@
 						<span>HTML</span><span>CSS</span><span>JS</span>
 					</div>
 					<div class="work-section__work-card-btn-container">
-						<a href="https://mario-nano.com" target="_blank">
+						<a href="https://mario-nano.com" target="_blank" rel="noopener noreferrer">
 							<div class="work-section__work-card-btn">Live&nbsp;Version</div>
 						</a>
 						<a
 							href="https://github.com/vankoosh/is-Mario-Nano"
 							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<div class="work-section__work-card-btn">Github</div>
 						</a>
@@ -274,7 +298,7 @@
 				</div>
 			</div>
 			<div class="work-section__work-card">
-				<a href="https://github.com/vankoosh" target="_blank">
+				<a href="https://github.com/vankoosh" target="_blank" rel="noopener noreferrer">
 					<img
 						class="work-section__heatmap"
 						src="https://ghchart.rshah.org/000000/vankoosh"
@@ -286,7 +310,7 @@
 	</section>
 	<section id="contact-section" class="contact-section">
 		<span class="horizontal-line desktop-hidden"></span>
-		<h1 class="section-title">.contact()</h1>
+ 	<h2 class="section-title">.contact()</h2>
 		<div class="contact-section__container">
 			<div class="contact-section__lead">Get in touch</div>
 			<div class="contact-section__text">
