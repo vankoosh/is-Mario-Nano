@@ -1,0 +1,121 @@
+import Modal from './modal.js';
+import fadeInElementsOnScroll from './fadeInElementsOnScroll.js';
+
+const sectionTitles = document.querySelectorAll('.section-title');
+const footerDate = document.querySelector('.contact-section__date');
+const waterIcon = document.querySelector('.water-icon');
+const line = document.querySelector('.line');
+const hi = document.querySelector('.front-section__hi-text-greeting');
+const name = document.querySelector('.front-section__hi-text-name');
+const meet = document.querySelector('.front-section__headline');
+const cta = document.querySelector('.front-section__cta');
+const circle = document.querySelector('.circle');
+const circleStatic = document.querySelector('.circle-static');
+const navbar = document.querySelector(".nav__small");
+let vHeight = window.innerHeight;
+let vWidth = window.innerWidth;
+
+function setFooterDate() {
+	footerDate.textContent = new Date().getFullYear();
+}
+
+waterIcon.addEventListener('click', () => {
+	document.querySelector('.video').classList.toggle('show-video')
+});
+
+window.addEventListener('scroll', () => {
+	sectionTitles.forEach((title) => {
+		const fromTop = title.getBoundingClientRect().top;
+
+		if (fromTop < vHeight && vWidth >= 768) {
+			title.style.letterSpacing = (vHeight - fromTop) * 0.015 + 'px';
+		}
+
+		if (fromTop < -50 && vWidth >= 768) {
+			title.style.letterSpacing = '1px';
+		}
+	});
+
+	syncLine();
+	syncCircleStaticScale();
+	fadeInElementsOnScroll();
+
+	const distanceFromBottom = document.body.scrollHeight - window.scrollY - vHeight;
+	const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+	navbar.style.bottom = distanceFromBottom <= 3 * rem ? '2.5rem' : '0.5rem';
+});
+
+function syncCircleStatic() {
+	if (window.innerWidth >= 768) {
+		const circleLeft = circle.getBoundingClientRect().left;
+		circleStatic.style.left = circleLeft + 'px';
+	}
+}
+
+function syncCircleStaticScale() {
+	const circleRect = circle.getBoundingClientRect();
+	const staticRect = circleStatic.getBoundingClientRect();
+	const intersects = (
+		circleRect.left < staticRect.right &&
+		circleRect.right > staticRect.left &&
+		circleRect.top < staticRect.bottom &&
+		circleRect.bottom > staticRect.top
+	);
+	circleStatic.style.transform = intersects ? 'scale(1.5)' : 'scale(1)';
+}
+
+function syncLine() {
+	const circleRect = circle.getBoundingClientRect();
+	const staticRect = circleStatic.getBoundingClientRect();
+	const top = Math.min(circleRect.top, staticRect.top);
+	const bottom = Math.max(circleRect.bottom, staticRect.bottom);
+	line.style.position = 'fixed';
+	line.style.left = circleRect.left + circleRect.width / 2 + 'px';
+	line.style.top = (top + 5) + 'px';
+	line.style.height = (bottom - top - 5) + 'px';
+	line.style.bottom = '';
+}
+
+window.addEventListener('resize', () => {
+	vHeight = window.innerHeight;
+	vWidth = window.innerWidth;
+	syncCircleStatic();
+	syncLine();
+	syncCircleStaticScale();
+});
+
+window.addEventListener('load', () => {
+	setTimeout(() => {
+		hi.style.transition = '0.8s';
+		hi.style.opacity = '1';
+		vWidth < 2300 ? (hi.style.top = '-35px') : (hi.style.top = '-70px');
+		circle.style.left = vWidth < 992 ? 'calc(5rem - 6px)' : 'calc(8rem - 6px)';
+		line.style.left = vWidth < 992 ? '5rem' : '8rem';
+		circleStatic.style.opacity = 1;
+		circle.style.opacity = 1;
+		syncCircleStatic();
+		syncLine();
+		syncCircleStaticScale();
+
+	}, 1000);
+	setTimeout(() => {
+		name.style.transition = 'opacity 4s';
+		name.style.opacity = '1';
+	}, 10);
+	setTimeout(() => {
+		meet.style.transition = 'opacity 0.8s';
+		meet.style.opacity = '1';
+	}, 1600);
+	setTimeout(() => {
+		cta.style.transition = 'opacity 0.8s';
+		cta.style.opacity = '1';
+	}, 1900);
+	setTimeout(() => {
+		navbar.style.bottom = '0.5rem';
+	}, 1900);
+
+	Modal();
+	setFooterDate();
+	},
+	true
+);

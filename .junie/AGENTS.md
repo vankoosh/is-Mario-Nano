@@ -1,0 +1,3 @@
+- **NEVER** change files unless instructed to. If the user asks a question, do not apply the changes you propose right away. The user will instruct you to make changes.
+- Be concise. Tokens are limited and to be used sparingly.
+- Never open and review files that are not necessary for the task. This saves tokens.
