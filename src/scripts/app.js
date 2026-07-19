@@ -11,7 +11,7 @@ const headline = document.querySelector('.front-section__headline');
 const cta = document.querySelector('.front-section__cta');
 const circle = document.querySelector('.circle');
 const circleStatic = document.querySelector('.circle-static');
-const navbar = document.querySelector(".nav__small");
+const navbar = document.querySelector(".navbar");
 let vHeight = window.innerHeight;
 let vWidth = window.innerWidth;
 
