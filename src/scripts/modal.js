@@ -1,4 +1,4 @@
-export default function Modal() {
+export default function modal() {
 	// SASS certificate
 	const modalSS = document.querySelector(".myModalSS");
 	const imgSS = document.querySelector(".certImgSass");

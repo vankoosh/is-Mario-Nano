@@ -1,4 +1,4 @@
-import Modal from './modal.js';
+import modal from './modal.js';
 import fadeInElementsOnScroll from './fadeInElementsOnScroll.js';
 
 const sectionTitles = document.querySelectorAll('.section-title');
@@ -7,7 +7,7 @@ const waterIcon = document.querySelector('.water-icon');
 const line = document.querySelector('.line');
 const hi = document.querySelector('.front-section__hi-text-greeting');
 const name = document.querySelector('.front-section__hi-text-name');
-const meet = document.querySelector('.front-section__headline');
+const headline = document.querySelector('.front-section__headline');
 const cta = document.querySelector('.front-section__cta');
 const circle = document.querySelector('.circle');
 const circleStatic = document.querySelector('.circle-static');
@@ -86,35 +86,27 @@ window.addEventListener('resize', () => {
 
 window.addEventListener('load', () => {
 	setTimeout(() => {
-		hi.style.transition = '0.8s';
 		hi.style.opacity = '1';
-		vWidth < 2300 ? (hi.style.top = '-35px') : (hi.style.top = '-70px');
-		circle.style.left = vWidth < 992 ? 'calc(5rem - 6px)' : 'calc(8rem - 6px)';
-		line.style.left = vWidth < 992 ? '5rem' : '8rem';
-		circleStatic.style.opacity = 1;
-		circle.style.opacity = 1;
+		hi.style.top = '-35px';
 		syncCircleStatic();
 		syncLine();
 		syncCircleStaticScale();
 
 	}, 1000);
 	setTimeout(() => {
-		name.style.transition = 'opacity 4s';
 		name.style.opacity = '1';
 	}, 10);
 	setTimeout(() => {
-		meet.style.transition = 'opacity 0.8s';
-		meet.style.opacity = '1';
-	}, 1600);
+		headline.style.opacity = '1';
+	}, 1300);
 	setTimeout(() => {
-		cta.style.transition = 'opacity 0.8s';
 		cta.style.opacity = '1';
-	}, 1900);
+	}, 1300);
 	setTimeout(() => {
 		navbar.style.bottom = '0.5rem';
-	}, 1900);
+	}, 1300);
 
-	Modal();
+	modal();
 	setFooterDate();
 	},
 	true
