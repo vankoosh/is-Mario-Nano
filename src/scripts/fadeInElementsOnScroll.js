@@ -1,6 +1,5 @@
 const fadeInElementsOnScroll = () => {
 	const storyElem = document.querySelector(".about-section__story-text");
-	const cv = document.querySelector(".about-section__cv-button");
 	const skillsContainer = document.querySelector(".skills-section__skills-container");
 	const cert1 = document.querySelector(".cert1");
 	const cert2 = document.querySelector(".cert2");
@@ -13,11 +12,6 @@ const fadeInElementsOnScroll = () => {
 		// TODO: the slide up animations have to be solved with class names and transform: translate, not .style
 		storyElem.style.opacity = "1";
 		// storyElem.style.marginTop = "2rem";
-	}
-
-	if (cv.getBoundingClientRect().top - window.scrollY < 0) {
-		// cv.style.marginTop = "5rem";
-		cv.style.opacity = "1";
 	}
 
 	if (skillsContainer.getBoundingClientRect().top - window.scrollY < -650) {
