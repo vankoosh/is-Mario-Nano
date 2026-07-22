@@ -1,5 +1,4 @@
-const fadeInElementsOnScroll = () => {
-	const storyElem = document.querySelector(".about-section__story-text");
+const fadeInElementsOnScroll = (storyElem) => {
 	const skillsContainer = document.querySelector(".skills-section__skills-container");
 	const cert1 = document.querySelector(".cert1");
 	const cert2 = document.querySelector(".cert2");
@@ -8,16 +7,32 @@ const fadeInElementsOnScroll = () => {
 	const cert5 = document.querySelector(".cert5");
 	const cert6 = document.querySelector(".cert6");
 
-	if (storyElem.getBoundingClientRect().top - window.scrollY < -50) {
-		// TODO: the slide up animations have to be solved with class names and transform: translate, not .style
-		storyElem.style.opacity = "1";
-		// storyElem.style.marginTop = "2rem";
-	}
+	const callback = (entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("fade-in");
+				entry.target.classList.remove("fade-out");
+			} else {
+				entry.target.classList.add("fade-out");
+				entry.target.classList.remove("fade-in");
+			}
+		});
+	};
+
+	const options = {
+		root: null,
+		rootMargin: '-200px',
+		threshold: 0.2
+	};
 
 	if (skillsContainer.getBoundingClientRect().top - window.scrollY < -650) {
 		// skills.style.marginTop = "2rem";
 		skillsContainer.style.opacity = "1";
 	}
+
+	const observer = new IntersectionObserver(callback, options);
+
+	observer.observe(storyElem);
 
 	if (cert1.getBoundingClientRect().top - window.scrollY < -1100) {
 		cert1.style.transition = "all 1s";

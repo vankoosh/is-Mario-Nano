@@ -14,6 +14,16 @@
 	.desktop-hidden:is(.desktop-hidden) {
 		display: none;
 	}
+
+	.fade-in {
+		opacity: 1;
+		transition: opacity 1.5s;
+	}
+
+	.fade-out {
+		opacity: 0;
+		transition: opacity 1s;
+	}
 }
 
 video {
@@ -471,14 +481,23 @@ section:not(:first-of-type):not(:last-of-type) {
 	align-items: center;
 }
 
+.about-section__story-container {
+	display: block;
+	margin-top: 15%;
+}
+
+.about-section__story-image {
+	width: 20rem;
+	float: left;
+	margin-bottom: 2rem;
+}
+
 .about-section__story-text {
 	position: relative;
 	margin: 0 auto;
 	text-align: center;
 	font-family: "Source Code Pro", "Arial";
-	transition: opacity 2s,	margin-top 2s;
 	/* TODO: if story wont slide up, remove margin-top transition */
-	opacity: 0;
 }
 
 @media (min-width: 768px) {
