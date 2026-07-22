@@ -12,6 +12,9 @@ const cta = document.querySelector('.front-section__cta');
 const circle = document.querySelector('.circle');
 const circleStatic = document.querySelector('.circle-static');
 const navbar = document.querySelector(".navbar");
+const storyImage = document.querySelector(".about-section__story-image");
+const storyElem = document.querySelector(".about-section__story-text");
+
 let vHeight = window.innerHeight;
 let vWidth = window.innerWidth;
 
@@ -24,6 +27,7 @@ waterIcon.addEventListener('click', () => {
 });
 
 window.addEventListener('scroll', () => {
+	let storyElemIsFadeIn = storyElem.classList.contains("fade-in");
 	sectionTitles.forEach((title) => {
 		const fromTop = title.getBoundingClientRect().top;
 
@@ -36,9 +40,17 @@ window.addEventListener('scroll', () => {
 		}
 	});
 
+	if (storyElemIsFadeIn) {
+		storyImage.classList.add("fade-in");
+		storyImage.classList.remove("fade-out");
+	} else {
+		storyImage.classList.add("fade-out");
+		storyImage.classList.remove("fade-in");
+	}
+
 	syncLine();
 	syncCircleStaticScale();
-	fadeInElementsOnScroll();
+	fadeInElementsOnScroll(storyElem, vWidth);
 
 	const distanceFromBottom = document.body.scrollHeight - window.scrollY - vHeight;
 	const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
