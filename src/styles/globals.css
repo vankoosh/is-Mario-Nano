@@ -27,6 +27,8 @@ body {
 	font-size: 100%;
 	width: 100vw;
 	overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 }
 
 a {
