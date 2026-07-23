@@ -34,6 +34,19 @@ const fadeInElementsOnScroll = (storyElem) => {
 
 	observer.observe(storyElem);
 
+	const skills = document.querySelectorAll(".skills-section__skill");
+	const skillObserver = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("skill-visible");
+			} else {
+				entry.target.classList.remove("skill-visible");
+			}
+		});
+	}, { root: null, rootMargin: '100px', threshold: 0.2 });
+
+	skills.forEach(skill => skillObserver.observe(skill));
+
 	if (cert1.getBoundingClientRect().top - window.scrollY < -1100) {
 		cert1.style.transition = "all 1s";
 		cert1.style.marginTop = "0rem";
