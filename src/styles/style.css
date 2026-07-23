@@ -236,7 +236,6 @@ section:not(:first-of-type):not(:last-of-type) {
 	.section-title {
 		display: block;
 		position: relative;
-		margin: 0 auto;
 		text-align: left;
 		font-size: 2rem;
 		width: 100%;
@@ -249,6 +248,10 @@ section:not(:first-of-type):not(:last-of-type) {
 	section:not(:first-of-type):not(:last-of-type) {
 		margin-bottom: 2rem;
 	}
+}
+
+.contact-section > .section-title {
+	margin: 0 auto;
 }
 
 .navbar {
@@ -477,19 +480,23 @@ section:not(:first-of-type):not(:last-of-type) {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	justify-content: center;
-	align-items: center;
 }
 
 .about-section__story-container {
 	display: block;
-	margin-top: 15%;
 }
 
 .about-section__story-image {
-	width: 20rem;
-	float: left;
-	margin-bottom: 2rem;
+	width: 80%;
+	margin: 0 auto 2rem 10%;
+}
+
+@media (min-width: 576px) {
+	.about-section__story-image {
+		margin: 0 2rem 1rem auto;
+		float: left;
+		width: 15rem;
+	}
 }
 
 .about-section__story-text {
@@ -497,7 +504,6 @@ section:not(:first-of-type):not(:last-of-type) {
 	margin: 0 auto;
 	text-align: center;
 	font-family: "Source Code Pro", "Arial";
-	/* TODO: if story wont slide up, remove margin-top transition */
 }
 
 @media (min-width: 768px) {
@@ -509,23 +515,61 @@ section:not(:first-of-type):not(:last-of-type) {
 .skills-section__skills-container {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
-	flex-direction: row;
-	column-gap: 2rem;
+	justify-items: flex-start;
+	flex-direction: column;
+	gap: 5rem;
 	opacity: 0;
 	transition: all 1s;
 }
 
-.skills-section__skills-container > img {
-	max-width: 5rem;
+.skills-section__skills {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 5rem;
 }
 
 @media (min-width: 768px) {
-	.skills-section__skills-container > img {
-		max-width: 4rem;
-		margin-left: 1rem;
-		margin-right: 1rem;
+	.skills-section__skills {
+		flex-direction: row;
 	}
+}
+
+.skills-section__skills-title {
+	font-size: 3rem;
+	min-width: 13.5rem;
+	line-height: 2rem;
+}
+
+.skills-section__skills-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	row-gap: 1rem;
+	gap: 2.5rem;
+}
+
+.skills-section__skill {
+	display: flex;
+	align-items: center;
+	gap: .875rem;
+	transform: translateY(200px);
+	opacity: 0;
+	transition: transform 1s ease, opacity 1.5s ease;
+}
+
+.skills-section__skill.skill-visible {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.skills-section__skill-logo {
+	width: 3rem;
+}
+
+.skills-section__skill-name {
+	font-size: 1.2rem;
+	letter-spacing: 0.01rem;
+	font-weight: 600;
 }
 
 .certificates-section__certs-container {
@@ -534,7 +578,7 @@ section:not(:first-of-type):not(:last-of-type) {
 
 @media (min-width: 768px) {
 	.certificates-section__certs-container {
-		margin: 5rem auto 0;
+		margin: 0 auto;
 		justify-content: center;
 		align-items: center;
 	}
