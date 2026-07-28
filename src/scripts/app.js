@@ -30,6 +30,7 @@ waterIcon.addEventListener('click', () => {
 
 window.addEventListener('scroll', () => {
 	let isStoryElemFadeIn = storyElem.classList.contains("fade-in-from-right");
+	let activeIcon = null;
 	sectionTitles.forEach((title) => {
 		const fromTop = title.getBoundingClientRect().top;
 
@@ -40,14 +41,28 @@ window.addEventListener('scroll', () => {
 		if (fromTop < -50 && vWidth >= 768) {
 			title.style.letterSpacing = '1px';
 		}
+
+		const section = title.closest('section');
+		const navLink = section && document.querySelector(`.navbar__link[href="#${section.id}"]`);
+		const icon = navLink && navLink.querySelector('.icon');
+
+		if (icon && fromTop <= vHeight * 0.44) {
+			activeIcon = icon;
+		}
 	});
 
-	if (isStoryElemFadeIn) {
+	const navIcons = document.querySelectorAll('.navbar__link .icon');
+
+	if (!activeIcon) {
+		activeIcon = navIcons[0];
+	}
+
+	navIcons.forEach((icon) => {
+		icon.classList.toggle('icon-active', icon === activeIcon);
+	});
+
+	if (isStoryElemFadeIn && vWidth >= 576) {
 		storyImage.classList.add("fade-in");
-		storyImage.classList.remove("fade-out");
-	} else {
-		storyImage.classList.add("fade-out");
-		storyImage.classList.remove("fade-in");
 	}
 
 	syncLine();
