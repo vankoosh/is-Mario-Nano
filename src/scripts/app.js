@@ -42,12 +42,8 @@ window.addEventListener('scroll', () => {
 		}
 	});
 
-	if (isStoryElemFadeIn) {
+	if (isStoryElemFadeIn && vWidth >= 576) {
 		storyImage.classList.add("fade-in");
-		storyImage.classList.remove("fade-out");
-	} else {
-		storyImage.classList.add("fade-out");
-		storyImage.classList.remove("fade-in");
 	}
 
 	syncLine();
