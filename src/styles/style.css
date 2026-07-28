@@ -2,30 +2,6 @@
 	opacity: 0.3;
 }
 
-.mobile-hidden {
-	display: none;
-}
-
-@media (min-width: 768px) {
-	.mobile-hidden {
-		display: block;
-	}
-
-	.desktop-hidden:is(.desktop-hidden) {
-		display: none;
-	}
-
-	.fade-in {
-		opacity: 1;
-		transition: opacity 1.5s;
-	}
-
-	.fade-out {
-		opacity: 0;
-		transition: opacity 1s;
-	}
-}
-
 video {
 	object-fit: cover;
 	width: 100vw;
@@ -489,6 +465,7 @@ section:not(:first-of-type):not(:last-of-type) {
 .about-section__story-image {
 	width: 80%;
 	margin: 0 auto 2rem 10%;
+	opacity: 0;
 }
 
 @media (min-width: 576px) {
@@ -504,6 +481,7 @@ section:not(:first-of-type):not(:last-of-type) {
 	margin: 0 auto;
 	text-align: center;
 	font-family: "Source Code Pro", "Arial";
+	opacity: 0;
 }
 
 @media (min-width: 768px) {
@@ -518,7 +496,6 @@ section:not(:first-of-type):not(:last-of-type) {
 	justify-items: flex-start;
 	flex-direction: column;
 	gap: 5rem;
-	opacity: 0;
 	transition: all 1s;
 }
 
@@ -557,11 +534,6 @@ section:not(:first-of-type):not(:last-of-type) {
 	transition: transform 1s ease, opacity 1.5s ease;
 }
 
-.skills-section__skill.skill-visible {
-	transform: translateY(0);
-	opacity: 1;
-}
-
 .skills-section__skill-logo {
 	width: 3rem;
 }
@@ -590,7 +562,8 @@ section:not(:first-of-type):not(:last-of-type) {
 	align-items: center;
 	margin-top: 5rem;
 	opacity: 0;
-	transition: all 1s;
+	transform: translateY(5rem);
+	transition: opacity 1s, transform 1s;
 }
 
 @media (min-width: 576px) {
@@ -877,4 +850,45 @@ footer {
 	.modal-content {
 		width: 100%;
 	}
+}
+
+.mobile-hidden {
+	display: none;
+}
+
+.fade-up {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+@media (min-width: 768px) {
+	.mobile-hidden {
+		display: block;
+	}
+
+	.desktop-hidden {
+		display: none;
+	}
+}
+
+.fade-in {
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+.fade-out {
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.fade-in-from-right {
+	opacity: 1;
+	transform: translateX(0rem);
+	transition: opacity 1s, transform 1s;
+}
+
+.fade-out-to-right {
+	opacity: 0;
+	transform: translateX(5rem);
+	transition: opacity 1s, transform 1s;
 }

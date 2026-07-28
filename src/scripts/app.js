@@ -14,9 +14,11 @@ const circleStatic = document.querySelector('.circle-static');
 const navbar = document.querySelector(".navbar");
 const storyImage = document.querySelector(".about-section__story-image");
 const storyElem = document.querySelector(".about-section__story-text");
+const skillElem = document.querySelectorAll(".skills-section__skill");
+const certificatesElem = document.querySelectorAll(".certificates-section__cert-image-container")
 
-let vHeight = window.innerHeight;
-let vWidth = window.innerWidth;
+let vHeight;
+let vWidth;
 
 function setFooterDate() {
 	footerDate.textContent = new Date().getFullYear();
@@ -27,7 +29,7 @@ waterIcon.addEventListener('click', () => {
 });
 
 window.addEventListener('scroll', () => {
-	let storyElemIsFadeIn = storyElem.classList.contains("fade-in");
+	let isStoryElemFadeIn = storyElem.classList.contains("fade-in-from-right");
 	sectionTitles.forEach((title) => {
 		const fromTop = title.getBoundingClientRect().top;
 
@@ -40,7 +42,7 @@ window.addEventListener('scroll', () => {
 		}
 	});
 
-	if (storyElemIsFadeIn) {
+	if (isStoryElemFadeIn) {
 		storyImage.classList.add("fade-in");
 		storyImage.classList.remove("fade-out");
 	} else {
@@ -50,7 +52,7 @@ window.addEventListener('scroll', () => {
 
 	syncLine();
 	syncCircleStaticScale();
-	fadeInElementsOnScroll(storyElem, vWidth);
+	fadeInElementsOnScroll(vWidth, storyElem, skillElem, certificatesElem);
 
 	const distanceFromBottom = document.body.scrollHeight - window.scrollY - vHeight;
 	const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
@@ -97,6 +99,8 @@ window.addEventListener('resize', () => {
 });
 
 window.addEventListener('load', () => {
+	vWidth = window.innerWidth;
+	vHeight = window.innerHeight
 	setTimeout(() => {
 		hi.style.opacity = '1';
 		hi.style.top = '-35px';
