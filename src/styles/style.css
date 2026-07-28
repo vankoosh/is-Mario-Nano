@@ -97,6 +97,15 @@ video {
 	right: -3.5rem;
 	transform: rotate(270deg);
 	font-size: 1rem;
+
+	.social__link {
+		transition: font-weight 0.2s;
+	}
+
+	.social__link:hover {
+		color: var(--font-color);
+		font-weight: bold;
+	}
 }
 
 .circle-static {
@@ -858,8 +867,8 @@ body.modal-open {
 
 .modal-content {
 	margin: auto;
-	display: block;
 	animation-name: zoom;
+	max-width: 1000px;
 	animation-duration: 0.6s;
 }
 
