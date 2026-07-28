@@ -233,7 +233,6 @@ section:not(#contact-section) {
 }
 
 .navbar {
-	/* TODO: make navbar highlight section icon where one is */
 	position: fixed;
 	display: flex;
 	bottom: -5rem;
@@ -287,13 +286,15 @@ section:not(#contact-section) {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: scale 0.5s;
 
-	svg {
+	.icon {
 		width: 1.5rem;
 		height: 1.5rem;
+		transition: transform 0.2s;
 	}
 
-	svg path {
+	.icon path {
 		fill: var(--alt-color);
 	}
 }
@@ -552,7 +553,7 @@ section:not(#contact-section) {
 @media (min-width: 576px) {
 	.skills-section__skill {
 		opacity: 0;
-		transform: translateY(50px);
+		transform: translateY(100px);
 	}
 }
 
@@ -875,22 +876,12 @@ footer {
 	}
 }
 
-@media (min-width: 768px) {
-	.modal-content {
-		width: 100%;
-	}
-
-	.mobile-hidden {
-		display: block;
-	}
-
-	.desktop-hidden {
-		display: none;
-	}
-}
-
 .mobile-hidden {
 	display: none;
+}
+
+.icon-active {
+	transform: scale(1.8);
 }
 
 @media (min-width: 576px) {
@@ -908,5 +899,19 @@ footer {
 		opacity: 1;
 		transform: translateX(0rem);
 		transition: opacity 1s, transform 1s;
+	}
+}
+
+@media (min-width: 768px) {
+	.modal-content {
+		width: 100%;
+	}
+
+	.mobile-hidden {
+		display: block;
+	}
+
+	.desktop-hidden {
+		display: none;
 	}
 }

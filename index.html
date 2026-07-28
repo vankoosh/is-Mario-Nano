@@ -92,30 +92,41 @@
 	</video>
 	<nav class="navbar">
 		<a
-			href="https://mario-nano.com" class="navbar__link" aria-label="Home"
+			href="https://mario-nano.com" class="navbar__link navbar__link--home" aria-label="Home"
 		>
-			<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z"/></svg>
+			<svg class="icon icon-active" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3">
+				<path d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z"/>
+			</svg>
 		</a>
 		<span class="navbar__hint">Home</span>
-		<a href="#about-section" class="navbar__link" aria-label="About me">
-			<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M180-180v-600 224-33 409Zm97-270h253.7q2.3-16 6.3-31t12-29H277v60Zm0 171h198q17-14 36.5-23.5T552-319v-20H277v60Zm0-342h406v-60H277v60Zm-97 501q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v345q0-37-16.5-68.5T780-556v-224H180v600h248v60H180Zm437.5-248.5Q590-396 590-435t27.5-66.5Q645-529 684-529t66.5 27.5Q778-474 778-435t-27.5 66.5Q723-341 684-341t-66.5-27.5ZM488-120v-51q0-26 11-44.5t31-28.5q37-19 75-28t79-9q41 0 79 8.5t75 28.5q20 9 31 28t11 45v51H488Z"/></svg>
+		<a href="#about-section" class="navbar__link navbar__link--about" aria-label="About me">
+			<svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3">
+				<path d="M180-180v-600 224-33 409Zm97-270h253.7q2.3-16 6.3-31t12-29H277v60Zm0 171h198q17-14 36.5-23.5T552-319v-20H277v60Zm0-342h406v-60H277v60Zm-97 501q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v345q0-37-16.5-68.5T780-556v-224H180v600h248v60H180Zm437.5-248.5Q590-396 590-435t27.5-66.5Q645-529 684-529t66.5 27.5Q778-474 778-435t-27.5 66.5Q723-341 684-341t-66.5-27.5ZM488-120v-51q0-26 11-44.5t31-28.5q37-19 75-28t79-9q41 0 79 8.5t75 28.5q20 9 31 28t11 45v51H488Z"/>
+			</svg>
 		</a>
 		<span class="navbar__hint">About</span>
-		<a href="#skills-section" class="navbar__link" aria-label="Skills">
-			<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M320-242 80-482l242-242 43 43-199 199 197 197-43 43Zm318 2-43-43 199-199-197-197 43-43 240 240-242 242Z"/></svg>
+		<a href="#skills-section" class="navbar__link navbar__link--skills" aria-label="Skills">
+			<svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3">
+				<path d="M320-242 80-482l242-242 43 43-199 199 197 197-43 43Zm318 2-43-43 199-199-197-197 43-43 240 240-242 242Z"/>
+			</svg>
 		</a>
 		<span class="navbar__hint">Skills</span>
-		<a href="#certificates-section" class="navbar__link" aria-label="Certificates">
-				<svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M402.5-482.5Q370-515 370-560t32.5-77.5Q435-670 480-670t77.5 32.5Q590-605 590-560t-32.5 77.5Q525-450 480-450t-77.5-32.5ZM244-40v-304q-45-47-64.5-103T160-560q0-136 92-228t228-92q136 0 228 92t92 228q0 57-19.5 113T716-344v304l-236-79-236 79Zm420.5-335.5Q740-451 740-560t-75.5-184.5Q589-820 480-820t-184.5 75.5Q220-669 220-560t75.5 184.5Q371-300 480-300t184.5-75.5ZM304-124l176-55 176 55v-171q-40 29-86 42t-90 13q-44 0-90-13t-86-42v171Zm176-86Z"/>
+		<a href="#certificates-section" class="navbar__link navbar__link--certificates" aria-label="Certificates">
+				<svg class="icon" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3">
+					<path d="M402.5-482.5Q370-515 370-560t32.5-77.5Q435-670 480-670t77.5 32.5Q590-605 590-560t-32.5 77.5Q525-450 480-450t-77.5-32.5ZM244-40v-304q-45-47-64.5-103T160-560q0-136 92-228t228-92q136 0 228 92t92 228q0 57-19.5 113T716-344v304l-236-79-236 79Zm420.5-335.5Q740-451 740-560t-75.5-184.5Q589-820 480-820t-184.5 75.5Q220-669 220-560t75.5 184.5Q371-300 480-300t184.5-75.5ZM304-124l176-55 176 55v-171q-40 29-86 42t-90 13q-44 0-90-13t-86-42v171Zm176-86Z"/>
 				</svg>
 		</a>
 		<span class="navbar__hint">Certificates</span>
-		<a href="#work-section" class="navbar__link" aria-label="Work">
-			<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M140-220v-520 550-30Zm0 60q-24 0-42-18.5T80-220v-520q0-23 18-41.5t42-18.5h281l60 60h339q23 0 41.5 18.5T880-680v301h-60v-301H456l-60-60H140v520h295v60H140Zm485 99L495-190l130-129 42 42-87 87 87 87-42 42Zm164 0-42-42 87-87-87-87 42-42 130 129L789-61Z"/></svg>
+		<a href="#work-section" class="navbar__link navbar__link--work" aria-label="Work">
+			<svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3">
+				<path d="M140-220v-520 550-30Zm0 60q-24 0-42-18.5T80-220v-520q0-23 18-41.5t42-18.5h281l60 60h339q23 0 41.5 18.5T880-680v301h-60v-301H456l-60-60H140v520h295v60H140Zm485 99L495-190l130-129 42 42-87 87 87 87-42 42Zm164 0-42-42 87-87-87-87 42-42 130 129L789-61Z"/>
+			</svg>
 		</a>
 		<span class="navbar__hint">Work</span>
-		<a href="#contact-section" class="navbar__link" aria-label="Contact">
-			<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"/></svg>
+		<a href="#contact-section" class="navbar__link navbar__link--contact" aria-label="Contact">
+			<svg class="icon" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3">
+				<path d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"/>
+			</svg>
 		</a>
 		<span class="navbar__hint">Contact</span>
 	</nav>
