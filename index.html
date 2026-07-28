@@ -164,7 +164,7 @@
 			<img src="./src/images/MarioBW.png" class="about-section__story-image" alt="My picture">
 			<div class="about-section__story-text">
 				I'm <b>Mario Nano</b>.<br />
-				I love to code. Simple as that.<br /><br />
+				<b>I love to code. Simple as that.</b><br /><br />
 				Many years ago, in the age of Adobe Dreamweaver, I was asked to make a webpage for a small art festival and since then I knew what I wanted to do professionally.<br />
 				After years of building toward it, I made the official leap into full-stack development, leaving no stone unturned to turn passion into my daily practice.<br /><br />
 				Since then, I’ve spent years in the trenches of professional full-stack web development. I’ve engineered custom PHP backends, built complex TypeScript/React applications, and architected multi-tenant data systems handling 120+ localized branch sites. Along the way, I’ve frequently stepped up as QA Manager—because I genuinely enjoy hunting down edge-case bugs and ensuring what goes to production is rock-solid.<br /><br />
@@ -254,6 +254,10 @@
 						<span class="skills-section__skill-name">Docker</span>
 					</div>
 					<div class="skills-section__skill">
+						<img class="skills-section__skill-logo" src="./src/images/azure.png" alt="Azure logo" />
+						<span class="skills-section__skill-name">Azure DevOps</span>
+					</div>
+					<div class="skills-section__skill">
 						<img class="skills-section__skill-logo" src="./src/images/gimp.png" alt="GIMP logo" />
 						<span class="skills-section__skill-name">GIMP3</span>
 					</div>
@@ -269,48 +273,73 @@
 		<span class="horizontal-line desktop-hidden"></span>
  	<h2 class="section-title">.my_certificates()</h2>
 		<div class="certificates-section__certs-container">
-			<div class="cert1 certificates-section__cert-image-container">
-    <img class="certImgSass certificates-section__cert-image" src="./src/images/CertSASS-1145x871.webp" alt="SASS certificate" />
-				<span class="certificates-section__cert-name">SASS</span>
-			</div>
-			<span class="myModalSS modal">
-    <img class="modal-content imgSS" alt="SASS certificate full view"/>
-			</span>
-			<div class="cert2 certificates-section__cert-image-container">
-    <img class="certImgBS certificates-section__cert-image" src="./src/images/CertBOOT-1145x871.webp" alt="Bootstrap certificate" />
-				<span class="certificates-section__cert-name">BOOTSTRAP</span>
-			</div>
-			<span class="myModalBS modal">
-    <img class="modal-content imgBS" alt="Bootstrap certificate full view"/>
-			</span>
-			<div class="cert3 certificates-section__cert-image-container">
-    <img class="certImgJS certificates-section__cert-image" src="./src/images/CertJS-1145x871.webp" alt="JavaScript certificate" />
-				<span class="certificates-section__cert-name">JAVASCRIPT</span>
-			</div>
-			<span class="myModalJS modal">
-    <img class="modal-content imgJS" alt="JavaScript certificate full view"/>
-			</span>
-			<div class="cert4 certificates-section__cert-image-container">
-    <img class="certImgJSS certificates-section__cert-image" src="./src/images/CertJS-II-1145x871.webp" alt="JavaScript II certificate" />
-				<span class="certificates-section__cert-name">JAVASCRIPT II </span>
-			</div>
-			<span class="myModalJSS modal">
-    <img class="modal-content imgJSS" alt="JavaScript II certificate full view"/>
-			</span>
-			<div class="cert5 certificates-section__cert-image-container">
-    <img class="certImgRE certificates-section__cert-image" src="./src/images/CertREACT-1145x871.webp" alt="React JS certificate" />
-				<span class="certificates-section__cert-name">REACT JS</span>
-			</div>
-			<span class="myModalRE modal">
-    <img class="modal-content imgRE" alt="React JS certificate full view"/>
-			</span>
-			<div class="cert6 certificates-section__cert-image-container">
-    <img class="certImgPHP certificates-section__cert-image" src="./src/images/CertPHP.webp" alt="PHP certificate" />
+
+			<div class="certificates-section__cert-image-container">
+				<img
+					class="certificates-section__cert-image"
+					src="./src/images/cert-php.webp" alt="PHP certificate"
+				/>
 				<span class="certificates-section__cert-name">PHP</span>
 			</div>
-			<span class="myModalPHP modal">
-    <img class="modal-content imgPHP" alt="PHP certificate full view"/>
+			<span class="modal">
+				<img class="modal-content" alt="PHP certificate"/>
 			</span>
+
+			<div class="certificates-section__cert-image-container">
+				<img
+					class="certificates-section__cert-image"
+					src="./src/images/cert-js.webp" alt="JavaScript certificate"
+				/>
+				<span class="certificates-section__cert-name">JAVASCRIPT</span>
+			</div>
+			<span class="modal">
+				<img class="modal-content" alt="JavaScript certificate"/>
+			</span>
+
+			<div class="certificates-section__cert-image-container">
+				<img
+					class="certificates-section__cert-image"
+					src="./src/images/cert-jsII.webp" alt="JavaScript II certificate"
+				/>
+				<span class="certificates-section__cert-name">JAVASCRIPT II </span>
+			</div>
+			<span class="modal">
+				<img class="modal-content" alt="JavaScript II certificate"/>
+			</span>
+
+			<div class="certificates-section__cert-image-container">
+				<img
+					class="certificates-section__cert-image"
+					src="./src/images/cert-react.webp" alt="React JS certificate"
+				/>
+				<span class="certificates-section__cert-name">REACT JS</span>
+			</div>
+			<span class="modal">
+				<img class="modal-content" alt="React JS certificate"/>
+			</span>
+
+			<div class="certificates-section__cert-image-container">
+				<img
+					class="certificates-section__cert-image"
+					src="./src/images/cert-sass.webp" alt="SASS certificate"
+				/>
+				<span class="certificates-section__cert-name">SASS</span>
+			</div>
+			<span class="modal">
+				<img class="modal-content" alt="SASS certificate"/>
+			</span>
+
+			<div class="certificates-section__cert-image-container">
+				<img
+					class="certificates-section__cert-image"
+					src="./src/images/cert-boot.webp" alt="Bootstrap certificate"
+				/>
+				<span class="certificates-section__cert-name">BOOTSTRAP</span>
+			</div>
+			<span class="modal">
+				<img class="modal-content" alt="Bootstrap certificate"/>
+			</span>
+
 		</div>
 	</section>
 	<section id="work-section" class="work-section">
