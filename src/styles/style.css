@@ -220,6 +220,7 @@ section:not(#contact-section) {
 	margin: 0 auto 8rem;
 	color: var(--alt-color);
 	max-width: 1280px;
+	font-family: "Silkscreen", "sans-serif";
 }
 
 @media (min-width: 768px) {
@@ -229,7 +230,7 @@ section:not(#contact-section) {
 		text-align: left;
 		font-size: 2rem;
 		width: 100%;
-		transform: translateX(-1.76rem);
+		transform: translateX(-1.93rem);
 	}
 
 	.line {
