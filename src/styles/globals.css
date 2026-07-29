@@ -23,7 +23,7 @@ html {
 body {
 	background-color: var(--bg-color);
 	color: var(--font-color);
-	font-family: "Source Code Pro", "sans-serif";
+	font-family: "Alata", "sans-serif";
 	font-size: 100%;
 	width: 100vw;
 	overflow-x: hidden;

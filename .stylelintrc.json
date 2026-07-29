@@ -3,7 +3,12 @@
 		"block-no-empty": true,
 		"property-no-unknown": true,
 		"declaration-no-important": true,
-		"unit-no-unknown": true,
+		"unit-no-unknown": [
+			true,
+			{
+				"ignoreUnits": ["dvh"]
+			}
+		],
 		"selector-type-no-unknown": true,
 		"at-rule-empty-line-before": "always",
 		"rule-empty-line-before": [
