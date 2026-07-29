@@ -90,7 +90,8 @@ function syncCircleStaticScale() {
 		circleRect.top < staticRect.bottom &&
 		circleRect.bottom > staticRect.top
 	);
-	circleStatic.style.transform = intersects ? 'scale(1.5)' : 'scale(1)';
+	circleStatic.style.transform = intersects ? 'scale(2)' : 'scale(1)';
+	circleStatic.style.borderRadius = intersects ? '0px' : '15px';
 }
 
 function syncLine() {
