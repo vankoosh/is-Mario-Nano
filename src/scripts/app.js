@@ -1,5 +1,12 @@
+import Lenis from 'https://unpkg.com/lenis@1.3.25/dist/lenis.mjs';
 import modal from './modal.js';
 import fadeInElementsOnScroll from './fadeInElementsOnScroll.js';
+
+const lenis = new Lenis({
+	autoRaf: true,
+	lerp: 0.1,
+	wheelMultiplier: 0.4,
+});
 
 const sectionTitles = document.querySelectorAll('.section-title');
 const footerDate = document.querySelector('.contact-section__date');
@@ -28,7 +35,7 @@ waterIcon.addEventListener('click', () => {
 	document.querySelector('.video').classList.toggle('show-video')
 });
 
-window.addEventListener('scroll', () => {
+lenis.on('scroll', ({ scroll }) => {
 	let isStoryElemFadeIn = storyElem.classList.contains("fade-in-from-right");
 	let activeIcon = null;
 	sectionTitles.forEach((title) => {
@@ -67,9 +74,8 @@ window.addEventListener('scroll', () => {
 
 	syncLine();
 	syncCircleStaticScale();
-	fadeInElementsOnScroll(vWidth, storyElem, skillElem, certificatesElem);
 
-	const distanceFromBottom = document.body.scrollHeight - window.scrollY - vHeight;
+	const distanceFromBottom = document.body.scrollHeight - scroll - vHeight;
 	const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
 	navbar.style.bottom = distanceFromBottom <= 3 * rem ? '2.5rem' : '0.5rem';
 });
@@ -140,6 +146,7 @@ window.addEventListener('load', () => {
 
 	modal();
 	setFooterDate();
+	fadeInElementsOnScroll(vWidth, storyElem, skillElem, certificatesElem);
 	},
 	true
 );
