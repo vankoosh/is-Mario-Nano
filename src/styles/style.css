@@ -654,7 +654,6 @@ section:not(#contact-section) {
 .work-section__card {
 	display: flex;
 	flex-direction: column;
-	/*border-bottom: 1px solid #000;*/
 	background-color: #f5f3f3;
 	padding-bottom: 1rem;
 	-webkit-mask-image: linear-gradient(to bottom, black calc(100% - 3rem), transparent 100%);
