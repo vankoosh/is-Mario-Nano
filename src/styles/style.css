@@ -102,7 +102,7 @@ video {
 	width: 12px;
 	height: 12px;
 	left: -1500px;
-	border-radius: 15px;
+	/*border-radius: 15px;*/
 	background-color: var(--alt-color);
 	opacity: 0;
 }
@@ -112,7 +112,7 @@ video {
 	height: 12px;
 	transform: translateY(-3.5rem) translateX(-2rem);
 	background-color: var(--alt-color);
-	border-radius: 15px;
+	/*border-radius: 15px;*/
 	opacity: 0;
 }
 
@@ -166,12 +166,13 @@ video {
 section:not(:nth-of-type(2)):not(:last-of-type) .horizontal-line {
 	margin: 10rem auto 0.5rem;
 }
+/* TODO: scroll margin for about section always scrolls too far */
 
 section {
 	scroll-margin-top: 1rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	margin: 0 auto;
 	max-width: 1280px;
 	width: 100%;
@@ -213,7 +214,7 @@ section {
 
 section:not(#contact-section) {
 	height: 100%;
-	min-height: 100svh;
+	min-height: 100vh;
 }
 
 .section-title {
@@ -223,6 +224,7 @@ section:not(#contact-section) {
 	color: var(--alt-color);
 	max-width: 1280px;
 	font-family: "Silkscreen", "sans-serif";
+	justify-self: flex-start;
 }
 
 @media (min-width: 768px) {
@@ -639,21 +641,26 @@ section:not(#contact-section) {
 
 .work-section__container {
 	gap: 2rem;
+	margin-bottom: 10rem;
 }
 /* TODO: have AI put all section media queries under the appropriate section */
+
 @media (min-width: 576px) {
 	.work-section__container {
 		flex-flow: row wrap;
-
 	}
 }
 
 .work-section__card {
 	display: flex;
 	flex-direction: column;
-	border-bottom: 1px solid #000;
 	background-color: #f5f3f3;
 	padding-bottom: 1rem;
+	-webkit-mask-image: linear-gradient(to bottom, black calc(100% - 3rem), transparent 100%);
+	mask-image: linear-gradient(to bottom, black calc(100% - 3rem), transparent 100%);
+	opacity: 0;
+	transform: translateY(5rem);
+	transition: opacity 1s, transform 1s;
 }
 
 @media (min-width: 576px) {
@@ -666,6 +673,11 @@ section:not(#contact-section) {
 	.work-section__card {
 		max-width: calc(33.33% - 1.35rem);
 	}
+}
+
+.work-section__card.fade-up {
+	opacity: 1;
+	transform: translateY(0rem);
 }
 
 .work-section__card-image {
@@ -684,6 +696,7 @@ section:not(#contact-section) {
 
 .work-section__card-title {
 	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 .work-section__card-description {

@@ -6,7 +6,7 @@
 		"unit-no-unknown": [
 			true,
 			{
-				"ignoreUnits": ["dvh"]
+				"ignoreUnits": ["dvh","svh","lvh"]
 			}
 		],
 		"selector-type-no-unknown": true,

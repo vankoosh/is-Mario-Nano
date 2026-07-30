@@ -22,7 +22,8 @@ const navbar = document.querySelector(".navbar");
 const storyImage = document.querySelector(".about-section__story-image");
 const storyElem = document.querySelector(".about-section__story-text");
 const skillElem = document.querySelectorAll(".skills-section__skill");
-const certificatesElem = document.querySelectorAll(".certificates-section__cert-image-container")
+const certificatesElem = document.querySelectorAll(".certificates-section__cert-image-container");
+const workElem = document.querySelectorAll(".work-section__card");
 
 let vHeight;
 let vWidth;
@@ -97,7 +98,7 @@ function syncCircleStaticScale() {
 		circleRect.bottom > staticRect.top
 	);
 	circleStatic.style.transform = intersects ? 'scale(2)' : 'scale(1)';
-	circleStatic.style.borderRadius = intersects ? '0px' : '15px';
+	// circleStatic.style.borderRadius = intersects ? '0px' : '15px';
 }
 
 function syncLine() {
@@ -146,7 +147,7 @@ window.addEventListener('load', () => {
 
 	modal();
 	setFooterDate();
-	fadeInElementsOnScroll(vWidth, storyElem, skillElem, certificatesElem);
+	fadeInElementsOnScroll(vWidth, storyElem, skillElem, certificatesElem, workElem);
 	},
 	true
 );
