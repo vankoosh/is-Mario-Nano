@@ -178,6 +178,15 @@ section {
 	padding: 0 var(--side-padding-sm);
 }
 
+.about-section__story-container,
+.work-section__container,
+.skills-section__skills-container,
+.certificates-section__certs-container,
+.contact-section__container {
+	max-width: 992px;
+	align-self: center;
+}
+
 @media (min-width: 768px) {
 	section {
 		padding: 0 var(--side-padding-md);
@@ -458,10 +467,9 @@ section:not(#contact-section) {
 	flex-direction: column;
 }
 
-.about-section__story-container,
 .skills-section__skills-container,
 .certificates-section__certs-container,
-.work-section__work-container {
+.work-section__container {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
@@ -491,7 +499,6 @@ section:not(#contact-section) {
 	margin: 0 auto;
 	text-align: center;
 	opacity: 1;
-	max-width: 66ch;
 }
 
 @media (min-width: 576px) {
@@ -630,138 +637,78 @@ section:not(#contact-section) {
 	transition: 0.3s;
 }
 
-.work-section__work-card {
-	margin: 1rem 0;
-	border-left: 1px solid #80808085;
-	border-bottom: 1px solid #80808085;
+.work-section__container {
+	gap: 2rem;
+}
+/* TODO: have AI put all section media queries under the appropriate section */
+@media (min-width: 576px) {
+	.work-section__container {
+		flex-flow: row wrap;
+
+	}
 }
 
-.work-section__work-card:last-child {
-	margin-bottom: 0;
+.work-section__card {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #000;
+	background-color: #f5f3f3;
+	padding-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
-	.work-section__work-card {
-		width: 50vw;
+@media (min-width: 576px) {
+	.work-section__card {
+		max-width: calc(50% - 1rem);
 	}
 }
 
 @media (min-width: 992px) {
-	.work-section__work-card {
-		display: flex;
-		width: 60vw;
-		margin-bottom: 3vh;
+	.work-section__card {
+		max-width: calc(33.33% - 1.35rem);
 	}
 }
 
-@media (min-width: 1280px) {
-	.work-section__work-card {
-		width: 50vw;
-	}
-}
-
-.work-section__work-card img {
+.work-section__card-image {
 	display: block;
-	margin: 0 auto;
-	width: 70vw;
-	height: auto;
-	border: 1px solid #0000007c;
-	object-fit: cover;
+	width: 100%;
 }
 
-@media (min-width: 768px) {
-	.work-section__work-card img {
-		display: inline-block;
-		margin: 0;
-		width: 18rem;
-	}
-}
-
-.work-section__work-card-text {
+.work-section__card-text {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 2rem;
+	padding: 1rem;
+	height: 100%;
 }
 
-@media (min-width: 768px) {
-	.work-section__work-card-text {
-		margin-left: 2rem;
-		align-items: flex-start;
-		justify-content: space-between;
-	}
-}
-
-.work-section__work-card-text h5 {
-	margin: 1rem 0;
+.work-section__card-title {
 	font-size: 1.5rem;
 }
 
-@media (min-width: 768px) {
-	.work-section__work-card-text h5 {
-		margin: 0;
-	}
-}
-
-.work-section__work-card-text p {
-	margin-bottom: 1rem;
-	font-size: 1.1rem;
-}
-
-@media (min-width: 768px) {
-	.work-section__work-card-text p {
-		margin-top: 0.5rem;
-		margin-bottom: 1rem;
-	}
-}
-
-.work-section__work-card-tech-tags {
-	display: flex;
-}
-
-.work-section__work-card-tech-tags span {
-	margin-right: 1rem;
-	padding: 0.1rem 0.5rem;
-	background-color: rgba(128, 128, 128, 0.253);
-	border-radius: 0.5rem;
-}
-
-@media (min-width: 768px) {
-	.work-section__work-card-tech-tags span {
-		margin-right: 1rem;
-	}
-}
-
-.work-section__work-card-btn-container {
-	display: flex;
-	width: 100%;
-	margin-top: 1rem;
-	justify-content: space-around;
-}
-
-@media (min-width: 768px) {
-	.work-section__work-card-btn-container {
-		justify-content: flex-start;
-	}
-}
-
-.work-section__work-card-btn {
-	display: inline-block;
-	padding: .4rem .5rem;
+.work-section__card-description {
 	text-align: center;
-	font-size: 1.5rem;
-	color: #fff;
-	background-color: #000;
-	transition: color ease-in 0.2s;
+	font-size: 0.9rem;
 }
 
-@media (min-width: 768px) {
-	.work-section__work-card-btn {
-		margin-right: 3rem;
-	}
+.work-section__card-tags {
+	display: flex;
+	gap: 0.5rem;
+	width: 100%;
+	justify-content: flex-end;
+	margin-top: auto;
+	flex-wrap: wrap;
 }
 
-.work-section__work-card-btn:hover {
-	color: var(--alt-color);
+.work-section__card-tag {
+	padding: 0 0.5rem 0.1rem;
+	background-color: #80808041;
+	border-radius: 1rem;
+	font-weight: bold;
+}
+
+.work-section__card-tag-icon {
+	height: 1.5rem;
 }
 
 .work-section__heatmap {
