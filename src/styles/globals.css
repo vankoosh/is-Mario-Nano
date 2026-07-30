@@ -23,7 +23,7 @@ html {
 body {
 	background-color: var(--bg-color);
 	color: var(--font-color);
-	font-family: "Alata", "sans-serif";
+	font-family: "Noto Sans", "sans-serif";
 	font-size: 100%;
 	width: 100vw;
 	overflow-x: hidden;
@@ -46,7 +46,7 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: "Alata", "sans-serif";
+	font-family: "Noto Sans", "sans-serif";
 }
 
 body::-webkit-scrollbar {
