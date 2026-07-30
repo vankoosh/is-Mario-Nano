@@ -213,7 +213,7 @@ section {
 
 section:not(#contact-section) {
 	height: 100%;
-	min-height: 100dvh;
+	min-height: 100svh;
 }
 
 .section-title {
