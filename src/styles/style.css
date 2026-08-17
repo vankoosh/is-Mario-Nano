@@ -331,12 +331,7 @@ section:not(#contact-section) {
 	font-family: "Silkscreen", "sans-serif";
 	font-weight: bold;
 	transition: opacity 0.8s ease;
-}
-
-@media (min-width: 768px) {
-	.front-section__hi-text {
-		margin-top: 44vh;
-	}
+	margin-top: 44vh;
 }
 
 .front-section__hi-text-greeting {
@@ -809,8 +804,7 @@ footer {
 	height: 3rem;
 }
 
-html.modal-open,
-body.modal-open {
+html.modal-open {
 	overflow: hidden;
 }
 
