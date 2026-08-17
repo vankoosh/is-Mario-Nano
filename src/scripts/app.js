@@ -78,7 +78,7 @@ lenis.on('scroll', ({ scroll }) => {
 
 	const distanceFromBottom = document.body.scrollHeight - scroll - vHeight;
 	const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
-	navbar.style.bottom = distanceFromBottom <= 3 * rem ? '2.5rem' : '9rem';
+	navbar.style.bottom = distanceFromBottom <= 3 * rem ? '2.5rem' : '0.5rem';
 });
 
 function syncCircleStatic() {
@@ -142,7 +142,7 @@ window.addEventListener('load', () => {
 		cta.style.opacity = '1';
 	}, 1300);
 	setTimeout(() => {
-		navbar.style.bottom = '9rem';
+		navbar.style.bottom = '0.5rem';
 	}, 1300);
 
 	modal(lenis);
